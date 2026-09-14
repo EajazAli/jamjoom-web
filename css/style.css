@@ -8083,3 +8083,50 @@ img {
 .home-screen__step-2__content.reveal {
     position: absolute;
 }
+
+/* Homepage story panels were previously listed in #home-pagination, but that
+   widget's positioning (percentage offsets meant for a single pinned 100vh
+   stage) no longer makes sense now that #home-page is a tall, naturally
+   scrolling document, and nothing currently drives it. Hide it rather than
+   leave a broken floating counter on the page. */
+#home-pagination {
+    display: none;
+}
+
+/* ------------------------------------------------------------------
+   Cinematic homepage scroll (original build for this site, see
+   js/cinematic.js). Progressive enhancement only: js/cinematic.js adds
+   "cine-mode" to <html> solely on wide viewports when the visitor hasn't
+   asked for reduced motion. Without that class every rule above still
+   applies untouched, so the plain stacked/reveal homepage (already
+   accessible and already verified working) stays the fallback for mobile,
+   no-JS and reduced-motion visitors.
+   ------------------------------------------------------------------ */
+.cine-mode .cine-block {
+    position: relative;
+}
+@media screen and (min-width: 1024px) {
+    .cine-mode .cine-block {
+        height: 220vh;
+    }
+    .cine-mode .cine-sticky.home-screen {
+        position: sticky !important;
+        top: 0;
+        height: 100vh !important;
+        min-height: 0 !important;
+        overflow: hidden !important;
+    }
+    .cine-mode .cine-sticky .home-screen__step {
+        position: absolute !important;
+        inset: 0;
+        width: 100%;
+        height: 100% !important;
+        min-height: 0 !important;
+    }
+    .cine-mode .cine-sticky .home-screen__step-1 {
+        z-index: 1;
+    }
+    .cine-mode .cine-sticky .home-screen__step-2 {
+        z-index: 2;
+    }
+}

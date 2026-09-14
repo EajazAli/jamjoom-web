@@ -229,7 +229,7 @@
 
         <section class="home-screen" id="home-landing">
           <div id="home-landing__bg">
-            <video id="home-landing__bg__video" preload="auto" loop muted>
+            <video id="home-landing__bg__video" preload="auto" loop muted autoplay playsinline>
               <source src="videos/Home_1.mp4" />
             </video>
           </div>
@@ -279,10 +279,11 @@
           </div>
         </section>
 
-        <section class="home-screen" id="home-screen-1" name="story">
+        <div class="cine-block">
+        <section class="home-screen cine-sticky" id="home-screen-1" name="story">
           <section class="home-screen__step home-screen__step-1">
             <div class="home-screen__step-1__bg">
-              <video class="home-screen__step-1__bg__video" preload="auto" loop muted>
+              <video class="home-screen__step-1__bg__video" preload="auto" loop muted autoplay playsinline>
                 <source src="videos/Service.mp4" />
               </video>
               <canvas class="home-screen__step-1__bg__canvas"></canvas>
@@ -366,12 +367,14 @@
 
           </section>
         </section>
-        <section class="home-screen" id="home-screen-2" name="client-commitment">
+        </div>
+        <div class="cine-block">
+        <section class="home-screen cine-sticky" id="home-screen-2" name="client-commitment">
 
           <section class="home-screen__step home-screen__step-1">
 
             <div class="home-screen__step-1__bg">
-              <video class="home-screen__step-1__bg__video" preload="auto" loop muted>
+              <video class="home-screen__step-1__bg__video" preload="auto" loop muted autoplay playsinline>
                 <source src="videos/Service.mp4" />
               </video>
               <canvas class="home-screen__step-1__bg__canvas"></canvas>
@@ -385,7 +388,7 @@
             <div class="reveal home-screen__step__content home-screen__step-1__content">
               <h1 class="home-screen__step__content__title home-screen__step-1__content__title"> Our Services </h1>
               <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">
-                “Together we reach our goals” <br />
+                â€œTogether we reach our goalsâ€ <br />
                 Quality Pakaging begins with a quality relationship.
               </h2>
             </div>
@@ -436,12 +439,14 @@
 
           </section>
         </section>
-        <section class="home-screen" id="home-screen-3" name="vision">
+        </div>
+        <div class="cine-block">
+        <section class="home-screen cine-sticky" id="home-screen-3" name="vision">
 
           <section class="home-screen__step home-screen__step-1">
 
             <div class="home-screen__step-1__bg">
-              <video class="home-screen__step-1__bg__video" preload="auto" loop muted>
+              <video class="home-screen__step-1__bg__video" preload="auto" loop muted autoplay playsinline>
                 <!-- <source src="videos/JPP3.mp4"> -->
                 <source src="videos/OurVision.mp4">
               </video>
@@ -456,7 +461,7 @@
             <div class="reveal home-screen__step__content home-screen__step-1__content">
               <h1 class="home-screen__step__content__title home-screen__step-1__content__title">Our vision</h1>
               <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">
-                “Together we reach our goals” <br />
+                â€œTogether we reach our goalsâ€ <br />
                 Quality Pakaging begins with a quality relationship.
               </h2>
             </div>
@@ -504,12 +509,14 @@
 
           </section>
         </section>
-        <section class="home-screen" id="home-screen-4" name="expertise">
+        </div>
+        <div class="cine-block">
+        <section class="home-screen cine-sticky" id="home-screen-4" name="expertise">
 
           <section class="home-screen__step home-screen__step-1">
 
             <div class="home-screen__step-1__bg">
-              <video class="home-screen__step-1__bg__video" preload="auto" loop muted>
+              <video class="home-screen__step-1__bg__video" preload="auto" loop muted autoplay playsinline>
                 <source src="videos/Facility.mp4">
               </video>
               <canvas class="home-screen__step-1__bg__canvas"></canvas>
@@ -568,12 +575,14 @@
 
           </section>
         </section>
-        <section class="home-screen" id="home-screen-5" name="who-we-are">
+        </div>
+        <div class="cine-block">
+        <section class="home-screen cine-sticky" id="home-screen-5" name="who-we-are">
 
           <section class="home-screen__step home-screen__step-1">
 
             <div class="home-screen__step-1__bg">
-              <video class="home-screen__step-1__bg__video" preload="auto" loop muted>
+              <video class="home-screen__step-1__bg__video" preload="auto" loop muted autoplay playsinline>
                 <source src="videos/one.mp4">
               </video>
               <canvas class="home-screen__step-1__bg__canvas"></canvas>
@@ -631,6 +640,7 @@
 
           </section>
         </section>
+        </div>
         <div class=" " id="home-pagination">
           <ul id="home-pagination__nav">
             <li class="home-pagination__nav__item home-pagination__nav__item--selected">
@@ -756,6 +766,7 @@
     </script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/reveal.js"></script>
+    <script type="text/javascript" src="js/cinematic.js"></script>
     <script src="https://embed.typeform.com/next/embed.js"></script>
     <script>
       // scripts.js's home-page controller hijacks mouse-wheel/trackpad scroll to
