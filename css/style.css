@@ -8115,7 +8115,10 @@ img {
 }
 @media screen and (min-width: 1024px) {
     .cine-mode .cine-block {
-        height: 220vh;
+        /* The runway each pinned section is scrubbed across. The handover
+           occupies about half of it, so a shorter runway is what keeps the
+           transition feeling like a transition rather than a slow drag. */
+        height: 180vh;
     }
     .cine-mode .cine-sticky.home-screen {
         position: sticky !important;
@@ -8147,8 +8150,19 @@ img {
     }
     .cine-mode .cine-sticky .home-screen__step-1__bg,
     .cine-mode .cine-sticky .home-screen__step-2__img,
-    .cine-mode .cine-sticky .home-screen__step-2__bg {
+    .cine-mode .cine-sticky .home-screen__step-2__bg,
+    .cine-mode .cine-sticky .home-screen__step-2__corner {
         will-change: transform;
+    }
+    /* During the handover the headline and subtitle of each step travel all
+       the way to the other step's resting position, which is outside their
+       own container. Both of these clip by default (auto / hidden), which
+       would cut the type off mid-flight - and, on the oversized subtitles,
+       mid-word even at rest. Nothing inside needs a scroll box at this
+       width, so let them spill. */
+    .cine-mode .cine-sticky .home-screen__step-2__content,
+    .cine-mode .cine-sticky .home-screen__step-2__content__inner {
+        overflow: visible;
     }
 }
 
