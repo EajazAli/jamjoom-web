@@ -5,13 +5,9 @@
     /*blue: #1e396e*/
     /*green : #5ab381;*/
     /*gray : #dddde7;*/
-    /* font-family: gt_walsheim, Helvetica, Arial, sans-serif;
-    font-family: "Staatliches", cursive; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif !important;
-    /* font-family: gt_walsheim, Helvetica, Arial, sans-serif; */
 }
 ::selection {
     background-color: #1e396e;
