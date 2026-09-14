@@ -19,9 +19,7 @@
       (function () {
         var wide = window.innerWidth >= 1024;
         var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        if (wide && !reduced) {
-          document.documentElement.classList.add('cine-mode');
-        }
+        document.documentElement.classList.add((wide && !reduced) ? 'cine-mode' : 'cine-fade');
       })();
     </script>
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
@@ -310,7 +308,7 @@
               <div class="home-screen__step-1__lines__line"></div>
             </div>
 
-            <div class="reveal home-screen__step__content home-screen__step-1__content">
+            <div class="home-screen__step__content home-screen__step-1__content">
               <h1 class="home-screen__step__content__title home-screen__step-1__content__title"> Our Services </h1>
               <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">Quality is not
                 only
@@ -359,7 +357,7 @@
 
             <div class="home-screen__step-2__corner"></div>
 
-            <div class="reveal home-screen__step__content home-screen__step-2__content">
+            <div class="home-screen__step__content home-screen__step-2__content">
               <div class="home-screen__step-2__content__inner">
                 <h1 class="home-screen__step__content__title home-screen__step-2__content__inner__title"> Our Services
                 </h1>
@@ -401,7 +399,7 @@
               <div class="home-screen__step-1__lines__line"></div>
             </div>
 
-            <div class="reveal home-screen__step__content home-screen__step-1__content">
+            <div class="home-screen__step__content home-screen__step-1__content">
               <h1 class="home-screen__step__content__title home-screen__step-1__content__title"> Our Services </h1>
               <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">
                 “Together we reach our goals” <br />
@@ -429,7 +427,7 @@
 
             <div class="home-screen__step-2__corner"></div>
 
-            <div class="reveal home-screen__step__content home-screen__step-2__content">
+            <div class="home-screen__step__content home-screen__step-2__content">
               <div class="home-screen__step-2__content__inner">
                 <h1 class="home-screen__step__content__title home-screen__step-2__content__inner__title">Our Services
                 </h1>
@@ -474,7 +472,7 @@
               <div class="home-screen__step-1__lines__line"></div>
             </div>
 
-            <div class="reveal home-screen__step__content home-screen__step-1__content">
+            <div class="home-screen__step__content home-screen__step-1__content">
               <h1 class="home-screen__step__content__title home-screen__step-1__content__title">Our vision</h1>
               <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">
                 “Together we reach our goals” <br />
@@ -502,7 +500,7 @@
 
             <div class="home-screen__step-2__corner"></div>
 
-            <div class="reveal home-screen__step__content home-screen__step-2__content">
+            <div class="home-screen__step__content home-screen__step-2__content">
               <div class="home-screen__step-2__content__inner">
                 <h1 class="home-screen__step__content__title home-screen__step-2__content__inner__title">Our vision</h1>
                 <h2 class="home-screen__step__content__subtitle home-screen__step-2__content__inner__subtitle">
@@ -543,7 +541,7 @@
               <div class="home-screen__step-1__lines__line"></div>
             </div>
 
-            <div class="reveal home-screen__step__content home-screen__step-1__content">
+            <div class="home-screen__step__content home-screen__step-1__content">
               <h1 class="home-screen__step__content__title home-screen__step-1__content__title">Our Facility</h1>
               <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">A higher level of
                 satisfaction inside and out possible through our technology
@@ -570,7 +568,7 @@
 
             <div class="home-screen__step-2__corner"></div>
 
-            <div class="reveal home-screen__step__content home-screen__step-2__content">
+            <div class="home-screen__step__content home-screen__step-2__content">
               <div class="home-screen__step-2__content__inner">
                 <h1 class="home-screen__step__content__title home-screen__step-2__content__inner__title">Our Facility
                 </h1>
@@ -609,7 +607,7 @@
               <div class="home-screen__step-1__lines__line"></div>
             </div>
 
-            <div class="reveal home-screen__step__content home-screen__step-1__content">
+            <div class="home-screen__step__content home-screen__step-1__content">
               <h1 class="home-screen__step__content__title home-screen__step-1__content__title">Seeing is believing </h1>
               <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">Explore Jamjoom
                 Printing and Packaging facilty</h2>
@@ -634,7 +632,7 @@
 
             <div class="home-screen__step-2__corner"></div>
 
-            <div class="reveal home-screen__step__content home-screen__step-2__content">
+            <div class="home-screen__step__content home-screen__step-2__content">
               <div class="home-screen__step-2__content__inner">
                 <h1 class="home-screen__step__content__title home-screen__step-2__content__inner__title">Seeing is
                   believing</h1>

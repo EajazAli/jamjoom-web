@@ -8156,11 +8156,24 @@ img {
    (25px scaled 1.2973x, or 1.5238x above 1400px, from transform-origin:
    left top). That means their LAYOUT box stays 25px-text wide while they
    RENDER about half again as wide, deliberately spilling to the right of
-   their column. That was fine until these panels were given the sitewide
-   .reveal class for their scroll fade-in, because .reveal also carries
-   overflow:hidden - which clipped the scaled text mid-word. Keep the fade,
-   drop the clipping. */
-.home-screen__step__content.reveal,
-.home-screen__step__content.reveal.active {
+   their column - so this container must never clip. It briefly did, when
+   these panels carried the sitewide .reveal class (which brings
+   overflow:hidden) and cut the scaled text off mid-word. js/cinematic.js
+   owns their motion now instead; this guard keeps the spill safe. */
+#home-page .home-screen__step__content {
     overflow: visible;
+}
+
+/* Narrow screens and reduced-motion visitors skip the pinned timeline and
+   read the panels as a normal stacked page, so they get one gentle fade as
+   each scrolls in. Gated on a class js/cinematic.js sets, so with no JS the
+   content is simply visible. */
+.cine-fade #home-page .home-screen__step__content {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.cine-fade #home-page .home-screen__step__content.cine-seen {
+    opacity: 1;
+    transform: translateY(0);
 }
