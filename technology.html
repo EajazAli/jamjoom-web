@@ -1,0 +1,2545 @@
+﻿<!DOCTYPE html>
+<html class="no-js desktop ">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="description" content="">
+		<link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#ffffff">
+		<title> Jamjoom Printing and Packaging - JP&P </title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script>
+			! function (e, n, t) {
+				function o(e, n) {
+					return typeof e === n
+				}
+
+				function s() {
+					return "function" != typeof n.createElement ? n.createElement(arguments[0]) : u ? n.createElementNS.call(n,
+						"http://www.w3.org/2000/svg", arguments[0]) : n.createElement.apply(n, arguments)
+				}
+
+				function i() {
+					var e = n.body;
+					return e || (e = s(u ? "svg" : "body"), e.fake = !0), e
+				}
+
+				function a(e, t, o, a) {
+					var r, f, l, d, u = "modernizr",
+						p = s("div"),
+						h = i();
+					if (parseInt(o, 10))
+						for (; o--;) l = s("div"), l.id = a ? a[o] : u + (o + 1), p.appendChild(l);
+					return r = s("style"), r.type = "text/css", r.id = "s" + u, (h.fake ? h : p).appendChild(r), h.appendChild(
+							p), r.styleSheet ? r.styleSheet.cssText = e : r.appendChild(n.createTextNode(e)), p.id = u, h.fake &&
+						(h
+							.style.background = "", h.style.overflow = "hidden", d = c.style.overflow, c.style.overflow =
+							"hidden", c.appendChild(h)), f = t(p, e), h.fake ? (h.parentNode.removeChild(h), c.style.overflow =
+							d, c.offsetHeight) : p.parentNode.removeChild(p), !!f
+				}
+				var r = [],
+					f = {
+						_version: "3.6.0",
+						_config: {
+							classPrefix: "",
+							enableClasses: !0,
+							enableJSClass: !0,
+							usePrefixes: !0
+						},
+						_q: [],
+						on: function (e, n) {
+							var t = this;
+							setTimeout(function () {
+								n(t[e])
+							}, 0)
+						},
+						addTest: function (e, n, t) {
+							r.push({
+								name: e,
+								fn: n,
+								options: t
+							})
+						},
+						addAsyncTest: function (e) {
+							r.push({
+								name: null,
+								fn: e
+							})
+						}
+					},
+					l = function () {};
+				l.prototype = f, l = new l;
+				var d = [],
+					c = n.documentElement,
+					u = "svg" === c.nodeName.toLowerCase();
+				l.addTest("history", function () {
+					var n = navigator.userAgent;
+					return (-1 === n.indexOf("Android 2.") && -1 === n.indexOf("Android 4.0") || -1 === n.indexOf(
+							"Mobile Safari") || -1 !== n.indexOf("Chrome") || -1 !== n.indexOf("Windows Phone") ||
+						"file:" === location.protocol) && (e.history && "pushState" in e.history)
+				});
+				var p = function () {
+					function e(e, n) {
+						var i;
+						return !!e && (n && "string" != typeof n || (n = s(n || "div")), e = "on" + e, i = e in n, !i && o &&
+							(n.setAttribute || (n = s("div")), n.setAttribute(e, ""), i = "function" == typeof n[e], n[
+								e] !== t && (n[e] = t), n.removeAttribute(e)), i)
+					}
+					var o = !("onblur" in n.documentElement);
+					return e
+				}();
+				f.hasEvent = p, l.addTest("inputsearchevent", p("search"));
+				var h = f._config.usePrefixes ? " -webkit- -moz- -o- -ms- ".split(" ") : ["", ""];
+				f._prefixes = h;
+				var v = f.testStyles = a;
+				l.addTest("touchevents", function () {
+						var t;
+						if ("ontouchstart" in e || e.DocumentTouch && n instanceof DocumentTouch) t = !0;
+						else {
+							var o = ["@media (", h.join("touch-enabled),("), "heartz", ")",
+								"{#modernizr{top:9px;position:absolute}}"
+							].join("");
+							v(o, function (e) {
+								t = 9 === e.offsetTop
+							})
+						}
+						return t
+					}),
+					function () {
+						var e, n, t, s, i, a, f;
+						for (var c in r)
+							if (r.hasOwnProperty(c)) {
+								if (e = [], n = r[c], n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases &&
+										n.options.aliases.length))
+									for (t = 0; t < n.options.aliases.length; t++) e.push(n.options.aliases[t].toLowerCase());
+								for (s = o(n.fn, "function") ? n.fn() : n.fn, i = 0; i < e.length; i++) a = e[i], f = a.split(
+									"."), 1 === f.length ? l[f[0]] = s : (!l[f[0]] || l[f[0]] instanceof Boolean || (l[f[
+									0]] = new Boolean(l[f[0]])), l[f[0]][f[1]] = s), d.push((s ? "" : "no-") + f.join("-"))
+							}
+					}(),
+					function (e) {
+						var n = c.className,
+							t = l._config.classPrefix || "";
+						if (u && (n = n.baseVal), l._config.enableJSClass) {
+							var o = new RegExp("(^|\\s)" + t + "no-js(\\s|$)");
+							n = n.replace(o, "$1" + t + "js$2")
+						}
+						l._config.enableClasses && (n += " " + t + e.join(" " + t), u ? c.className.baseVal = n : c.className =
+							n)
+					}(d), delete f.addTest, delete f.addAsyncTest;
+				for (var m = 0; m < l._q.length; m++) l._q[m]();
+				e.Modernizr = l
+			}(window, document);
+
+		</script>
+	</head>
+
+	<body class="page-id-projects">
+
+		<div id="top-bar">
+		</div>
+		<a class="" href="/" id="logo" data-ajax="false">
+			<img src="Images/Logo12.png" class="Logo" id="Logo">
+		</a>
+
+		<nav class="" id="nav">
+
+			<input id="nav-is-open" type="checkbox" value="" aria-hidden="true">
+
+			<label id="nav-toggle" class="" for="nav-is-open">
+				<span id="nav-toggle__list">
+					<span class="nav-toggle__list__line"></span>
+					<span class="nav-toggle__list__line"></span>
+					<span class="nav-toggle__list__line"></span>
+				</span>
+				<span id="nav-toggle__cross">
+					<span class="nav-toggle__cross__line"></span>
+					<span class="nav-toggle__cross__line"></span>
+				</span>
+			</label>
+
+			<div id="nav__content">
+				<div id="nav__content__inner">
+					<div id="nav__content__bg">
+						<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+							<path fill="none" stroke="#E02D2D" stroke-width="64" stroke-miterlimit="10"
+								d="M-41 715l398-398L-15-55" />
+							<path fill="none" stroke="#C40E0E" stroke-width="64" stroke-miterlimit="10"
+								d="M541.5 122.8L701.7-37.5" />
+							<path fill="none" stroke="#D14B4B" stroke-width="64" stroke-miterlimit="10"
+								d="M1007 353L813.8 159.9 513 461.9l506.9 515.9" />
+							<path fill="none" stroke="#CE0D0D" stroke-width="64" stroke-miterlimit="10"
+								d="M634.8 376.7l259.4 259.4" />
+							<path fill="none" stroke="#ED1818" stroke-width="64" stroke-miterlimit="10"
+								d="M784.6 345.1L958 516.5 1499.1-37" />
+						</svg>
+					</div>
+					<ul class="nav__list" id="nav__main-list">
+
+						<li class="nav__item" data-id="home">
+							<a class="nav-link" href="/" data-ajax="false">
+								<span class="nav__link__label">Home</span>
+							</a>
+						</li>
+						<li class="nav__item" data-id="process">
+							<a class="nav-link" href="/process.html" data-ajax="false">
+								<span class="nav__link__label"> Process </span>
+							</a>
+						</li>
+						<li class="nav__item" data-id="solutions">
+							<a class="nav-link" href="/solution.html" data-ajax="false">
+								<span class="nav__link__label"> Solutions </span>
+							</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav-link" href="/color.html" data-ajax="false">
+								<span class="nav__link__label"> Colors </span>
+							</a>
+						</li>
+						<li class="nav__item" data-id="about">
+							<a class="nav-link" href="/about.html" data-ajax="false">
+								<span class="nav__link__label"> About Us </span>
+							</a>
+						</li>
+					</ul>
+
+					<!-- <ul class="nav__list" id="nav__side-list">
+					<li class="nav__item" data-id="contact">
+						<a class="nav-link" href="/about.html" data-ajax="false">
+							<span class="nav__link__label"> About Us </span>
+						</a>
+					</li>
+				</ul> -->
+				</div>
+			</div>
+		</nav>
+
+		<div id="page-container">
+
+			<section class="page" id="projects-page" data-first-project-id="water-u"
+				data-title="Water University - Maman Corp">
+
+				<div id="projects-line"></div>
+
+				<nav class="" id="projects__nav">
+					<div id="projects__nav__color-overlay"></div>
+					<div id="projects__nav__overlay"></div>
+					<button id="projects__nav__shrink">
+						<span id="projects__nav__shrink__txt">Back to project</span>
+					</button>
+					<ul id="projects__nav__list">
+						<li class="projects__nav__item projects__nav__item--selected" data-id="water-u">
+							<a class="projects__nav__link" href="/technology.html" data-ajax="false">
+								<div class="projects__nav__index">
+									<div class="projects__nav__index__txt">01</div>
+									<div class="projects__nav__index__line"></div>
+								</div>
+								<div class="projects__nav__infos">
+									<div class="projects__nav__infos__title">Water University</div>
+									<ul class="projects__nav__infos__tags">
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Client</div>
+											<div class="projects__nav__infos__tag__value">Customer Experience Center
+											</div>
+										</li>
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Industry</div>
+											<div class="projects__nav__infos__tag__value">Industrial Commercial</div>
+										</li>
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Sector</div>
+											<div class="projects__nav__infos__tag__value">Educational &amp; Technology,
+												AV
+											</div>
+										</li>
+									</ul>
+								</div>
+							</a>
+						</li>
+						<li class="projects__nav__item " data-id="schneider-schaumburg">
+							<a class="projects__nav__link" href="/technology.html" data-ajax="false">
+								<div class="projects__nav__index">
+									<div class="projects__nav__index__txt">02</div>
+									<div class="projects__nav__index__line"></div>
+								</div>
+								<div class="projects__nav__infos">
+									<div class="projects__nav__infos__title">Schneider Schaumburg</div>
+									<ul class="projects__nav__infos__tags">
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Client</div>
+											<div class="projects__nav__infos__tag__value">Office Consolidation</div>
+										</li>
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Industry</div>
+											<div class="projects__nav__infos__tag__value">Industry</div>
+										</li>
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Sector</div>
+											<div class="projects__nav__infos__tag__value">Commercial</div>
+										</li>
+									</ul>
+								</div>
+							</a>
+						</li>
+						<li class="projects__nav__item " data-id="schneider-houston">
+							<a class="projects__nav__link" href="/technology.html" data-ajax="false">
+								<div class="projects__nav__index">
+									<div class="projects__nav__index__txt">03</div>
+									<div class="projects__nav__index__line"></div>
+								</div>
+								<div class="projects__nav__infos">
+									<div class="projects__nav__infos__title">Administration and Meeting spaces</div>
+									<ul class="projects__nav__infos__tags">
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Client</div>
+											<div class="projects__nav__infos__tag__value">Corporate</div>
+										</li>
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Industry</div>
+											<div class="projects__nav__infos__tag__value">Industrial</div>
+										</li>
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Sector</div>
+											<div class="projects__nav__infos__tag__value">Commercial</div>
+										</li>
+									</ul>
+								</div>
+							</a>
+						</li>
+						<li class="projects__nav__item " data-id="ecolab-lobby">
+							<a class="projects__nav__link" href="/technology.html" data-ajax="false">
+								<div class="projects__nav__index">
+									<div class="projects__nav__index__txt">04</div>
+									<div class="projects__nav__index__line"></div>
+								</div>
+								<div class="projects__nav__infos">
+									<div class="projects__nav__infos__title">Ecolab Lobby</div>
+									<ul class="projects__nav__infos__tags">
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Client</div>
+											<div class="projects__nav__infos__tag__value">Client</div>
+										</li>
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Industry</div>
+											<div class="projects__nav__infos__tag__value">Industry</div>
+										</li>
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Sector</div>
+											<div class="projects__nav__infos__tag__value">Sector</div>
+										</li>
+									</ul>
+								</div>
+							</a>
+						</li>
+						<li class="projects__nav__item " data-id="customer-experience-center">
+							<a class="projects__nav__link" href="/technology.html" data-ajax="false">
+								<div class="projects__nav__index">
+									<div class="projects__nav__index__txt">05</div>
+									<div class="projects__nav__index__line"></div>
+								</div>
+								<div class="projects__nav__infos">
+									<div class="projects__nav__infos__title">High Security Spaces &amp; Data Centers
+									</div>
+									<ul class="projects__nav__infos__tags">
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Client</div>
+											<div class="projects__nav__infos__tag__value">Many</div>
+										</li>
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Industry</div>
+											<div class="projects__nav__infos__tag__value">Commercial</div>
+										</li>
+										<li class="projects__nav__infos__tag">
+											<div class="projects__nav__infos__tag__name">Sector</div>
+											<div class="projects__nav__infos__tag__value">Corporate</div>
+										</li>
+									</ul>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<button id="projects__nav__expand">All works</button>
+				</nav>
+				<section class="project" id="project-id-water-u" style="visibility: inherit">
+
+					<div class="project__body">
+						<h1 class="project__title">ROLAND 700 EVOLUTION</h1>
+						<div class="project__desc">
+							<div class="project__desc__content">TLatest Printing Machine with a combinations of UV and
+								Conventional, Can Print 6 colors + Coating (UV Varnish Coating and Water Base Varnish
+								Coating). <br />
+							</div>
+							<button class="project__desc__more">Discover more</button>
+						</div>
+					</div>
+
+					<div class="project__media " data-first-media-index="0">
+						<div class="project__media__overlay"></div>
+						<div class="project__media__close">
+							<div class="project__media__close__label">Close</div>
+							<button class="project__media__close__btn">
+								<span class="project__media__close__btn__picto">
+									<span class="project__media__close__btn__picto__line"></span>
+									<span class="project__media__close__btn__picto__line"></span>
+								</span>
+							</button>
+						</div>
+						<div class="project__media__nav">
+							<div class="project__media__nav__bg"></div>
+							<button class="project__media__nav__btn project__media__nav__btn--prev">
+								<div class="project__media__nav__btn__inner">
+									<div class="project__media__nav__btn__picto"></div>
+								</div>
+							</button>
+							<div class="project__media__nav__line"></div>
+							<ul class="project__media__nav__list">
+								<li class="project__media__nav__item project__media__nav__item--selected">
+									<button class="project__media__nav__item__btn" data-index="0">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="1">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="2">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="3">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="4">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+							</ul>
+							<button class="project__media__nav__btn project__media__nav__btn--next">
+								<div class="project__media__nav__btn__inner">
+									<div class="project__media__nav__btn__picto"></div>
+								</div>
+							</button>
+						</div>
+						<ul class="project__media__list">
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1778" height="1000" data-srcset="" data-sizes="auto" alt=""
+									data-src="Images/Project/First.png">
+								<noscript>
+									<img class="project__media__img" src="Images/Project/First.png" alt="" width="1778"
+										height="1000">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--video" style="">
+								<div class="project__media__player" data-id="242582727"></div>
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="3840" height="2160" data-srcset="" data-sizes="auto" alt=""
+									data-src="https://i.vimeocdn.com/video/666481286_3840x2160?r=pad">
+								<noscript>
+									<img class="project__media__img"
+										src="https://i.vimeocdn.com/video/666481286_3840x2160?r=pad" alt="" width="3840"
+										height="2160">
+								</noscript>
+								<div class="project__media__more project__media__more--video">
+									<div class="project__media__more__overlay"></div>
+									<div class="project__media__more__btn"></div>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--video" style="">
+								<div class="project__media__player" data-id="271339571"></div>
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="3840" height="2160" data-srcset="" data-sizes="auto" alt=""
+									data-src="https://i.vimeocdn.com/video/702614340_3840x2160?r=pad">
+								<noscript>
+									<img class="project__media__img"
+										src="https://i.vimeocdn.com/video/702614340_3840x2160?r=pad" alt="" width="3840"
+										height="2160">
+								</noscript>
+								<div class="project__media__more project__media__more--video">
+									<div class="project__media__more__overlay"></div>
+									<div class="project__media__more__btn"></div>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1778" height="1000"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2680-480x270.jpg 480w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2680-150x84.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2680-1280x720.jpg 1280w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2680-1600x900.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2680.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2680.jpg"
+										alt="" width="1778" height="1000">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1778" height="1000"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2684-480x270.jpg 480w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2684-150x84.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2684-1280x720.jpg 1280w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2684-1600x900.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2684.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2684.jpg"
+										alt="" width="1778" height="1000">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<ul class="project__tags">
+						<div class="project__tags__bg"></div>
+						<div class="project__tags__inner">
+							<li class="project__tag">
+								<div class="project__tag__name">Client</div>
+								<div class="project__tag__value">Customer Experience Center</div>
+							</li>
+							<li class="project__tag">
+								<div class="project__tag__name">Industry</div>
+								<div class="project__tag__value">Industrial Commercial</div>
+							</li>
+							<li class="project__tag">
+								<div class="project__tag__name">Sector</div>
+								<div class="project__tag__value">Educational &amp; Technology, AV</div>
+							</li>
+						</div>
+					</ul>
+
+				</section>
+				<section class="project" id="project-id-schneider-schaumburg" style="">
+
+					<div class="project__body">
+						<h1 class="project__title">NOVACUT 106 ER</h1>
+						<div class="project__desc">
+							<div class="project__desc__content">
+								die cut Substrate: (60gsm-700gsm), Online-Braille Embossing; Die Cut+Emboss+Stripping+
+								Blanking Capabilities
+							</div>
+							<button class="project__desc__more">Discover more</button>
+						</div>
+					</div>
+
+					<div class="project__media " data-first-media-index="0">
+						<div class="project__media__overlay"></div>
+						<div class="project__media__close">
+							<div class="project__media__close__label">Close</div>
+							<button class="project__media__close__btn">
+								<span class="project__media__close__btn__picto">
+									<span class="project__media__close__btn__picto__line"></span>
+									<span class="project__media__close__btn__picto__line"></span>
+								</span>
+							</button>
+						</div>
+						<div class="project__media__nav">
+							<div class="project__media__nav__bg"></div>
+							<button class="project__media__nav__btn project__media__nav__btn--prev">
+								<div class="project__media__nav__btn__inner">
+									<div class="project__media__nav__btn__picto"></div>
+								</div>
+							</button>
+							<div class="project__media__nav__line"></div>
+							<ul class="project__media__nav__list">
+								<li class="project__media__nav__item project__media__nav__item--selected">
+									<button class="project__media__nav__item__btn" data-index="0">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="1">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="2">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="3">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="4">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="5">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="6">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="7">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="8">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+							</ul>
+							<button class="project__media__nav__btn project__media__nav__btn--next">
+								<div class="project__media__nav__btn__inner">
+									<div class="project__media__nav__btn__picto"></div>
+								</div>
+							</button>
+						</div>
+						<ul class="project__media__list">
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1077" data-srcset="Images/Project/Second.png" data-sizes="auto"
+									alt="" data-src="Images/Project/Second.png">
+								<noscript>
+									<img class="project__media__img" src="Images/Project/Second.png" alt="" width="1600"
+										height="1077">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1060"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3-453x300.jpg 453w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3-150x99.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3-1208x800.jpg 1208w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3-1509x1000.jpg 1509w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3.jpg" alt=""
+										width="1600" height="1060">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1112"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5-432x300.jpg 432w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5-150x104.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5-1151x800.jpg 1151w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5-1439x1000.jpg 1439w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5.jpg" alt=""
+										width="1600" height="1112">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1067"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7-450x300.jpg 450w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7-1200x800.jpg 1200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7-1500x1000.jpg 1500w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7.jpg" alt=""
+										width="1600" height="1067">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="800" height="1133"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9-212x300.jpg 212w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9-106x150.jpg 106w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9-565x800.jpg 565w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9-706x1000.jpg 706w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9.jpg 800w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9.jpg" alt=""
+										width="800" height="1133">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1115"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11-430x300.jpg 430w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11-150x105.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11-1148x800.jpg 1148w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11-1435x1000.jpg 1435w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11.jpg"
+										alt="" width="1600" height="1115">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1060"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13-453x300.jpg 453w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13-150x99.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13-1208x800.jpg 1208w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13-1509x1000.jpg 1509w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13.jpg"
+										alt="" width="1600" height="1060">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1067"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15-450x300.jpg 450w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15-1200x800.jpg 1200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15-1500x1000.jpg 1500w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15.jpg"
+										alt="" width="1600" height="1067">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--video" style="">
+								<div class="project__media__player" data-id="242582618"></div>
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1920" height="1080" data-srcset="" data-sizes="auto" alt=""
+									data-src="https://i.vimeocdn.com/video/666481065_1920x1080?r=pad">
+								<noscript>
+									<img class="project__media__img"
+										src="https://i.vimeocdn.com/video/666481065_1920x1080?r=pad" alt="" width="1920"
+										height="1080">
+								</noscript>
+								<div class="project__media__more project__media__more--video">
+									<div class="project__media__more__overlay"></div>
+									<div class="project__media__more__btn"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<ul class="project__tags">
+						<div class="project__tags__bg"></div>
+						<div class="project__tags__inner">
+							<li class="project__tag">
+								<div class="project__tag__name">Client</div>
+								<div class="project__tag__value">Office Consolidation</div>
+							</li>
+							<li class="project__tag">
+								<div class="project__tag__name">Industry</div>
+								<div class="project__tag__value">Industry</div>
+							</li>
+							<li class="project__tag">
+								<div class="project__tag__name">Sector</div>
+								<div class="project__tag__value">Commercial</div>
+							</li>
+						</div>
+					</ul>
+
+				</section>
+				<section class="project" id="project-id-schneider-houston" style="">
+
+					<div class="project__body">
+						<h1 class="project__title">Administration and Meeting spaces</h1>
+						<div class="project__desc">
+							<div class="project__desc__content">Complete build of administration buildings. The space
+								consisted of meeting spaces, gathering space and much more. We travel nationwide for
+								clients
+								who are looking for a high caliber construction professional.</div>
+							<button class="project__desc__more">Discover more</button>
+						</div>
+					</div>
+
+					<div class="project__media " data-first-media-index="0">
+						<div class="project__media__overlay"></div>
+						<div class="project__media__close">
+							<div class="project__media__close__label">Close</div>
+							<button class="project__media__close__btn">
+								<span class="project__media__close__btn__picto">
+									<span class="project__media__close__btn__picto__line"></span>
+									<span class="project__media__close__btn__picto__line"></span>
+								</span>
+							</button>
+						</div>
+						<div class="project__media__nav">
+							<div class="project__media__nav__bg"></div>
+							<button class="project__media__nav__btn project__media__nav__btn--prev">
+								<div class="project__media__nav__btn__inner">
+									<div class="project__media__nav__btn__picto"></div>
+								</div>
+							</button>
+							<div class="project__media__nav__line"></div>
+							<ul class="project__media__nav__list">
+								<li class="project__media__nav__item project__media__nav__item--selected">
+									<button class="project__media__nav__item__btn" data-index="0">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="1">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="2">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="3">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="4">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="5">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="6">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="7">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+							</ul>
+							<button class="project__media__nav__btn project__media__nav__btn--next">
+								<div class="project__media__nav__btn__inner">
+									<div class="project__media__nav__btn__picto"></div>
+								</div>
+							</button>
+						</div>
+						<ul class="project__media__list">
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1133"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-4-done-424x300.jpg 424w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-4-done-150x106.jpg 150w, Images/Jamjoom-Printing-Press-03112021_170902.jpg 1130w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-4-done-1412x1000.jpg 1412w, Images/Jamjoom-Printing-Press-03112021_170902.jpg  1600w"
+									data-sizes="auto" alt=""
+									data-src="Images/Jamjoom-Printing-Press-03112021_170902.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="Images/Jamjoom-Printing-Press-03112021_170902.jpg" alt="" width="1600"
+										height="1133">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--video" style="">
+								<div class="project__media__player" data-id="242589836"></div>
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1920" height="1080" data-srcset="" data-sizes="auto" alt=""
+									data-src="https://i.vimeocdn.com/video/666489919_1920x1080?r=pad">
+								<noscript>
+									<img class="project__media__img"
+										src="https://i.vimeocdn.com/video/666489919_1920x1080?r=pad" alt="" width="1920"
+										height="1080">
+								</noscript>
+								<div class="project__media__more project__media__more--video">
+									<div class="project__media__more__overlay"></div>
+									<div class="project__media__more__btn"></div>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1083"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done-443x300.jpg 443w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done-150x102.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done-1182x800.jpg 1182w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done-1477x1000.jpg 1477w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done.jpg"
+										alt="" width="1600" height="1083">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1241"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done-387x300.jpg 387w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done-150x116.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done-1031x800.jpg 1031w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done-1289x1000.jpg 1289w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done.jpg"
+										alt="" width="1600" height="1241">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="800" height="1200"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13-533x800.jpg 533w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13.jpg 800w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13.jpg"
+										alt="" width="800" height="1200">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="800" height="1202"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done-532x800.jpg 532w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done-666x1000.jpg 666w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done.jpg 800w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done.jpg"
+										alt="" width="800" height="1202">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1505"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done-319x300.jpg 319w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done-150x141.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done-850x800.jpg 850w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done-1063x1000.jpg 1063w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done.jpg"
+										alt="" width="1600" height="1505">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="800" height="1039"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done-231x300.jpg 231w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done-115x150.jpg 115w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done-616x800.jpg 616w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done-770x1000.jpg 770w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done.jpg 800w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done.jpg"
+										alt="" width="800" height="1039">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<ul class="project__tags">
+						<div class="project__tags__bg"></div>
+						<div class="project__tags__inner">
+							<li class="project__tag">
+								<div class="project__tag__name">Client</div>
+								<div class="project__tag__value">Corporate</div>
+							</li>
+							<li class="project__tag">
+								<div class="project__tag__name">Industry</div>
+								<div class="project__tag__value">Industrial</div>
+							</li>
+							<li class="project__tag">
+								<div class="project__tag__name">Sector</div>
+								<div class="project__tag__value">Commercial</div>
+							</li>
+						</div>
+					</ul>
+
+				</section>
+				<section class="project" id="project-id-ecolab-lobby" style="">
+
+					<div class="project__body">
+						<h1 class="project__title">Ecolab Lobby</h1>
+						<div class="project__desc">
+							<div class="project__desc__content">Maman Corp has a strong expertise which allows us to
+								work
+								with all kind of environment structure. We have worked for Ecolab lobby, producing and
+								recreating a studious, elegant and intelligent environment that reflects the Ecolab
+								brand.
+							</div>
+							<button class="project__desc__more">Discover more</button>
+						</div>
+					</div>
+
+					<div class="project__media " data-first-media-index="0">
+						<div class="project__media__overlay"></div>
+						<div class="project__media__close">
+							<div class="project__media__close__label">Close</div>
+							<button class="project__media__close__btn">
+								<span class="project__media__close__btn__picto">
+									<span class="project__media__close__btn__picto__line"></span>
+									<span class="project__media__close__btn__picto__line"></span>
+								</span>
+							</button>
+						</div>
+						<div class="project__media__nav">
+							<div class="project__media__nav__bg"></div>
+							<button class="project__media__nav__btn project__media__nav__btn--prev">
+								<div class="project__media__nav__btn__inner">
+									<div class="project__media__nav__btn__picto"></div>
+								</div>
+							</button>
+							<div class="project__media__nav__line"></div>
+							<ul class="project__media__nav__list">
+								<li class="project__media__nav__item project__media__nav__item--selected">
+									<button class="project__media__nav__item__btn" data-index="0">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="1">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="2">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="3">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="4">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="5">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="6">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="7">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="8">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="9">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="10">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="11">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="12">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="13">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="14">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="15">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="16">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="17">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="18">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="19">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="20">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="21">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="22">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="23">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="24">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="25">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="26">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="27">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="28">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="29">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="30">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="31">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="32">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="33">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="34">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="35">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="36">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="37">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="38">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="39">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+							</ul>
+							<button class="project__media__nav__btn project__media__nav__btn--next">
+								<div class="project__media__nav__btn__inner">
+									<div class="project__media__nav__btn__picto"></div>
+								</div>
+							</button>
+						</div>
+						<ul class="project__media__list">
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8569-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8569-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8569-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8569-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, Images/Jamjoom-Printing-Press-03112021_171518.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="Images/Jamjoom-Printing-Press-03112021_171518.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="Images/Jamjoom-Printing-Press-03112021_171518.jpg" alt="" width="1600"
+										height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="800" height="1199"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916.jpg 800w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="800" height="1199">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="800" height="1199"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916.jpg 800w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="800" height="1199">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="800" height="1199"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916.jpg 800w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="800" height="1199">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="800" height="1199"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916.jpg 800w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="800" height="1199">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="800" height="1199"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916.jpg 800w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="800" height="1199">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="800" height="1199"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916.jpg 800w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="800" height="1199">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="800" height="1199"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916.jpg 800w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="800" height="1199">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="800" height="1199"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916.jpg 800w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="800" height="1199">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="800" height="1199"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916.jpg 800w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="800" height="1199">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="1600" height="1068"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916.jpg 1600w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916.jpg"
+										alt="" width="1600" height="1068">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--video" style="">
+								<div class="project__media__player" data-id="242589156"></div>
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="3840" height="2160" data-srcset="" data-sizes="auto" alt=""
+									data-src="https://i.vimeocdn.com/video/666489112_3840x2160?r=pad">
+								<noscript>
+									<img class="project__media__img"
+										src="https://i.vimeocdn.com/video/666489112_3840x2160?r=pad" alt="" width="3840"
+										height="2160">
+								</noscript>
+								<div class="project__media__more project__media__more--video">
+									<div class="project__media__more__overlay"></div>
+									<div class="project__media__more__btn"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<ul class="project__tags">
+						<div class="project__tags__bg"></div>
+						<div class="project__tags__inner">
+							<li class="project__tag">
+								<div class="project__tag__name">Client</div>
+								<div class="project__tag__value">Client</div>
+							</li>
+							<li class="project__tag">
+								<div class="project__tag__name">Industry</div>
+								<div class="project__tag__value">Industry</div>
+							</li>
+							<li class="project__tag">
+								<div class="project__tag__name">Sector</div>
+								<div class="project__tag__value">Sector</div>
+							</li>
+						</div>
+					</ul>
+
+				</section>
+				<section class="project" id="project-id-customer-experience-center" style="">
+
+					<div class="project__body">
+						<h1 class="project__title">High Security Spaces &amp; Data Centers</h1>
+						<div class="project__desc">
+							<div class="project__desc__content">Many of our projects cannot be featured in this section
+								due
+								to the Security levels of the space. Maman's team is all background checked, and trained
+								to
+								provide the best product with the strictest deadlines and toughest of specifications.
+							</div>
+							<button class="project__desc__more">Discover more</button>
+						</div>
+					</div>
+
+					<div class="project__media " data-first-media-index="0">
+						<div class="project__media__overlay"></div>
+						<div class="project__media__close">
+							<div class="project__media__close__label">Close</div>
+							<button class="project__media__close__btn">
+								<span class="project__media__close__btn__picto">
+									<span class="project__media__close__btn__picto__line"></span>
+									<span class="project__media__close__btn__picto__line"></span>
+								</span>
+							</button>
+						</div>
+						<div class="project__media__nav">
+							<div class="project__media__nav__bg"></div>
+							<button class="project__media__nav__btn project__media__nav__btn--prev">
+								<div class="project__media__nav__btn__inner">
+									<div class="project__media__nav__btn__picto"></div>
+								</div>
+							</button>
+							<div class="project__media__nav__line"></div>
+							<ul class="project__media__nav__list">
+								<li class="project__media__nav__item project__media__nav__item--selected">
+									<button class="project__media__nav__item__btn" data-index="0">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="1">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="2">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="3">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="4">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="5">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="6">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="7">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+								<li class="project__media__nav__item ">
+									<button class="project__media__nav__item__btn" data-index="8">
+										<div class="project__media__nav__item__btn__inner">
+											<span class="project__media__nav__item__picto"></span>
+										</div>
+									</button>
+								</li>
+							</ul>
+							<button class="project__media__nav__btn project__media__nav__btn--next">
+								<div class="project__media__nav__btn__inner">
+									<div class="project__media__nav__btn__picto"></div>
+								</div>
+							</button>
+						</div>
+						<ul class="project__media__list">
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="4032" height="3024"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0144-400x300.jpg 400w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0144-150x113.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0144-1067x800.jpg 1067w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0144-1333x1000.jpg 1333w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0144.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0144.jpg"
+										alt="" width="4032" height="3024">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--video" style="">
+								<div class="project__media__player" data-id="247515086"></div>
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="3840" height="2160" data-srcset="" data-sizes="auto" alt=""
+									data-src="https://i.vimeocdn.com/video/672788834_3840x2160?r=pad">
+								<noscript>
+									<img class="project__media__img"
+										src="https://i.vimeocdn.com/video/672788834_3840x2160?r=pad" alt="" width="3840"
+										height="2160">
+								</noscript>
+								<div class="project__media__more project__media__more--video">
+									<div class="project__media__more__overlay"></div>
+									<div class="project__media__more__btn"></div>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="3024" height="4032"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0165-225x300.jpg 225w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0165-113x150.jpg 113w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0165-600x800.jpg 600w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0165-750x1000.jpg 750w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0165.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0165.jpg"
+										alt="" width="3024" height="4032">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="4032" height="3024"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0180-400x300.jpg 400w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0180-150x113.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0180-1067x800.jpg 1067w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0180-1333x1000.jpg 1333w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0180.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0180.jpg"
+										alt="" width="4032" height="3024">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="3024" height="4032"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0195-225x300.jpg 225w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0195-113x150.jpg 113w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0195-600x800.jpg 600w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0195-750x1000.jpg 750w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0195.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0195.jpg"
+										alt="" width="3024" height="4032">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="4032" height="3024"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0214-400x300.jpg 400w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0214-150x113.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0214-1067x800.jpg 1067w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0214-1333x1000.jpg 1333w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0214.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0214.jpg"
+										alt="" width="4032" height="3024">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="3024" height="4032"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0215-225x300.jpg 225w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0215-113x150.jpg 113w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0215-600x800.jpg 600w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0215-750x1000.jpg 750w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0215.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0215.jpg"
+										alt="" width="3024" height="4032">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--image" style="">
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="4032" height="3024"
+									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0229-400x300.jpg 400w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0229-150x113.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0229-1067x800.jpg 1067w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0229-1333x1000.jpg 1333w"
+									data-sizes="auto" alt=""
+									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0229.jpg">
+								<noscript>
+									<img class="project__media__img"
+										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0229.jpg"
+										alt="" width="4032" height="3024">
+								</noscript>
+								<div class="project__media__more project__media__more--img">
+									<div class="project__media__more__overlay"></div>
+									<button class="project__media__more__btn">Discover more</button>
+								</div>
+							</li>
+							<li class="project__media__item project__media__item--video" style="">
+								<div class="project__media__player" data-id="242589156"></div>
+
+								<img class=" project__media__img"
+									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									width="3840" height="2160" data-srcset="" data-sizes="auto" alt=""
+									data-src="https://i.vimeocdn.com/video/666489112_3840x2160?r=pad">
+								<noscript>
+									<img class="project__media__img"
+										src="https://i.vimeocdn.com/video/666489112_3840x2160?r=pad" alt="" width="3840"
+										height="2160">
+								</noscript>
+								<div class="project__media__more project__media__more--video">
+									<div class="project__media__more__overlay"></div>
+									<div class="project__media__more__btn"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<ul class="project__tags">
+						<div class="project__tags__bg"></div>
+						<div class="project__tags__inner">
+							<li class="project__tag">
+								<div class="project__tag__name">Client</div>
+								<div class="project__tag__value">Many</div>
+							</li>
+							<li class="project__tag">
+								<div class="project__tag__name">Industry</div>
+								<div class="project__tag__value">Commercial</div>
+							</li>
+							<li class="project__tag">
+								<div class="project__tag__name">Sector</div>
+								<div class="project__tag__value">Corporate</div>
+							</li>
+						</div>
+					</ul>
+
+				</section>
+
+				<div id="projects_media_overlay"></div>
+
+				<div id="projects__scroll-cta">
+					<div id="projects__scroll-cta__label" data-reverse="Back to the top">Scroll to explore</div>
+					<button id="projects__scroll-cta__btn">
+						<div id="projects__scroll-cta__picto">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="34" viewBox="0 0 20 34">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M8 0v26.2l-8-8.1v5.7L10 34l10-10.2v-5.7l-8 8.1V0H8z" />
+							</svg>
+						</div>
+					</button>
+				</div>
+			</section>
+
+			<section class="page" id="main-loading-page">
+				<!-- <div id="main-loading__overlay"></div> -->
+				<div id="main-loading__outer">
+					<div id="main-loading__inner">
+						<div id="main-loading__lines">
+							<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 40 00">
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit="" />
+
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M1549.7 745.8l-447.3-447.3" />
+								<path fill="none" stroke="#F9F9F9" stroke-width="50" stroke-miterlimit=""
+									d="M676.2 261.2l663.5-663.6" />
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M582.2 167.2l-621-621" />
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M293.2-136l-924.1 924.2" />
+								<!-- is Very Importnant Loading -->
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M220.6 649.7l-753.4-753.3" />
+								<!-- is Very Importnant Loading -->
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M329.6 424.2L-92 845.8" />
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M-494.2 1712.7l924.5-924.5" />
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M1077.4 1121.7L675.9 720.2" />
+							</svg>
+						</div>
+
+						<!-- ProLoading Content Start -->
+						<img src="/Images/Logo.png" class="Logo_Loading" />
+						<div class="anim-line line-left"></div>
+						<div class="anim-line line-right"></div>
+
+						<!-- ProLoading Content End -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer id="footer">
+			<div id="footer__inner">
+				<div id="footer__logo">
+					<img src="/Images/Logo12.png" alt="" className="footer-logo">
+				</div>
+
+				<ul id="footer__pages">
+
+					<li class="footer__page" id="footer__page--home">
+						<a class="footer__page__title" href="/" data-ajax="false">Home</a>
+					</li>
+					<li class="footer__page" id="footer__page--solutions">
+						<a class="footer__page__title" href="/solutions" data-ajax="false">Solutions</a>
+					</li>
+					<li class="footer__page" id="footer__page--process">
+						<a class="footer__page__title" href="/process" data-ajax="false">Process</a>
+					</li>
+					<li class="footer__page" id="footer__page--about">
+						<a class="footer__page__title" href="/about" data-ajax="false">About us</a>
+					</li>
+					<li class="footer__page" id="footer__page--contact">
+						<a class="footer__page__title" href="/contact" data-ajax="false">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div data-tf-popover="EvigCCCZ" data-tf-custom- icon="https://images.typeform.com/images/d6qHZSzLZm8S"
+				data-tf-button- color="#F58C4B" data-tf-tooltip="Hi Let&#39;s get in touch&nbsp;&nbsp;" data-tf-
+				open="time" data-tf-open-value="10000" data-tf-chat data-tf-medium="snippet" style="all:unset;"></div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/Script-jquery.js"><\/script>')
+
+		</script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script src="https://embed.typeform.com/next/embed.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    /* Colors */
+
+    --body-color: #e4e9f7;
+    --sidebar-color: #fff;
+    --primary-color: #695cfe;
+    --primary-color-light: #f6f5ff;
+    --toggle-color: #ddd;
+    --text-color: #707070;
+
+    /* Transitions */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--body-color);
+}
+
+/* Reusable Css */
+.sidebar .text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.sidebar .image {
+    min-width: 60px;
+    align-items: center;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 10px 14px;
+    width: 250px;
+    background-color: var(--sidebar-color);
+}
+.sidebar .image-text img {
+    width: 40px;
+    /* background-color: red; */
+}
+.sidebar header .image-text {
+    display: flex;
+    align-items: center;
+}
+header .image-text .header-text {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.header-text .name {
+    font-weight: 600;
+}
+.header-text .profession {
+    margin-top: -2px;
+}

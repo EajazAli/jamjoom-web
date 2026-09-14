@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<html class="no-js desktop ">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="description" content="">
+
+		<link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#ffffff">
+		<title> Jamjoom Printing and Packaging - JP&P </title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script>
+			! function (e, n, t) {
+				function o(e, n) {
+					return typeof e === n
+				}
+
+				function s() {
+					return "function" != typeof n.createElement ? n.createElement(arguments[0]) : u ? n.createElementNS.call(n,
+						"http://www.w3.org/2000/svg", arguments[0]) : n.createElement.apply(n, arguments)
+				}
+
+				function i() {
+					var e = n.body;
+					return e || (e = s(u ? "svg" : "body"), e.fake = !0), e
+				}
+
+				function a(e, t, o, a) {
+					var r, f, l, d, u = "modernizr",
+						p = s("div"),
+						h = i();
+					if (parseInt(o, 10))
+						for (; o--;) l = s("div"), l.id = a ? a[o] : u + (o + 1), p.appendChild(l);
+					return r = s("style"), r.type = "text/css", r.id = "s" + u, (h.fake ? h : p).appendChild(r), h.appendChild(
+							p), r.styleSheet ? r.styleSheet.cssText = e : r.appendChild(n.createTextNode(e)), p.id = u, h.fake &&
+						(h
+							.style.background = "", h.style.overflow = "hidden", d = c.style.overflow, c.style.overflow =
+							"hidden", c.appendChild(h)), f = t(p, e), h.fake ? (h.parentNode.removeChild(h), c.style.overflow =
+							d, c.offsetHeight) : p.parentNode.removeChild(p), !!f
+				}
+				var r = [],
+					f = {
+						_version: "3.6.0",
+						_config: {
+							classPrefix: "",
+							enableClasses: !0,
+							enableJSClass: !0,
+							usePrefixes: !0
+						},
+						_q: [],
+						on: function (e, n) {
+							var t = this;
+							setTimeout(function () {
+								n(t[e])
+							}, 0)
+						},
+						addTest: function (e, n, t) {
+							r.push({
+								name: e,
+								fn: n,
+								options: t
+							})
+						},
+						addAsyncTest: function (e) {
+							r.push({
+								name: null,
+								fn: e
+							})
+						}
+					},
+					l = function () {};
+				l.prototype = f, l = new l;
+				var d = [],
+					c = n.documentElement,
+					u = "svg" === c.nodeName.toLowerCase();
+				l.addTest("history", function () {
+					var n = navigator.userAgent;
+					return (-1 === n.indexOf("Android 2.") && -1 === n.indexOf("Android 4.0") || -1 === n.indexOf(
+							"Mobile Safari") || -1 !== n.indexOf("Chrome") || -1 !== n.indexOf("Windows Phone") ||
+						"file:" === location.protocol) && (e.history && "pushState" in e.history)
+				});
+				var p = function () {
+					function e(e, n) {
+						var i;
+						return !!e && (n && "string" != typeof n || (n = s(n || "div")), e = "on" + e, i = e in n, !i && o &&
+							(n.setAttribute || (n = s("div")), n.setAttribute(e, ""), i = "function" == typeof n[e], n[
+								e] !== t && (n[e] = t), n.removeAttribute(e)), i)
+					}
+					var o = !("onblur" in n.documentElement);
+					return e
+				}();
+				f.hasEvent = p, l.addTest("inputsearchevent", p("search"));
+				var h = f._config.usePrefixes ? " -webkit- -moz- -o- -ms- ".split(" ") : ["", ""];
+				f._prefixes = h;
+				var v = f.testStyles = a;
+				l.addTest("touchevents", function () {
+						var t;
+						if ("ontouchstart" in e || e.DocumentTouch && n instanceof DocumentTouch) t = !0;
+						else {
+							var o = ["@media (", h.join("touch-enabled),("), "heartz", ")",
+								"{#modernizr{top:9px;position:absolute}}"
+							].join("");
+							v(o, function (e) {
+								t = 9 === e.offsetTop
+							})
+						}
+						return t
+					}),
+					function () {
+						var e, n, t, s, i, a, f;
+						for (var c in r)
+							if (r.hasOwnProperty(c)) {
+								if (e = [], n = r[c], n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases &&
+										n.options.aliases.length))
+									for (t = 0; t < n.options.aliases.length; t++) e.push(n.options.aliases[t].toLowerCase());
+								for (s = o(n.fn, "function") ? n.fn() : n.fn, i = 0; i < e.length; i++) a = e[i], f = a.split(
+									"."), 1 === f.length ? l[f[0]] = s : (!l[f[0]] || l[f[0]] instanceof Boolean || (l[f[
+									0]] = new Boolean(l[f[0]])), l[f[0]][f[1]] = s), d.push((s ? "" : "no-") + f.join("-"))
+							}
+					}(),
+					function (e) {
+						var n = c.className,
+							t = l._config.classPrefix || "";
+						if (u && (n = n.baseVal), l._config.enableJSClass) {
+							var o = new RegExp("(^|\\s)" + t + "no-js(\\s|$)");
+							n = n.replace(o, "$1" + t + "js$2")
+						}
+						l._config.enableClasses && (n += " " + t + e.join(" " + t), u ? c.className.baseVal = n : c.className =
+							n)
+					}(d), delete f.addTest, delete f.addAsyncTest;
+				for (var m = 0; m < l._q.length; m++) l._q[m]();
+				e.Modernizr = l
+			}(window, document);
+
+		</script>
+	</head>
+
+	<body class="page-id-process">
+
+		<div id="top-bar">
+		</div>
+		<a class="" href="/" id="logo" data-ajax="false">
+			<img src="Images/Logo12.png" class="Logo" id="Logo">
+		</a>
+		<nav class="" id="nav">
+
+			<input id="nav-is-open" type="checkbox" value="" aria-hidden="true">
+
+			<label id="nav-toggle" class="" for="nav-is-open">
+				<span id="nav-toggle__list">
+					<span class="nav-toggle__list__line"></span>
+					<span class="nav-toggle__list__line"></span>
+					<span class="nav-toggle__list__line"></span>
+				</span>
+				<span id="nav-toggle__cross">
+					<span class="nav-toggle__cross__line"></span>
+					<span class="nav-toggle__cross__line"></span>
+				</span>
+			</label>
+
+			<div id="nav__content">
+				<div id="nav__content__inner">
+					<div id="nav__content__bg">
+						<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+							<path fill="none" stroke="#E02D2D" stroke-width="64" stroke-miterlimit="10"
+								d="M-41 715l398-398L-15-55" />
+							<path fill="none" stroke="#C40E0E" stroke-width="64" stroke-miterlimit="10"
+								d="M541.5 122.8L701.7-37.5" />
+							<path fill="none" stroke="#D14B4B" stroke-width="64" stroke-miterlimit="10"
+								d="M1007 353L813.8 159.9 513 461.9l506.9 515.9" />
+							<path fill="none" stroke="#CE0D0D" stroke-width="64" stroke-miterlimit="10"
+								d="M634.8 376.7l259.4 259.4" />
+							<path fill="none" stroke="#ED1818" stroke-width="64" stroke-miterlimit="10"
+								d="M784.6 345.1L958 516.5 1499.1-37" />
+						</svg>
+					</div>
+					<ul class="nav__list" id="nav__main-list">
+
+						<li class="nav__item" data-id="home">
+							<a class="nav-link" href="/" data-ajax="false">
+								<span class="nav__link__label">Home</span>
+							</a>
+						</li>
+						<li class="nav__item" data-id="process">
+							<a class="nav-link" href="/process.html" data-ajax="false">
+								<span class="nav__link__label"> Process </span>
+							</a>
+						</li>
+						<li class="nav__item" data-id="solutions">
+							<a class="nav-link" href="/solution.html" data-ajax="false">
+								<span class="nav__link__label"> Solutions </span>
+							</a>
+						</li>
+						<!-- <li class="nav__item" data-id="projects">
+						<a class="nav-link" href="/technology.html" data-ajax="false">
+							<span class="nav__link__label"> Technology </span>
+						</a>
+					</li> -->
+						<li class="nav__item">
+							<a class="nav-link" href="/color.html" data-ajax="false">
+								<span class="nav__link__label"> Colors </span>
+							</a>
+						</li>
+						<li class="nav__item" data-id="projects">
+							<a class="nav-link" href="/about.html" data-ajax="false">
+								<span class="nav__link__label"> About Us </span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="page-container">
+
+			<section class="page" id="process-page" data-title="Process - Jamjoom Printing & Packaging">
+				<header id="process__header">
+					<h1 id="process__title"><span class="jpp-blue">JP<span class="jpp-green"
+								style="font-size: 40px;">&</span>P</span> Customer
+						<br /> Journey</h1>
+					<div id="process__intro">
+						<p class="process__intro__txt">A disciplined, thorough process ensures creativity becomes
+							reality.
+							That’s why we cover every step and detail, from the first call to the final walk-through.
+						</p>
+						<p class="process__intro__txt">At every point along the way, we’re focused on safety, attentive
+							to
+							evolving on-site needs, and dedicated to a stunning end result. Learn more about each step
+							in
+							our process.</p>
+					</div>
+				</header>
+
+				<div id="process__lines">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+
+				<ul id="process__steps">
+					<li class="process__step">
+						<div class="process__step__outer-index">01</div>
+						<div class="process__step__inner">
+							<div class="process__step__txt">
+								<div class="process__step__index">01</div>
+								<h2 class="process__step__title">Understanding your Goals and Requirement</h2>
+								<div class="process__step__body">At <span class="jpp-blue">JP<span
+											class="jpp-green">&</span>P</span> we believe every project is unique, we
+									begin by
+									understanding your requirements analyzing the products, compliance, and the end
+									customer's need to define the success of the project.</div>
+							</div>
+							<img class="process__step__img" id="process__step__img--1" src="/Images/Process/Goals.jpg"
+								alt="">
+						</div>
+					</li>
+					<li class="process__step">
+						<div class="process__step__outer-index">02</div>
+						<div class="process__step__inner">
+							<div class="process__step__txt">
+								<div class="process__step__index">02</div>
+								<h2 class="process__step__title">Proposal</h2>
+								<div class="process__step__body">We strive for outstanding partnership with our customer
+									by
+									providing the maximum quality products with a competitive price in a minimum lead
+									time
+									of delivery.</div>
+							</div>
+							<img class="process__step__img" id="process__step__img--2" src="/Images/Process/proposal.jpg"
+								alt="">
+						</div>
+					</li>
+					<li class="process__step">
+						<div class="process__step__outer-index">03</div>
+						<div class="process__step__inner">
+							<div class="process__step__txt">
+								<div class="process__step__index">03</div>
+								<h2 class="process__step__title">Social Responsibilities</h2>
+								<div class="process__step__body">We support the community and environment in the markets
+									where we operate.</div>
+							</div>
+							<img class="process__step__img" id="process__step__img--3" src="/Images/Process/social_responsibility.png"
+								alt="">
+						</div>
+					</li>
+					<li class="process__step">
+						<div class="process__step__outer-index">04</div>
+						<div class="process__step__inner">
+							<div class="process__step__txt">
+								<div class="process__step__index">04</div>
+								<h2 class="process__step__title">Our Strength</h2>
+								<div class="process__step__body"><span class="jpp-blue">JP<span
+											class="jpp-green">&</span>P</span> focused on the specific segment, and we
+									specialized to
+									Pharmaceutical Boxes and Food Boxes industries and invested in Professional Human
+									Capital and latest available technology. <span class="jpp-blue">JP<span
+											class="jpp-green">&</span>P</span> involved and follow Good Manufacturing
+									Practice (GMP).
+								</div>
+							</div>
+							<img class="process__step__img" id="process__step__img--4" src="/Images/Process/Stregth.jpg"
+								alt="">
+						</div>
+					</li>
+					<li class="process__step">
+						<div class="process__step__outer-index">05</div>
+						<div class="process__step__inner">
+							<div class="process__step__txt">
+								<div class="process__step__index">05</div>
+								<h2 class="process__step__title">Quality Inspections </h2>
+								<div class="process__step__body"><span class="jpp-blue">JP<span
+											class="jpp-green">&</span>P</span> apart from our competitor is we are
+									prioritizing
+									the
+									High-Quality Standards of our products. Established best Quality Management
+									System (QMS) to meet our Customer Quality Standards.</div>
+							</div>
+							<img class="process__step__img" id="process__step__img--5" src="/Images/Process/quality_inspection.jpg"
+								alt="">
+						</div>
+					</li>
+					<li class="process__step">
+						<div class="process__step__outer-index">06</div>
+						<div class="process__step__inner">
+							<div class="process__step__txt">
+								<div class="process__step__index">06</div>
+								<h2 class="process__step__title">Service </h2>
+								<div class="process__step__body"><span class="jpp-blue">JP<span
+											class="jpp-green">&</span>P</span> strongly believed and practiced on
+									On-Time
+									In-Full (OTIF) Process to meet delivery dates with Customers.</div>
+							</div>
+							<img class="process__step__img" id="process__step__img--6"
+								src="/Images/Process/customer_service.jpg" alt="">
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<section id="jpp-market">
+				<div id="jpp-market__header">
+					<h3 id="jpp-market__eyebrow">Our Strength</h3>
+					<h2 id="jpp-market__title">The Market <span class="jpp-green">We</span> Serve</h2>
+					<p id="jpp-market__body">
+						<span class="jpp-blue">JP<span class="jpp-green">&</span>P</span> is based in King Abdullah
+						Economic City (KAEC) in the Kingdom of Saudi Arabia, supplying pharmaceutical and food
+						packaging customers across the Kingdom with locally manufactured, GMP-compliant cartons.
+					</p>
+				</div>
+
+				<div id="jpp-market__grid">
+					<div class="jpp-market__col">
+						<h3 class="jpp-market__col-title">The Industries We Serve</h3>
+						<ul class="jpp-tag-list" id="jpp-industries">
+							<li class="jpp-tag jpp-tag--blue">
+								<span class="jpp-tag__dot"></span> Pharmaceutical
+							</li>
+							<li class="jpp-tag jpp-tag--green">
+								<span class="jpp-tag__dot"></span> Frozen Food Products
+							</li>
+							<li class="jpp-tag jpp-tag--orange">
+								<span class="jpp-tag__dot"></span> Food Manufacturing
+							</li>
+							<li class="jpp-tag jpp-tag--blue">
+								<span class="jpp-tag__dot"></span> Confectionery Products
+							</li>
+						</ul>
+					</div>
+
+					<div class="jpp-market__col">
+						<h3 class="jpp-market__col-title">Our Product Lines</h3>
+						<ul class="jpp-tag-list" id="jpp-products">
+							<li class="jpp-tag jpp-tag--green">
+								<span class="jpp-tag__dot"></span> Folding Cartons
+							</li>
+							<li class="jpp-tag jpp-tag--orange">
+								<span class="jpp-tag__dot"></span> Clampshell
+							</li>
+							<li class="jpp-tag jpp-tag--blue">
+								<span class="jpp-tag__dot"></span> Hot-Foil
+							</li>
+							<li class="jpp-tag jpp-tag--green">
+								<span class="jpp-tag__dot"></span> Flame Sealing
+							</li>
+							<li class="jpp-tag jpp-tag--orange">
+								<span class="jpp-tag__dot"></span> Flat Pack Supply
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="page" id="main-loading-page">
+				<!-- <div id="main-loading__overlay"></div> -->
+				<div id="main-loading__outer">
+					<div id="main-loading__inner">
+						<div id="main-loading__lines">
+							<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 40 00">
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit="" />
+
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M1549.7 745.8l-447.3-447.3" />
+								<path fill="none" stroke="#F9F9F9" stroke-width="50" stroke-miterlimit=""
+									d="M676.2 261.2l663.5-663.6" />
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M582.2 167.2l-621-621" />
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M293.2-136l-924.1 924.2" />
+								<!-- is Very Importnant Loading -->
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M220.6 649.7l-753.4-753.3" />
+								<!-- is Very Importnant Loading -->
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M329.6 424.2L-92 845.8" />
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M-494.2 1712.7l924.5-924.5" />
+								<path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+									d="M1077.4 1121.7L675.9 720.2" />
+							</svg>
+						</div>
+						<!-- ProLoading Content Start -->
+						<img src="/Images/Logo.png" class="Logo_Loading" />
+						<div class="anim-line line-left"></div>
+						<div class="anim-line line-right"></div>
+						<!-- ProLoading Content End -->
+					</div>
+				</div>
+			</section>
+			<div data-tf-popover="EvigCCCZ" data-tf-custom- icon="https://images.typeform.com/images/d6qHZSzLZm8S"
+				data-tf-button- color="#F58C4B" data-tf-tooltip="Hi Let&#39;s get in touch&nbsp;&nbsp;" data-tf-
+				open="time" data-tf-open-value="10000" data-tf-chat data-tf-medium="snippet" style="all:unset;"></div>
+		</div>
+
+		<footer id="footer">
+			<div id="footer__inner">
+				<div id="footer__logo">
+					<img src="/Images/Logo12.png" alt="" className="footer-logo">
+				</div>
+				<span class="material-icons-outlined">
+				</span>
+
+				<ul id="footer__pages">
+
+					<li class="footer__page" id="footer__page--home">
+						<a class="footer__page__title" href="/" data-ajax="false">Home</a>
+					</li>
+					<li class="footer__page" id="footer__page--solutions">
+						<a class="footer__page__title" href="/process.html" data-ajax="false">Process</a>
+					</li>
+					<li class="footer__page" id="footer__page--process">
+						<a class="footer__page__title" href="/solution.html" data-ajax="false">Solutions </a>
+					</li>
+					<!-- <li class="footer__page" id="footer__page--projects">
+						<a class="footer__page__title" href="/technology.html" data-ajax="false">Technology</a>
+					</li> -->
+					<li class="footer__page" id="footer__page--about">
+						<a class="footer__page__title" href="/about.html" data-ajax="false">About us</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/Script-jquery.js"><\/script>')
+
+		</script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script src="https://embed.typeform.com/next/embed.js"></script>
+
+	</body>
+
+</html>

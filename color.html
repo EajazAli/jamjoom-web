@@ -1,0 +1,724 @@
+﻿<!DOCTYPE html>
+<html class="no-js desktop">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="description" content="">
+
+        <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+        <title> Jamjoom Printing and Packaging - JP&P </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;500&display=swap"
+            rel="stylesheet">
+
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+        <script>
+            ! function (e, n, t) {
+                function o(e, n) {
+                    return typeof e === n
+                }
+
+                function s() {
+                    return "function" != typeof n.createElement ? n.createElement(arguments[0]) : u ? n.createElementNS
+                        .call(n, "http://www.w3.org/2000/svg", arguments[0]) : n.createElement.apply(n, arguments)
+                }
+
+                function i() {
+                    var e = n.body;
+                    return e || (e = s(u ? "svg" : "body"), e.fake = !0), e
+                }
+
+                function a(e, t, o, a) {
+                    var r, f, l, d, u = "modernizr",
+                        p = s("div"),
+                        h = i();
+                    if (parseInt(o, 10))
+                        for (; o--;) l = s("div"), l.id = a ? a[o] : u + (o + 1), p.appendChild(l);
+                    return r = s("style"), r.type = "text/css", r.id = "s" + u, (h.fake ? h : p).appendChild(r), h
+                        .appendChild(p), r.styleSheet ? r.styleSheet.cssText = e : r.appendChild(n.createTextNode(e)), p
+                        .id = u, h.fake && (h.style.background = "", h.style.overflow = "hidden", d = c.style.overflow,
+                            c.style.overflow = "hidden", c.appendChild(h)), f = t(p, e), h.fake ? (h.parentNode
+                            .removeChild(h), c.style.overflow = d, c.offsetHeight) : p.parentNode.removeChild(p), !!f
+                }
+                var r = [],
+                    f = {
+                        _version: "3.6.0",
+                        _config: {
+                            classPrefix: "",
+                            enableClasses: !0,
+                            enableJSClass: !0,
+                            usePrefixes: !0
+                        },
+                        _q: [],
+                        on: function (e, n) {
+                            var t = this;
+                            setTimeout(function () {
+                                n(t[e])
+                            }, 0)
+                        },
+                        addTest: function (e, n, t) {
+                            r.push({
+                                name: e,
+                                fn: n,
+                                options: t
+                            })
+                        },
+                        addAsyncTest: function (e) {
+                            r.push({
+                                name: null,
+                                fn: e
+                            })
+                        }
+                    },
+                    l = function () {};
+                l.prototype = f, l = new l;
+                var d = [],
+                    c = n.documentElement,
+                    u = "svg" === c.nodeName.toLowerCase();
+                l.addTest("history", function () {
+                    var n = navigator.userAgent;
+                    return (-1 === n.indexOf("Android 2.") && -1 === n.indexOf("Android 4.0") || -1 === n
+                        .indexOf("Mobile Safari") || -1 !== n.indexOf("Chrome") || -1 !== n.indexOf(
+                            "Windows Phone") || "file:" === location.protocol) && (e.history &&
+                        "pushState" in e.history)
+                });
+                var p = function () {
+                    function e(e, n) {
+                        var i;
+                        return !!e && (n && "string" != typeof n || (n = s(n || "div")), e = "on" + e, i = e in n, !
+                            i && o && (n.setAttribute || (n = s("div")), n.setAttribute(e, ""), i =
+                                "function" == typeof n[e], n[e] !== t && (n[e] = t), n.removeAttribute(e)), i)
+                    }
+                    var o = !("onblur" in n.documentElement);
+                    return e
+                }();
+                f.hasEvent = p, l.addTest("inputsearchevent", p("search"));
+                var h = f._config.usePrefixes ? " -webkit- -moz- -o- -ms- ".split(" ") : ["", ""];
+                f._prefixes = h;
+                var v = f.testStyles = a;
+                l.addTest("touchevents", function () {
+                        var t;
+                        if ("ontouchstart" in e || e.DocumentTouch && n instanceof DocumentTouch) t = !0;
+                        else {
+                            var o = ["@media (", h.join("touch-enabled),("), "heartz", ")",
+                                "{#modernizr{top:9px;position:absolute}}"
+                            ].join("");
+                            v(o, function (e) {
+                                t = 9 === e.offsetTop
+                            })
+                        }
+                        return t
+                    }),
+                    function () {
+                        var e, n, t, s, i, a, f;
+                        for (var c in r)
+                            if (r.hasOwnProperty(c)) {
+                                if (e = [], n = r[c], n.name && (e.push(n.name.toLowerCase()), n.options && n.options
+                                        .aliases && n.options.aliases.length))
+                                    for (t = 0; t < n.options.aliases.length; t++) e.push(n.options.aliases[t]
+                                        .toLowerCase());
+                                for (s = o(n.fn, "function") ? n.fn() : n.fn, i = 0; i < e.length; i++) a = e[i], f = a
+                                    .split("."), 1 === f.length ? l[f[0]] = s : (!l[f[0]] || l[f[
+                                            0]] instanceof Boolean || (l[f[0]] = new Boolean(l[f[0]])), l[f[0]][f[1]] =
+                                        s),
+                                    d.push((s ? "" : "no-") + f.join("-"))
+                            }
+                    }(),
+                    function (e) {
+                        var n = c.className,
+                            t = l._config.classPrefix || "";
+                        if (u && (n = n.baseVal), l._config.enableJSClass) {
+                            var o = new RegExp("(^|\\s)" + t + "no-js(\\s|$)");
+                            n = n.replace(o, "$1" + t + "js$2")
+                        }
+                        l._config.enableClasses && (n += " " + t + e.join(" " + t), u ? c.className.baseVal = n : c
+                            .className = n)
+                    }(d), delete f.addTest, delete f.addAsyncTest;
+                for (var m = 0; m < l._q.length; m++) l._q[m]();
+                e.Modernizr = l
+            }(window, document);
+
+        </script>
+    </head>
+
+    <body>
+
+        <div id="top-bar">
+        </div>
+        <a class="" href="/" id="logo" data-ajax="false">
+            <img src="Images/Logo12.png" class="Logo" id="Logo">
+        </a>
+
+        <nav class="" id="nav">
+            <input id="nav-is-open" type="checkbox" value="" aria-hidden="true">
+            <label id="nav-toggle" class="" for="nav-is-open">
+                <span id="nav-toggle__list">
+                    <span class="nav-toggle__list__line line__color"></span>
+                    <span class="nav-toggle__list__line line__color"></span>
+                    <span class="nav-toggle__list__line line__color"></span>
+                </span>
+                <span id="nav-toggle__cross">
+                    <span class="nav-toggle__cross__line"></span>
+                    <span class="nav-toggle__cross__line"></span>
+                </span>
+            </label>
+
+            <div id="nav__content">
+                <div id="nav__content__inner">
+                    <div id="nav__content__bg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+                            <path fill="none" stroke="#E02D2D" stroke-width="64" stroke-miterlimit="10"
+                                d="M-41 715l398-398L-15-55" />
+                            <path fill="none" stroke="#C40E0E" stroke-width="64" stroke-miterlimit="10"
+                                d="M541.5 122.8L701.7-37.5" />
+                            <path fill="none" stroke="#D14B4B" stroke-width="64" stroke-miterlimit="10"
+                                d="M1007 353L813.8 159.9 513 461.9l506.9 515.9" />
+                            <path fill="none" stroke="#CE0D0D" stroke-width="64" stroke-miterlimit="10"
+                                d="M634.8 376.7l259.4 259.4" />
+                            <path fill="none" stroke="#ED1818" stroke-width="64" stroke-miterlimit="10"
+                                d="M784.6 345.1L958 516.5 1499.1-37" />
+                        </svg>
+                    </div>
+
+                    <ul class="nav__list" id="nav__main-list">
+                        <li class="nav__item" data-id="home">
+                            <a class="nav-link" href="/" data-ajax="false">
+                                <span class="nav__link__label">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav-link" href="/process.html" data-ajax="false">
+                                <span class="nav__link__label"> Process </span>
+                            </a>
+                        </li>
+                        <li class="nav__item" data-id="solutions">
+                            <a class="nav-link" href="/solution.html" data-ajax="false">
+                                <span class="nav__link__label"> Solutions </span>
+                            </a>
+                        </li>
+                        <!-- <li class="nav__item">
+                        <a class="nav-link" href="/technology.html" data-ajax="false">
+                            <span class="nav__link__label"> Technology </span>
+                        </a>
+                    </li> -->
+                        <li class="nav__item" data-id="colors">
+                            <a class="nav-link" href="/color.html" data-ajax="false">
+                                <span class="nav__link__label"> Colors </span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav-link" href="/about.html" data-ajax="false">
+                                <span class="nav__link__label"> About Us </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="page page__color" id="colors" data-title="ColorManagement - JamJoom">
+            <div id="solutions__header__img-wrapper">
+                <img id="solutions__header__img" src="" alt="" />
+            </div>
+        </section>
+
+
+
+        <div id="page-container">
+            <div class="color__container ">
+                <div class="color__content">
+                    <div class="color__wrapper">
+
+                        <!-- Header Card Content Start  -->
+                        <div class="color__content__header">
+                            <div class="title"> Color Management </div>
+
+                            <div class="color__content__lists w3-animate-top">
+                                <a href="#importance" class="color__card__items">
+                                    <div class="text"> Color Management & Its Importance </div>
+                                    <div class="number"> 1 </div>
+                                </a>
+
+                                <a href="#whatwehave" class="color__card__items">
+                                    <div class="text"> What we have ? </div>
+                                    <div class="number"> 2 </div>
+                                </a>
+
+                                <a href="#workflow" class="color__card__items">
+                                    <div class="text"> Our work flow </div>
+                                    <div class="number"> 3 </div>
+                                </a>
+
+                                <a href="#offers" class="color__card__items">
+                                    <div class="text"> What we Offer ? </div>
+                                    <div class="number"> 4 </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Header Card Content Start  -->
+
+                        <div class="color__action__container">
+                            <div class="ac__content">
+
+                                <div class="ac__wrapper">
+                                    <div class="ac__lists">
+
+                                        <!-- First Start -->
+                                        <div class="ac__items__content" id="importance">
+                                            <div class="ac__number__content">
+                                                <img src="./Images/Color/1.png" alt="" />
+                                            </div>
+                                            <div class="ac__items__left">
+                                                <div class="head"> Importance </div>
+                                                <p>
+                                                    <span>C</span> olor is a major element of a product’s packaging.
+                                                    One that
+                                                    is
+                                                    particularly
+                                                    critical because it is vivid, effect loaded and memorable.
+                                                </p>
+                                                <p>
+                                                    Color is the very first perception the customer will have of a
+                                                    brand
+                                                </p>
+                                                <p>
+                                                    Color increases a Brand’s recognition by 80%
+                                                </p>
+                                                <p>
+                                                    Packaging is the preferred communication tool to boost a brand’s
+                                                    value
+                                                </p>
+                                                <p>
+                                                    More than 25% of adults say that the color helps in informing
+                                                    them about
+                                                    product quality .
+                                                    Color reproduction has a fundamental problem: a given "color "
+                                                    doesn't
+                                                    necessarily produce the same color in all process . Hence color
+                                                    variation
+                                                    across production is a major problem faced by packaging industry
+                                                </p>
+                                                <p>
+                                                    Only a well Color Managed work flow will give accurate color in
+                                                    design,
+                                                    Proofing & Printing
+                                                </p>
+                                            </div>
+                                            <div class="ac__items__right w3-animate-right">
+                                                <img src="./Images/Color/1.1.png" alt=""
+                                                    class="item1__img w3-animate-zoom" />
+                                            </div>
+                                        </div>
+
+                                        <!-- First End -->
+
+                                        <!-- Second Start -->
+                                        <div class="ac__items2__container">
+                                            <div class="ac__items__content reveal" id="whatwehave">
+                                                <div class="ac__number__content ac__number2__items">
+                                                    <img src="./Images/Color/2.png" alt="" />
+                                                </div>
+                                                <div class="ac__items__left">
+                                                    <div class="head"> What we have </div>
+                                                    <p>
+                                                        <span class="jpp-blue">JP<span
+                                                                class="jpp-green">&</span>P</span> we
+                                                        standardized our Pre-press, Proof and
+                                                        Printing
+                                                        processes as per the International Print Standards Of ISO
+                                                        12647-2
+                                                        for
+                                                        Offset
+                                                        Packaging
+                                                        JP&P invested in state of the art color management modules (CMM)
+                                                        from
+                                                        GMG
+                                                        Color, Germany & X-Rite/Pantone, USA
+                                                    </p>
+                                                    <p>
+                                                        <span class="jpp-blue">JP<span
+                                                                class="jpp-green">&</span>P</span> trained QA, prepress
+                                                        & printing departments to continuously
+                                                        monitor
+                                                        the
+                                                        quality with SOP’s and quality checks
+                                                    </p>
+                                                    <p>
+                                                        <span class="jpp-blue">JP<span
+                                                                class="jpp-green">&</span>P</span> equipped all
+                                                        processes with the best software and Hardware
+                                                        technologies
+                                                        available to meet current and future exacting quality demands
+                                                    </p>
+                                                </div>
+                                                <div class="ac__items__right">
+                                                    <img src="./Images/Color/2.png" alt="" class="item2__img" />
+                                                </div>
+                                            </div>
+                                            <div class="ac__item2__content reveal">
+                                                <div class="ac__item2__wrapper">
+                                                    <div class="title"> <span class="jpp-blue"
+                                                            style="font-size: 2rem;">JP<span class="jpp-green"
+                                                                style="font-size: 1.5rem;">&</span>P</span>
+                                                        &nbsp;Color Management
+                                                        <br />Ecosystem </div>
+                                                    <div class="ac__item2__lists reveal">
+                                                        <div class="left">
+                                                            <div style="width: 300px;">
+                                                                <div class="text text-align-left">
+                                                                    Epson InkJet Proofer with GMG Color
+                                                                    Management
+                                                                    Software</div>
+                                                            </div>
+                                                            <img src="./Images/Color/2.1.png" alt="" />
+                                                        </div>
+                                                        <div class="left align__items">
+                                                            <img src="./Images/Color/2.2.png" alt=""
+                                                                class="second__img" />
+                                                        </div>
+                                                        <div class="left">
+                                                            <div style="width: 300px;">
+                                                                <div class="text text-align-right"> Rutherford Xrite
+                                                                    Automated
+                                                                    Color
+                                                                    Measurement and
+                                                                    color correction system
+                                                                    (CIP3 Closed Loop) on Roland Press </div>
+                                                            </div>
+                                                            <img src="./Images/Color/2.3.png" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ac__item3-4__content reveal">
+                                                    <div class="ac__item3-4__lists">
+                                                        <div class="text text-align-center"> Xrite Ink Formulation
+                                                            System
+                                                            with
+                                                            <br /> IGT Proofer
+                                                        </div>
+                                                        <img src="./Images/Color/2.4.png" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ac__item2__content reveal">
+                                                <div class="ac__item2__wrapper">
+                                                    <div class="title"> <span class="jpp-blue"
+                                                            style="font-size: 2rem;">JP<span class="jpp-green"
+                                                                style="font-size: 1.5rem;">&</span>P</span>
+                                                        &nbsp;Board Profiler</div>
+                                                    <div class="ac__item2__lists reveal">
+                                                        <p>
+                                                            <span class="jpp-blue">JP<span
+                                                                    class="jpp-green">&</span>P</span> Color affects every workflow. When you need to produce consistent, repeatable color, we must be keen in the process standardization and color management. Varying printing conditions and substrates & countless parameters provide diverse challenges. Safe processes are therefore as essential for the graphic arts industry as a consistent appearance for any successful brand or product.
+                                                        </p>
+                                                    </div>
+                                                    <div class="ac__item2__lists reveal">
+                                                        <p>
+                                                            <span class="jpp-blue">JP<span
+                                                                    class="jpp-green">&</span>P</span> we do process standardization and calibrate our display monitors, proofing printer & Offset printing Press to ISO 39 standards. we cross check this in regular intervals and do corrective actions accordingly. Also, we create Board profiles with Automated X-rite i1io pro3 Spectrophotometer to match the color according to board color changes – every six months we do the Press standardization and Board profiling based on the available boards with us so that color will be always the same whether we change board or chemicals. 
+                                                        </p>
+                                                    </div>
+                                                    <div class="ac__item2__lists reveal">
+                                                        <div class="left">
+                                                            <img src="./Images/Color/Board_Color_Calibration_i1io_Automated.jpeg" alt="" />
+                                                        </div>
+                                                        <div class="left">
+                                                            <img src="./Images/Color/monitor_calibration_with_i1_Pro3.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Second End -->
+
+                                        <!-- Third Start -->
+
+                                        <div class="ac__items3__content reveal" id="workflow">
+                                            <div class="ac__item3__wrapper">
+                                                <div class="ac__item3__lists">
+                                                    <div class="head"> Our Workflow </div>
+                                                    <img src="./Images/Color/3.png" alt="" class="item__3" />
+                                                </div>
+                                                <div class="ac__item3__lists">
+                                                    <img src="./Images/Color/3.2.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Third End -->
+
+                                        <!-- Fourth Start -->
+
+                                        <div class="ac__item4__content reveal" id="offers">
+                                            <div class="ac__item4__wrapper">
+                                                <div class="ac__item__header">
+                                                    <img src="./Images/Color/4_2.jpeg" alt="" />
+                                                    <div class="text">
+                                                        <div class="title"> What we offer ?</div>
+                                                        <img src="./Images/Color/4.png" alt="" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="ac__item4__list reveal">
+                                                    <p>
+                                                        <span class="jpp-blue">JP<span
+                                                                class="jpp-green">&</span>P</span> Standardized
+                                                        Pre-press, Digital Hard Proof, CTP and Press
+                                                        as
+                                                        per
+                                                        ISO
+                                                        12647-2 workflow which can print ISO 39 , Gracol or Customized
+                                                        Standards.
+                                                    </p>
+                                                    <p>
+                                                        <span class="jpp-blue">JP<span
+                                                                class="jpp-green">&</span>P</span> bring consistent
+                                                        print results across print runs with
+                                                        X-Rite/Pantone
+                                                        Intellitrax Scanning System and confirm prints are run as per
+                                                        ISO 39
+                                                        or
+                                                        Gracol Standards.
+                                                    </p>
+                                                    <p>
+                                                        At <span class="jpp-blue">JP<span
+                                                                class="jpp-green">&</span>P</span>, We can print the
+                                                        Digital Hard Proof with different
+                                                        paper
+                                                        simulations like Folding Box board, Duplex board ,Kraft board ,
+                                                        Grey
+                                                        Board
+                                                        etc. within delta e 3 .
+                                                    </p>
+                                                    <p>
+                                                        At <span class="jpp-blue">JP<span
+                                                                class="jpp-green">&</span>P</span>, We can bring best
+                                                        quality on different packaging
+                                                        substrates by
+                                                        simulation of ISO 39 coated paper results on various substrates
+                                                        like
+                                                        food
+                                                        board, Duplex Board ,Grey Board, Kraft Board etc.
+                                                        JP&P make sure all the jobs are compared with Digital Proof and
+                                                        ensure
+                                                        the
+                                                        Press Print and Digital Proof match .
+                                                    </p>
+                                                    <p>
+                                                        At <span class="jpp-blue">JP<span
+                                                                class="jpp-green">&</span>P</span>, We can print CMYK &
+                                                        Spot Colors within delta e less
+                                                        than 3
+                                                        and
+                                                        ensure TVI’s & Gray Balance is within strict ISO 12647-2
+                                                        tolerance
+                                                    </p>
+                                                    <p>
+                                                        <span class="jpp-blue">JP<span
+                                                                class="jpp-green">&</span>P</span> use X-Rite Ink
+                                                        Formulation Software to ensure spot colors
+                                                        are
+                                                        mixed
+                                                        within Delta E 2
+                                                    </p>
+                                                    <p>
+                                                        <span class="jpp-blue">JP<span
+                                                                class="jpp-green">&</span>P</span> use global vision
+                                                        inspection technology for print and art
+                                                        work
+                                                        comparison to ensure all design elements are intact in final
+                                                        printed
+                                                        product
+                                                    </p>
+                                                    <p>
+                                                        At <span class="jpp-blue">JP<span
+                                                                class="jpp-green">&</span>P</span>,We have a well
+                                                        trained expert printing team who can use
+                                                        the
+                                                        right
+                                                        color management tools to reproduce the customer expected COLOR
+                                                        to
+                                                        the
+                                                        maximum extend.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fourth End -->
+
+                                        <!-- Fifth Start -->
+
+                                        <div class="ac__item__footer reveal">
+                                            <img src="./Images/Color/5.png" alt="">
+                                        </div>
+                                        <!-- Fifth End -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="page" id="main-loading-page">
+                <!-- <div id="main-loading__overlay"></div> -->
+                <div id="main-loading__outer">
+                    <div id="main-loading__inner">
+                        <div id="main-loading__lines">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 40 00">
+                                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit="" />
+
+                                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+                                    d="M1549.7 745.8l-447.3-447.3" />
+                                <path fill="none" stroke="#F9F9F9" stroke-width="50" stroke-miterlimit=""
+                                    d="M676.2 261.2l663.5-663.6" />
+                                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+                                    d="M582.2 167.2l-621-621" />
+                                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+                                    d="M293.2-136l-924.1 924.2" />
+                                <!-- is Very Importnant Loading -->
+                                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+                                    d="M220.6 649.7l-753.4-753.3" />
+                                <!-- is Very Importnant Loading -->
+                                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+                                    d="M329.6 424.2L-92 845.8" />
+                                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+                                    d="M-494.2 1712.7l924.5-924.5" />
+                                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+                                    d="M1077.4 1121.7L675.9 720.2" />
+                            </svg>
+                        </div>
+                        <!-- ProLoading Content Start -->
+
+                        <div class="loading__container">
+                            <img src="/Images/Logo.png" class="Logo_Loading" />
+                            <div class="anim-line line-left"></div>
+                            <div class="anim-line line-right"></div>
+                            <!-- ProLoading Content End -->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <footer id="footer">
+            <div id="footer__inner">
+                <div id="footer__logo">
+                    <img src="/Images/Logo12.png" alt="" className="footer-logo">
+                </div>
+
+                <ul id="footer__pages">
+
+                    <li class="footer__page" id="footer__page--home">
+                        <a class="footer__page__title" href="/" data-ajax="false">Home</a>
+
+                        <!-- <ul class="footer__page__sections">
+
+
+						<li class="footer__page__section">
+							<a class="footer__page__section__title" href="/#story">Story</a>
+						</li>
+
+						<li class="footer__page__section">
+							<a class="footer__page__section__title" href="/#client-commitment">Client </a>
+						</li>
+
+						<li class="footer__page__section">
+							<a class="footer__page__section__title" href="/#vision">Vision</a>
+						</li>
+
+						<li class="footer__page__section">
+							<a class="footer__page__section__title" href="/#expertise">Expertise</a>
+						</li>
+
+						<li class="footer__page__section">
+							<a class="footer__page__section__title" href="/#who-we-are">Who we are</a>
+						</li>
+
+						<li class="footer__page__section">
+							<a class="footer__page__section__title" href="/#services">Services</a>
+						</li>
+					</ul> -->
+
+                    </li>
+                    <li class="footer__page" id="footer__page--solutions">
+                        <a class="footer__page__title" href="/process.html" data-ajax="false">Process</a>
+
+                        <!-- <ul class="footer__page__sections">
+
+
+						<li class="footer__page__section">
+							<a class="footer__page__section__title" href="/solutions#service">M.E.S.T</a>
+						</li>
+
+						<li class="footer__page__section">
+							<a class="footer__page__section__title" href="/solutions#price">Price quality</a>
+						</li>
+
+						<li class="footer__page__section">
+							<a class="footer__page__section__title" href="/solutions#experts">Experts</a>
+						</li>
+
+						<li class="footer__page__section">
+							<a class="footer__page__section__title" href="/solutions#clients">Clients</a>
+						</li>
+					</ul> -->
+
+                    </li>
+                    <li class="footer__page" id="footer__page--process">
+                        <a class="footer__page__title" href="/solution.html" data-ajax="false">Solutions</a>
+                    </li>
+                    <!-- <li class="footer__page" id="footer__page--projects">
+                        <a class="footer__page__title" href="/technology.html" data-ajax="false">Technology </a>
+                    </li> -->
+                    <li class="footer__page" id="footer__page--about">
+                        <a class="footer__page__title" href="/about.html" data-ajax="false">About us</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div data-tf-popover="EvigCCCZ" data-tf-custom- icon="https://images.typeform.com/images/d6qHZSzLZm8S"
+                data-tf-button- color="#F58C4B" data-tf-tooltip="Hi Let&#39;s get in touch&nbsp;&nbsp;" data-tf-
+                open="time" data-tf-open-value="10000" data-tf-chat data-tf-medium="snippet" style="all:unset;"></div>
+        </footer>
+
+        <script>
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
+                }
+            }
+
+            window.addEventListener("scroll", reveal);
+
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/Script-jquery.js"><\/script>')
+
+        </script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script src="https://embed.typeform.com/next/embed.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,772 @@
+﻿<!DOCTYPE html>
+<html class="no-js desktop">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <title> Jamjoom Printing and Packaging - JP&P </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <script>
+      ! function (e, n, t) {
+        function o(e, n) {
+          return typeof e === n
+        }
+
+        function s() {
+          return "function" != typeof n.createElement ? n.createElement(arguments[0]) : u ? n.createElementNS.call(n,
+            "http://www.w3.org/2000/svg", arguments[0]) : n.createElement.apply(n, arguments)
+        }
+
+        function i() {
+          var e = n.body;
+          return e || (e = s(u ? "svg" : "body"), e.fake = !0), e
+        }
+
+        function a(e, t, o, a) {
+          var r, f, l, d, u = "modernizr",
+            p = s("div"),
+            h = i();
+          if (parseInt(o, 10))
+            for (; o--;) l = s("div"), l.id = a ? a[o] : u + (o + 1), p.appendChild(l);
+          return r = s("style"), r.type = "text/css", r.id = "s" + u, (h.fake ? h : p).appendChild(r), h.appendChild(p),
+            r.styleSheet ? r.styleSheet.cssText = e : r.appendChild(n.createTextNode(e)), p.id = u, h.fake && (h.style
+              .background = "", h.style.overflow = "hidden", d = c.style.overflow, c.style.overflow = "hidden", c
+              .appendChild(h)), f = t(p, e), h.fake ? (h.parentNode.removeChild(h), c.style.overflow = d, c
+              .offsetHeight) : p.parentNode.removeChild(p), !!f
+        }
+        var r = [],
+          f = {
+            _version: "3.6.0",
+            _config: {
+              classPrefix: "",
+              enableClasses: !0,
+              enableJSClass: !0,
+              usePrefixes: !0
+            },
+            _q: [],
+            on: function (e, n) {
+              var t = this;
+              setTimeout(function () {
+                n(t[e])
+              }, 0)
+            },
+            addTest: function (e, n, t) {
+              r.push({
+                name: e,
+                fn: n,
+                options: t
+              })
+            },
+            addAsyncTest: function (e) {
+              r.push({
+                name: null,
+                fn: e
+              })
+            }
+          },
+          l = function () {};
+        l.prototype = f, l = new l;
+        var d = [],
+          c = n.documentElement,
+          u = "svg" === c.nodeName.toLowerCase();
+        l.addTest("history", function () {
+          var n = navigator.userAgent;
+          return (-1 === n.indexOf("Android 2.") && -1 === n.indexOf("Android 4.0") || -1 === n.indexOf(
+              "Mobile Safari") || -1 !== n.indexOf("Chrome") || -1 !== n.indexOf("Windows Phone") || "file:" ===
+            location.protocol) && (e.history && "pushState" in e.history)
+        });
+        var p = function () {
+          function e(e, n) {
+            var i;
+            return !!e && (n && "string" != typeof n || (n = s(n || "div")), e = "on" + e, i = e in n, !i && o && (n
+              .setAttribute || (n = s("div")), n.setAttribute(e, ""), i = "function" == typeof n[e], n[e] !== t &&
+              (n[e] = t), n.removeAttribute(e)), i)
+          }
+          var o = !("onblur" in n.documentElement);
+          return e
+        }();
+        f.hasEvent = p, l.addTest("inputsearchevent", p("search"));
+        var h = f._config.usePrefixes ? " -webkit- -moz- -o- -ms- ".split(" ") : ["", ""];
+        f._prefixes = h;
+        var v = f.testStyles = a;
+        l.addTest("touchevents", function () {
+            var t;
+            if ("ontouchstart" in e || e.DocumentTouch && n instanceof DocumentTouch) t = !0;
+            else {
+              var o = ["@media (", h.join("touch-enabled),("), "heartz", ")",
+                "{#modernizr{top:9px;position:absolute}}"
+              ].join("");
+              v(o, function (e) {
+                t = 9 === e.offsetTop
+              })
+            }
+            return t
+          }),
+          function () {
+            var e, n, t, s, i, a, f;
+            for (var c in r)
+              if (r.hasOwnProperty(c)) {
+                if (e = [], n = r[c], n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases && n
+                    .options.aliases.length))
+                  for (t = 0; t < n.options.aliases.length; t++) e.push(n.options.aliases[t].toLowerCase());
+                for (s = o(n.fn, "function") ? n.fn() : n.fn, i = 0; i < e.length; i++) a = e[i], f = a.split("."),
+                  1 === f.length ? l[f[0]] = s : (!l[f[0]] || l[f[0]] instanceof Boolean || (l[f[0]] = new Boolean(l[f[
+                    0]])), l[f[0]][f[1]] = s), d.push((s ? "" : "no-") + f.join("-"))
+              }
+          }(),
+          function (e) {
+            var n = c.className,
+              t = l._config.classPrefix || "";
+            if (u && (n = n.baseVal), l._config.enableJSClass) {
+              var o = new RegExp("(^|\\s)" + t + "no-js(\\s|$)");
+              n = n.replace(o, "$1" + t + "js$2")
+            }
+            l._config.enableClasses && (n += " " + t + e.join(" " + t), u ? c.className.baseVal = n : c.className = n)
+          }(d), delete f.addTest, delete f.addAsyncTest;
+        for (var m = 0; m < l._q.length; m++) l._q[m]();
+        e.Modernizr = l
+      }(window, document);
+
+    </script>
+  </head>
+
+  <body class="page-id-home">
+    <div id="top-bar">
+    </div>
+    <a class="" href="/" id="logo" data-ajax="false">
+      <img src="Images/Logo12.png" class="Logo" id="Logo">
+    </a>
+    <nav class="" id="nav">
+
+      <input id="nav-is-open" type="checkbox" value="" aria-hidden="true">
+
+      <label id="nav-toggle" class="" for="nav-is-open">
+        <span id="nav-toggle__list">
+          <span class="nav-toggle__list__line"></span>
+          <span class="nav-toggle__list__line"></span>
+          <span class="nav-toggle__list__line"></span>
+        </span>
+        <span id="nav-toggle__cross">
+          <span class="nav-toggle__cross__line"></span>
+          <span class="nav-toggle__cross__line"></span>
+        </span>
+      </label>
+
+      <div id="nav__content">
+        <div id="nav__content__inner">
+          <div id="nav__content__bg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+              <path fill="none" stroke="#E02D2D" stroke-width="64" stroke-miterlimit="10" d="M-41 715l398-398L-15-55" />
+              <path fill="none" stroke="#C40E0E" stroke-width="64" stroke-miterlimit="10" d="M541.5 122.8L701.7-37.5" />
+              <path fill="none" stroke="#D14B4B" stroke-width="64" stroke-miterlimit="10"
+                d="M1007 353L813.8 159.9 513 461.9l506.9 515.9" />
+              <path fill="none" stroke="#CE0D0D" stroke-width="64" stroke-miterlimit="10"
+                d="M634.8 376.7l259.4 259.4" />
+              <path fill="none" stroke="#ED1818" stroke-width="64" stroke-miterlimit="10"
+                d="M784.6 345.1L958 516.5 1499.1-37" />
+            </svg>
+          </div>
+
+          <ul class="nav__list" id="nav__main-list">
+            <li class="nav__item" data-id="home">
+              <a class="nav-link" href="/" data-ajax="false">
+                <span class="nav__link__label">Home</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav-link" href="/process.html" data-ajax="false">
+                <span class="nav__link__label"> Process </span>
+              </a>
+            </li>
+            <li class="nav__item" data-id="process">
+              <a class="nav-link" href="/solution.html" data-ajax="false">
+                <span class="nav__link__label"> Solutions </span>
+              </a>
+            </li>
+            <!-- <li class="nav__item" data-id="projects">
+            <a class="nav-link" href="/technology.html" data-ajax="false">
+              <span class="nav__link__label"> Technology </span>
+            </a>
+          </li> -->
+            <li class="nav__item">
+              <a class="nav-link" href="/color.html" data-ajax="false">
+                <span class="nav__link__label"> Colors </span>
+              </a>
+            </li>
+            <li class="nav__item" data-id="about">
+              <a class="nav-link" href="/about.html" data-ajax="false">
+                <span class="nav__link__label">About us</span>
+              </a>
+            </li>
+
+          </ul>
+          <!-- <ul class="nav__list" id="nav__side-list">
+          <li class="nav__item" data-id="contact">
+            <a class="nav-link" href="/about.html" data-ajax="false">
+              <span class="nav__link__label"> About Us </span>
+            </a>
+          </li>
+        </ul> -->
+        </div>
+      </div>
+
+    </nav>
+
+    <div id="page-container">
+
+      <section class="page" id="home-page" data-title="Jam Joom">
+
+        <section class="home-screen" id="home-landing">
+          <div id="home-landing__bg">
+            <video id="home-landing__bg__video" preload="auto" loop muted>
+              <source src="videos/Home_1.mp4" />
+            </video>
+          </div>
+
+          <div id="home-landing__content">
+            <div id="home-landing__content__text">
+              <div id="home-landing__content__text__bg"></div>
+
+              <div id="home-landing__content__text__heading">
+                <div id="home-landing__content__text__heading__title">
+                  <img src="./Images/Logo12.png" alt="" class="home-landing__content__img">
+                </div>
+                <div id="home-landing__content__text__heading__baseline"> EXPERTS SINCE 2018 </div>
+                <div id="home-landing__content__text__heading__title"> Jamjoom Printing and Packaging - JP<span
+                    class="jpp-green" style="font-size: 16px">&</span>P
+                  <span id="home-landing__content__text__heading__subtitle">
+                    For your complete Packaging needs
+                  </span>
+                </div>
+              </div>
+              <p id="home-landing__content__text__body">
+                Tegan Al Fateh Factory Co. Ltd. (Jamjoom Printing & Packaging - JP<span class="jpp-green"
+                  style="font-size: 16px">&</span>P) is newly established manufacturer
+                of
+                Duplex Paper Board based inners folding cartons, JP<span class="jpp-green"
+                  style="font-size: 16px">&</span>P commenced operations in 2018 with state of the art
+                facility and machines
+              </p>
+            </div>
+            <button id="home-landing__content__cta">
+              <div id="home-landing__content__cta__bg"></div>
+              <div id="home-landing__content__cta__label">Scroll to discover</div>
+            </button>
+          </div>
+
+          <button id="home-landing__scroll">
+            <div id="home-landing__scroll__icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="34"
+                viewBox="0 0 20 34">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0v26.2l-8-8.1v5.7L10 34l10-10.2v-5.7l-8 8.1V0H8z" />
+              </svg></div>
+          </button>
+
+          <div id="home-landing__lines">
+            <div class="home-landing__line"></div>
+            <div class="home-landing__line"></div>
+            <div class="home-landing__line"></div>
+          </div>
+        </section>
+
+        <section class="home-screen" id="home-screen-1" name="story">
+          <section class="home-screen__step home-screen__step-1">
+            <div class="home-screen__step-1__bg">
+              <video class="home-screen__step-1__bg__video" preload="auto" loop muted>
+                <source src="videos/Service.mp4" />
+              </video>
+              <canvas class="home-screen__step-1__bg__canvas"></canvas>
+            </div>
+
+            <div class="home-screen__step-1__lines">
+              <div class="home-screen__step-1__lines__line"></div>
+              <div class="home-screen__step-1__lines__line"></div>
+            </div>
+
+            <div class="home-screen__step__content home-screen__step-1__content">
+              <h1 class="home-screen__step__content__title home-screen__step-1__content__title"> Our Services </h1>
+              <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">Quality is not
+                only
+                our standard. it's also an attitude instilled in our products and services </h2>
+            </div>
+
+          </section>
+          <section class="home-screen__step home-screen__step-2" data-ui="">
+
+            <div class="home-screen__step-2__img">
+              <div class="home-screen__step-2__img__overlay"></div>
+            </div>
+
+            <div class="home-screen__step-2__bg">
+              <div class="service-page-footer-content">
+                <div class="sp-wrapper">
+                  <div class="sp-items">
+                    <div class="title"> Design Services </div>
+                    <div class="para"> Graphics art, and Auto CAD Services </div>
+                  </div>
+                  <div class="sp-items">
+                    <div class="title"> Printing </div>
+                    <div class="para"> Conventional Printing and UV printing </div>
+                  </div>
+                  <div class="sp-items">
+                    <div class="title"> Die Cutting and Gluing </div>
+                    <div class="para"> Conventional Printing and UV printing </div>
+                  </div>
+                  <div class="sp-items">
+                    <div class="title"> Color Management </div>
+                    <div class="para"> State of the art, color management technology in-house to continously monitor and
+                      ensure quality control. </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="home-screen__step-2__lines">
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+            </div>
+
+            <div class="home-screen__step-2__corner"></div>
+
+            <div class="home-screen__step__content home-screen__step-2__content">
+              <div class="home-screen__step-2__content__inner">
+                <h1 class="home-screen__step__content__title home-screen__step-2__content__inner__title"> Our Services
+                </h1>
+                <h2 class="home-screen__step__content__subtitle home-screen__step-2__content__inner__subtitle">Quality
+                  is
+                  not only our standard. it's also an attitude instilled in our products and services </h2>
+                <div class="home-screen__step-2__content__inner__body">We offer complete packaging services from design
+                  in
+                  our
+                  fully equipt design studio with in-house designers, Printing with both conventional and UV Technology
+                  to
+                  die cutting and
+                  gluing to a continous quality control with state of the art color management technology .
+                </div>
+                <a class="home-screen__step-2__content__inner__link" href="/" data-ajax="false">
+                  <span class="home-screen__step-2__content__inner__link__label">Discover more about our services
+                  </span>
+                </a>
+              </div>
+            </div>
+
+          </section>
+        </section>
+        <section class="home-screen" id="home-screen-2" name="client-commitment">
+
+          <section class="home-screen__step home-screen__step-1">
+
+            <div class="home-screen__step-1__bg">
+              <video class="home-screen__step-1__bg__video" preload="auto" loop muted>
+                <source src="videos/Service.mp4" />
+              </video>
+              <canvas class="home-screen__step-1__bg__canvas"></canvas>
+            </div>
+
+            <div class="home-screen__step-1__lines">
+              <div class="home-screen__step-1__lines__line"></div>
+              <div class="home-screen__step-1__lines__line"></div>
+            </div>
+
+            <div class="home-screen__step__content home-screen__step-1__content">
+              <h1 class="home-screen__step__content__title home-screen__step-1__content__title"> Our Services </h1>
+              <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">
+                “Together we reach our goals” <br />
+                Quality Pakaging begins with a quality relationship.
+              </h2>
+            </div>
+
+          </section>
+          <section class="home-screen__step home-screen__step-2"
+            data-ui="{&quot;nav-toggle&quot;:{&quot;color&quot;:&quot;light&quot;},&quot;scroll-cta&quot;:{&quot;color&quot;:&quot;light&quot;}}">
+
+            <div class="home-screen__step-2__img">
+              <div class="home-screen__step-2__img__overlay"></div>
+            </div>
+
+            <div class="home-screen__step-2__bg"></div>
+
+            <div class="home-screen__step-2__lines">
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+            </div>
+
+            <div class="home-screen__step-2__corner"></div>
+
+            <div class="home-screen__step__content home-screen__step-2__content">
+              <div class="home-screen__step-2__content__inner">
+                <h1 class="home-screen__step__content__title home-screen__step-2__content__inner__title">Our Services
+                </h1>
+                <h2 class="home-screen__step__content__subtitle home-screen__step-2__content__inner__subtitle">
+                  Quality is not only our standard. it's also an attitude instilled in our products and services
+                  <!-- <span>
+                  Together We Reach Our Goals </span> <br />
+                Quality Pakaging begins with a quality relationship. -->
+                  <div class="home-screen__step-2__content__inner__body">
+                    We offer complete packaging services from design in our
+                    fully equipt design studio with in-house designers, Printing with both conventional and UV
+                    Technology
+                    to die cutting and gluing to a continous quality control with state of the art color management
+                    technology .
+                  </div>
+                  <a class="home-screen__step-2__content__inner__link" href="/about.html" data-ajax="false">
+                    <span class="home-screen__step-2__content__inner__link__label">
+                      Discover more about our services
+                    </span>
+                  </a>
+              </div>
+            </div>
+
+          </section>
+        </section>
+        <section class="home-screen" id="home-screen-3" name="vision">
+
+          <section class="home-screen__step home-screen__step-1">
+
+            <div class="home-screen__step-1__bg">
+              <video class="home-screen__step-1__bg__video" preload="auto" loop muted>
+                <!-- <source src="videos/JPP3.mp4"> -->
+                <source src="videos/OurVision.mp4">
+              </video>
+              <canvas class="home-screen__step-1__bg__canvas"></canvas>
+            </div>
+
+            <div class="home-screen__step-1__lines">
+              <div class="home-screen__step-1__lines__line"></div>
+              <div class="home-screen__step-1__lines__line"></div>
+            </div>
+
+            <div class="home-screen__step__content home-screen__step-1__content">
+              <h1 class="home-screen__step__content__title home-screen__step-1__content__title">Our vision</h1>
+              <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">
+                “Together we reach our goals” <br />
+                Quality Pakaging begins with a quality relationship.
+              </h2>
+            </div>
+
+          </section>
+          <section class="home-screen__step home-screen__step-2"
+            data-ui="{&quot;logo&quot;:{&quot;color&quot;:&quot;light&quot;},&quot;pagination&quot;:{&quot;color&quot;:&quot;light&quot;}}">
+
+            <div class="home-screen__step-2__img">
+              <div class="home-screen__step-2__img__overlay"></div>
+            </div>
+
+            <div class="home-screen__step-2__bg"></div>
+
+            <div class="home-screen__step-2__lines">
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+            </div>
+
+            <div class="home-screen__step-2__corner"></div>
+
+            <div class="home-screen__step__content home-screen__step-2__content">
+              <div class="home-screen__step-2__content__inner">
+                <h1 class="home-screen__step__content__title home-screen__step-2__content__inner__title">Our vision</h1>
+                <h2 class="home-screen__step__content__subtitle home-screen__step-2__content__inner__subtitle">
+                  <!-- <span> -->
+                  Together We Reach Our Goals
+                  <!-- </span> -->
+                  <br />
+                  Quality Pakaging begins with a quality relationship.
+                </h2>
+                <div class="home-screen__step-2__content__inner__body">
+                  Our Vision is to be among the Top-Quality Oriented Companies in the Printing and Packaging solution
+                  market. Our product will be on the top-quality of each class in all segments which we operate. We will
+                  encourage fair, motivational, safe workplace and teamwork culture for all our employees.
+                </div>
+                <a class="home-screen__step-2__content__inner__link" href="/about.html" data-ajax="false">
+                  <span class="home-screen__step-2__content__inner__link__label"> Discover more about us </span>
+                </a>
+              </div>
+            </div>
+
+          </section>
+        </section>
+        <section class="home-screen" id="home-screen-4" name="expertise">
+
+          <section class="home-screen__step home-screen__step-1">
+
+            <div class="home-screen__step-1__bg">
+              <video class="home-screen__step-1__bg__video" preload="auto" loop muted>
+                <source src="videos/Facility.mp4">
+              </video>
+              <canvas class="home-screen__step-1__bg__canvas"></canvas>
+            </div>
+
+            <div class="home-screen__step-1__lines">
+              <div class="home-screen__step-1__lines__line"></div>
+              <div class="home-screen__step-1__lines__line"></div>
+            </div>
+
+            <div class="home-screen__step__content home-screen__step-1__content">
+              <h1 class="home-screen__step__content__title home-screen__step-1__content__title">Our Facility</h1>
+              <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">A higher level of
+                satisfaction inside and out possible through our technology
+              </h2>
+            </div>
+
+          </section>
+          <section class="home-screen__step home-screen__step-2"
+            data-ui="{&quot;nav-toggle&quot;:{&quot;color&quot;:&quot;light&quot;}}">
+
+            <div class="home-screen__step-2__img">
+              <div class="home-screen__step-2__img__overlay"></div>
+            </div>
+
+            <div class="home-screen__step-2__bg"></div>
+
+            <div class="home-screen__step-2__lines">
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+            </div>
+
+            <div class="home-screen__step-2__corner"></div>
+
+            <div class="home-screen__step__content home-screen__step-2__content">
+              <div class="home-screen__step-2__content__inner">
+                <h1 class="home-screen__step__content__title home-screen__step-2__content__inner__title">Our Facility
+                </h1>
+                <h2 class="home-screen__step__content__subtitle home-screen__step-2__content__inner__subtitle">A higher
+                  level of satisfaction inside and out possible through our technology
+                </h2>
+                <div class="home-screen__step-2__content__inner__body">
+                  JamJoom printing & Pakaging - JP&P believes in utilizing the latest technology to attain a higher
+                  level of
+                  confidence and satisfaction for our customers we constently strive to bring in the best of human and
+                  technological resources with the best practices to deliver consistant quality to our clients.
+                </div>
+                <a class="home-screen__step-2__content__inner__link" href="/about.html" data-ajax="false">
+                  <span class="home-screen__step-2__content__inner__link__label">Discover our Technology </span>
+                </a>
+              </div>
+            </div>
+
+          </section>
+        </section>
+        <section class="home-screen" id="home-screen-5" name="who-we-are">
+
+          <section class="home-screen__step home-screen__step-1">
+
+            <div class="home-screen__step-1__bg">
+              <video class="home-screen__step-1__bg__video" preload="auto" loop muted>
+                <source src="videos/one.mp4">
+              </video>
+              <canvas class="home-screen__step-1__bg__canvas"></canvas>
+            </div>
+
+            <div class="home-screen__step-1__lines">
+              <div class="home-screen__step-1__lines__line"></div>
+              <div class="home-screen__step-1__lines__line"></div>
+            </div>
+
+            <div class="home-screen__step__content home-screen__step-1__content">
+              <h1 class="home-screen__step__content__title home-screen__step-1__content__title">Seeing is beliving </h1>
+              <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">Explore Jamjoom
+                Printing and Packaging facilty</h2>
+            </div>
+
+          </section>
+          <section class="home-screen__step home-screen__step-2" data-ui="">
+
+            <div class="home-screen__step-2__img">
+              <div class="home-screen__step-2__img__overlay"></div>
+            </div>
+
+            <div class="home-screen__step-2__bg"></div>
+
+            <div class="home-screen__step-2__lines">
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+              <div class="home-screen__step-2__lines__line"></div>
+            </div>
+
+            <div class="home-screen__step-2__corner"></div>
+
+            <div class="home-screen__step__content home-screen__step-2__content">
+              <div class="home-screen__step-2__content__inner">
+                <h1 class="home-screen__step__content__title home-screen__step-2__content__inner__title">Seeing is
+                  beliving</h1>
+                <h2 class="home-screen__step__content__subtitle home-screen__step-2__content__inner__subtitle">Explore
+                  Jamjoom Printing & Packaging - <span class="jpp-blue">JP<span class="jpp-green">&</span>P</span> </h2>
+
+
+                <div class="video-content">
+                  <iframe class="i-frame" width='553' height='380' src='https://my.matterport.com/show/?m=teHcZv89T2H'
+                    frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
+                </div>
+                <a class="home-screen__step-2__content__inner__link" href="/about.html" data-ajax="false">
+                  <span class="home-screen__step-2__content__inner__link__label">
+                    Learn more about color management
+                  </span>
+                </a>
+              </div>
+            </div>
+
+          </section>
+        </section>
+        <div class=" " id="home-pagination">
+          <ul id="home-pagination__nav">
+            <li class="home-pagination__nav__item home-pagination__nav__item--selected">
+              <svg class="home-pagination__nav__item__timer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 20">
+                <circle class="home-pagination__nav__item__timer__circle" cx="13" cy="10" r="6" />
+                <circle class="home-pagination__nav__item__timer__progress" cx="13" cy="10" r="6"
+                  transform="rotate(-90, 13, 10)" />
+              </svg>
+              <button class="home-pagination__nav__item__btn" data-screen="0"></button>
+            </li>
+            <li class="home-pagination__nav__item ">
+              <svg class="home-pagination__nav__item__timer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 20">
+                <circle class="home-pagination__nav__item__timer__circle" cx="13" cy="10" r="6" />
+                <circle class="home-pagination__nav__item__timer__progress" cx="13" cy="10" r="6"
+                  transform="rotate(-90, 13, 10)" />
+              </svg>
+              <button class="home-pagination__nav__item__btn" data-screen="1"></button>
+            </li>
+            <li class="home-pagination__nav__item ">
+              <svg class="home-pagination__nav__item__timer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 20">
+                <circle class="home-pagination__nav__item__timer__circle" cx="13" cy="10" r="6" />
+                <circle class="home-pagination__nav__item__timer__progress" cx="13" cy="10" r="6"
+                  transform="rotate(-90, 13, 10)" />
+              </svg>
+              <button class="home-pagination__nav__item__btn" data-screen="2"></button>
+            </li>
+            <li class="home-pagination__nav__item ">
+              <svg class="home-pagination__nav__item__timer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 20">
+                <circle class="home-pagination__nav__item__timer__circle" cx="13" cy="10" r="6" />
+                <circle class="home-pagination__nav__item__timer__progress" cx="13" cy="10" r="6"
+                  transform="rotate(-90, 13, 10)" />
+              </svg>
+              <button class="home-pagination__nav__item__btn" data-screen="3"></button>
+            </li>
+            <li class="home-pagination__nav__item ">
+              <svg class="home-pagination__nav__item__timer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 20">
+                <circle class="home-pagination__nav__item__timer__circle" cx="13" cy="10" r="6" />
+                <circle class="home-pagination__nav__item__timer__progress" cx="13" cy="10" r="6"
+                  transform="rotate(-90, 13, 10)" />
+              </svg>
+              <button class="home-pagination__nav__item__btn" data-screen="4"></button>
+            </li>
+          </ul>
+          <div id="home-pagination__number">
+            <span id="home-pagination__number__current">1</span><span
+              id="home-pagination__number__separator">/</span><span id="home-pagination__number__total">05</span>
+          </div>
+        </div>
+        <div class="" id="home-scroll-cta">
+          <div id="home-scroll-cta__label" data-reverse="Back to the top">Scroll to explore</div>
+          <button id="home-scroll-cta__btn">
+            <div id="home-scroll-cta__btn__picto">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="34" viewBox="0 0 20 34">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0v26.2l-8-8.1v5.7L10 34l10-10.2v-5.7l-8 8.1V0H8z" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <section class="page" id="main-loading-page">
+        <div id="main-loading__outer">
+          <div id="main-loading__inner">
+            <div id="main-loading__lines">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 40 00">
+                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit="" />
+                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+                  d="M1549.7 745.8l-447.3-447.3" />
+                <path fill="none" stroke="#F9F9F9" stroke-width="50" stroke-miterlimit=""
+                  d="M676.2 261.2l663.5-663.6" />
+                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit="" d="M582.2 167.2l-621-621" />
+                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit="" d="M293.2-136l-924.1 924.2" />
+                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit="" d="M220.6 649.7l-753.4-753.3" />
+                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit="" d="M329.6 424.2L-92 845.8" />
+                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+                  d="M-494.2 1712.7l924.5-924.5" />
+                <path fill="none" stroke="#F9F9F9" stroke-width="" stroke-miterlimit=""
+                  d="M1077.4 1121.7L675.9 720.2" />
+              </svg>
+            </div>
+            <img src="/Images/Logo.png" class="Logo_Loading" />
+            <div class="anim-line line-left"></div>
+            <div class="anim-line line-right"></div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer id="footer" class="reveal">
+      <div id="footer__inner">
+        <div id="footer__logo">
+          <img src="/Images/Logo12.png" alt="" className="footer-logo">
+        </div>
+
+        <ul id="footer__pages">
+          <li class="footer__page" id="footer__page--home">
+            <a class="footer__page__title" href="/" data-ajax="false">Home</a>
+          </li>
+          <li class="footer__page" id="footer__page--process">
+            <a class="footer__page__title" href="/process.html" data-ajax="false">Process</a>
+          </li>
+          <li class="footer__page" id="footer__page--solutions">
+            <a class="footer__page__title" href="/solution.html" data-ajax="false">Solutions</a>
+          </li>
+          <li class="footer__page" id="footer__page--about">
+            <a class="footer__page__title" href="/about.html" data-ajax="false">About us</a>
+          </li>
+          <li class="footer__page" id="footer__page--contact">
+            <a class="footer__page__title" href="/about.html#contact" data-ajax="false">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div data-tf-popover="EvigCCCZ" data-tf-custom- icon="https://images.typeform.com/images/d6qHZSzLZm8S"
+        data-tf-button- color="#F58C4B" data-tf-tooltip="Hi Let&#39;s get in touch&nbsp;&nbsp;" data-tf- open="time"
+        data-tf-open-value="10000" data-tf-chat data-tf-medium="snippet" style="all:unset;"></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/Script-jquery.js"><\/script>')
+
+    </script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="https://embed.typeform.com/next/embed.js"></script>
+    <script>
+      // scripts.js's home-page controller hijacks mouse-wheel/trackpad scroll to
+      // drive a pinned-section carousel animation that never renders in this
+      // static export (see the #home-page / .home-screen rules in style.css,
+      // which turn the sections into a normal scrolling stack instead). That
+      // hijack still calls preventDefault() on wheel events, which otherwise
+      // leaves the homepage unable to scroll at all with a mouse/trackpad.
+      // Stop the event before it reaches that handler so native scrolling works.
+      document.addEventListener('wheel', function (e) { e.stopImmediatePropagation(); }, { capture: true, passive: true });
+    </script>
+
+  </body>
+
+</html>
