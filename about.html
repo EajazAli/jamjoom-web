@@ -18,11 +18,33 @@
 	</head>
 
 	<body class="page-id-about">
+    <!-- Corporate top navigation. The template shipped only a logo and a
+         hamburger, both left permanently invisible by an intro animation
+         that never runs in this static export, so there was no way to
+         navigate from the homepage at all. This is a plain, always-visible
+         bar that needs no JavaScript to work. -->
+    <header class="site-nav" id="site-nav">
+      <a class="site-nav__brand" href="index.html" data-ajax="false">
+        <img src="Images/Logo12.png" alt="Jamjoom Printing and Packaging">
+      </a>
+      <input class="site-nav__switch" id="site-nav-switch" type="checkbox" aria-hidden="true">
+      <label class="site-nav__burger" for="site-nav-switch" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="site-nav__links" aria-label="Main">
+        <a href="index.html" data-ajax="false">Home</a>
+        <a href="process.html" data-ajax="false">Process</a>
+        <a href="solution.html" data-ajax="false">Solutions</a>
+        <a href="color.html" data-ajax="false">Colours</a>
+        <a href="about.html" aria-current="page" data-ajax="false">About</a>
+        <a class="site-nav__cta" href="about.html#contact" data-ajax="false">Contact</a>
+      </nav>
+    </header>
 
 		<div id="top-bar">
 		</div>
 		<a class="" href="index.html" id="logo" data-ajax="false">
-			<img src="Images/Logo12.png" class="Logo" id="Logo">
+			<img loading="lazy" decoding="async" src="Images/Logo12.png" class="Logo" id="Logo">
 		</a>
 		<nav class="" id="nav">
 
@@ -117,19 +139,19 @@
 
 									<div class="mySlides fade">
 										<figure>
-											<img src="./Images/About/1.png" alt="">
+											<img loading="lazy" decoding="async" src="./Images/About/1.jpg" alt="Inside the JP&amp;P production hall">
 										</figure>
 									</div>
 
 									<div class="mySlides fade">
 										<figure>
-											<img src="./Images/About/1.png" alt="">
+											<img loading="lazy" decoding="async" src="./Images/Jamjoom-Printing-Press-03112021_170902.jpg" alt="Printing line at the JP&amp;P plant">
 										</figure>
 									</div>
 
 									<div class="mySlides fade">
 										<figure>
-											<img src="./Images/About/1.png" alt="">
+											<img loading="lazy" decoding="async" src="./Images/Jamjoom-Printing-Press-03112021_171518.jpg" alt="Finished folding cartons ready for despatch">
 										</figure>
 									</div>
 								</div>
@@ -176,7 +198,7 @@
 										<div class="myCertSlides fade">
 											<div class="full-slider">
 												<figure>
-													<img src="./Images/Certificate/ISO_9001_2015.jpg" alt="">
+													<img loading="lazy" decoding="async" src="./Images/Certificate/ISO_9001_2015.jpg" alt="">
 												</figure>
 												<div class="details">
 													<div class="title"> Certified </div>
@@ -190,7 +212,7 @@
 										<div class="myCertSlides fade">
 											<div class="full-slider">
 												<figure>
-													<img src="./Images/Certificate/ISO_22000_2018.jpg" alt="">
+													<img loading="lazy" decoding="async" src="./Images/Certificate/ISO_22000_2018.jpg" alt="">
 												</figure>
 												<div class="details">
 													<div class="title"> Certified </div>
@@ -204,7 +226,7 @@
 										<div class="myCertSlides fade">
 											<div class="full-slider">
 												<figure>
-													<img src="./Images/Certificate/Environmental_Certificate_1.jpg" alt="">
+													<img loading="lazy" decoding="async" src="./Images/Certificate/Environmental_Certificate_1.jpg" alt="">
 												</figure>
 												<div class="details">
 													<div class="title"> Certified </div>
@@ -216,7 +238,7 @@
 										<div class="myCertSlides fade">
 											<div class="full-slider">
 												<figure>
-													<img src="./Images/Certificate/ECA_LICENSE_1.jpg" alt="">
+													<img loading="lazy" decoding="async" src="./Images/Certificate/ECA_LICENSE_1.jpg" alt="">
 												</figure>
 												<div class="details">
 													<div class="title"> Certified </div>
@@ -230,7 +252,7 @@
 										<div class="myCertSlides fade">
 											<div class="full-slider">
 												<figure>
-													<img src="./Images/Certificate/ECA_LICENSE_2.jpg" alt="">
+													<img loading="lazy" decoding="async" src="./Images/Certificate/ECA_LICENSE_2.jpg" alt="">
 												</figure>
 												<div class="details">
 													<div class="title"> Certified </div>
@@ -244,7 +266,7 @@
 										<div class="myCertSlides fade">
 											<div class="full-slider">
 												<figure>
-													<img src="./Images/Certificate/Factory_Operation_License.jpg" alt="">
+													<img loading="lazy" decoding="async" src="./Images/Certificate/Factory_Operation_License.jpg" alt="">
 												</figure>
 												<div class="details">
 													<div class="title"> Certified </div>
@@ -258,7 +280,7 @@
 										<div class="myCertSlides fade">
 											<div class="full-slider">
 												<figure>
-													<img src="./Images/Certificate/Warehouse_Operation_Permit.jpg" alt="">
+													<img loading="lazy" decoding="async" src="./Images/Certificate/Warehouse_Operation_Permit.jpg" alt="">
 												</figure>
 												<div class="details">
 													<div class="title"> Certified </div>
@@ -272,7 +294,7 @@
 										<div class="myCertSlides fade">
 											<div class="full-slider">
 												<figure>
-													<img src="./Images/Certificate/JP&P_CR_01.jpg" alt="">
+													<img loading="lazy" decoding="async" src="./Images/Certificate/JP&P_CR_01.jpg" alt="">
 												</figure>
 												<div class="details">
 													<div class="title"> Certified </div>
@@ -298,7 +320,7 @@
 							<!-- <div class="certificate__container reveal">
 								<div class="certi__content">
 									<figure>
-										<img src="./Images/About/certificate.png" alt="" />
+										<img loading="lazy" decoding="async" src="./Images/About/certificate.jpg" alt="" />
 									</figure>
 									<div class="details">
 										<div class="title"> Certified </div>
@@ -354,7 +376,7 @@
 						<footer id="footer" class="reveal">
 							<div id="footer__inner">
 								<div id="footer__logo">
-									<img src="Images/Logo12.png" alt="" className="footer-logo">
+									<img loading="lazy" decoding="async" src="Images/Logo12.png" alt="" className="footer-logo">
 								</div>
 
 								<ul id="footer__pages">
@@ -388,7 +410,7 @@
 
 			<section class="page" id="about-page" data-title="About us - Jamjoom Printing & Packaging">
 				<header id="about__header">
-					<img id="about__header__img" src="" alt="" />
+					<img id="about__header__img" src="Images/Jamjoom-Printing-Press-Office.jpg" alt="The Jamjoom Printing &amp; Packaging plant at King Abdullah Economic City" />
 				</header>
 
 
@@ -424,7 +446,7 @@
 							</svg>
 						</div>
 						<!-- ProLoading Content Start -->
-						<img src="Images/Logo.png" class="Logo_Loading" />
+						<img loading="lazy" decoding="async" src="Images/Logo.png" class="Logo_Loading" />
 						<div class="anim-line line-left"></div>
 						<div class="anim-line line-right"></div>
 					</div>
@@ -523,7 +545,6 @@
 			window.jQuery || document.write('<script src="js/Script-jquery.js"><\/script>')
 
 		</script>
-		<script type="text/javascript" src="js/scripts.js"></script>
 		<script type="text/javascript" src="js/reveal.js"></script>
 		<script src="https://embed.typeform.com/next/embed.js"></script>
 

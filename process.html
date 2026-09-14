@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js desktop ">
 
 	<head>
@@ -138,11 +138,33 @@
 	</head>
 
 	<body class="page-id-process">
+    <!-- Corporate top navigation. The template shipped only a logo and a
+         hamburger, both left permanently invisible by an intro animation
+         that never runs in this static export, so there was no way to
+         navigate from the homepage at all. This is a plain, always-visible
+         bar that needs no JavaScript to work. -->
+    <header class="site-nav" id="site-nav">
+      <a class="site-nav__brand" href="index.html" data-ajax="false">
+        <img src="Images/Logo12.png" alt="Jamjoom Printing and Packaging">
+      </a>
+      <input class="site-nav__switch" id="site-nav-switch" type="checkbox" aria-hidden="true">
+      <label class="site-nav__burger" for="site-nav-switch" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="site-nav__links" aria-label="Main">
+        <a href="index.html" data-ajax="false">Home</a>
+        <a href="process.html" aria-current="page" data-ajax="false">Process</a>
+        <a href="solution.html" data-ajax="false">Solutions</a>
+        <a href="color.html" data-ajax="false">Colours</a>
+        <a href="about.html" data-ajax="false">About</a>
+        <a class="site-nav__cta" href="about.html#contact" data-ajax="false">Contact</a>
+      </nav>
+    </header>
 
 		<div id="top-bar">
 		</div>
 		<a class="" href="index.html" id="logo" data-ajax="false">
-			<img src="Images/Logo12.png" class="Logo" id="Logo">
+			<img loading="lazy" decoding="async" src="Images/Logo12.png" class="Logo" id="Logo">
 		</a>
 		<nav class="" id="nav">
 
@@ -254,7 +276,7 @@
 									understanding your requirements analyzing the products, compliance, and the end
 									customer's need to define the success of the project.</div>
 							</div>
-							<img class="process__step__img" id="process__step__img--1" src="Images/Process/Goals.jpg"
+							<img loading="lazy" decoding="async" class="process__step__img" id="process__step__img--1" src="Images/Process/Goals.jpg"
 								alt="">
 						</div>
 					</li>
@@ -270,7 +292,7 @@
 									time
 									of delivery.</div>
 							</div>
-							<img class="process__step__img" id="process__step__img--2" src="Images/Process/proposal.jpg"
+							<img loading="lazy" decoding="async" class="process__step__img" id="process__step__img--2" src="Images/Process/proposal.jpg"
 								alt="">
 						</div>
 					</li>
@@ -283,7 +305,7 @@
 								<div class="process__step__body">We support the community and environment in the markets
 									where we operate.</div>
 							</div>
-							<img class="process__step__img" id="process__step__img--3" src="Images/Process/social_responsibility.png"
+							<img loading="lazy" decoding="async" class="process__step__img" id="process__step__img--3" src="Images/Process/social_responsibility.jpg"
 								alt="">
 						</div>
 					</li>
@@ -302,7 +324,7 @@
 									Practice (GMP).
 								</div>
 							</div>
-							<img class="process__step__img" id="process__step__img--4" src="Images/Process/Stregth.jpg"
+							<img loading="lazy" decoding="async" class="process__step__img" id="process__step__img--4" src="Images/Process/Stregth.jpg"
 								alt="">
 						</div>
 					</li>
@@ -319,7 +341,7 @@
 									High-Quality Standards of our products. Established best Quality Management
 									System (QMS) to meet our Customer Quality Standards.</div>
 							</div>
-							<img class="process__step__img" id="process__step__img--5" src="Images/Process/quality_inspection.jpg"
+							<img loading="lazy" decoding="async" class="process__step__img" id="process__step__img--5" src="Images/Process/quality_inspection.jpg"
 								alt="">
 						</div>
 					</li>
@@ -334,7 +356,7 @@
 									On-Time
 									In-Full (OTIF) Process to meet delivery dates with Customers.</div>
 							</div>
-							<img class="process__step__img" id="process__step__img--6"
+							<img loading="lazy" decoding="async" class="process__step__img" id="process__step__img--6"
 								src="Images/Process/customer_service.jpg" alt="">
 						</div>
 					</li>
@@ -423,7 +445,7 @@
 							</svg>
 						</div>
 						<!-- ProLoading Content Start -->
-						<img src="Images/Logo.png" class="Logo_Loading" />
+						<img loading="lazy" decoding="async" src="Images/Logo.png" class="Logo_Loading" />
 						<div class="anim-line line-left"></div>
 						<div class="anim-line line-right"></div>
 						<!-- ProLoading Content End -->
@@ -438,7 +460,7 @@
 		<footer id="footer">
 			<div id="footer__inner">
 				<div id="footer__logo">
-					<img src="Images/Logo12.png" alt="" className="footer-logo">
+					<img loading="lazy" decoding="async" src="Images/Logo12.png" alt="" className="footer-logo">
 				</div>
 				<span class="material-icons-outlined">
 				</span>
@@ -469,7 +491,6 @@
 			window.jQuery || document.write('<script src="js/Script-jquery.js"><\/script>')
 
 		</script>
-		<script type="text/javascript" src="js/scripts.js"></script>
 		<script type="text/javascript" src="js/reveal.js"></script>
 		<script src="https://embed.typeform.com/next/embed.js"></script>
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js desktop ">
 
 	<head>
@@ -9,6 +9,11 @@
 		<link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
 
 		<meta name="theme-color" content="#ffffff">
+		<!-- Left over from the purchased template: this page is the theme
+		     author's own portfolio, and every photograph on it is still hot-linked
+		     from their server. Nothing links to it any more; keep it out of search
+		     results until it is either rebuilt with JP&amp;P's own projects or deleted. -->
+		<meta name="robots" content="noindex, nofollow">
 		<title> Jamjoom Printing and Packaging - JP&P </title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script>
@@ -138,11 +143,33 @@
 	</head>
 
 	<body class="page-id-projects">
+    <!-- Corporate top navigation. The template shipped only a logo and a
+         hamburger, both left permanently invisible by an intro animation
+         that never runs in this static export, so there was no way to
+         navigate from the homepage at all. This is a plain, always-visible
+         bar that needs no JavaScript to work. -->
+    <header class="site-nav" id="site-nav">
+      <a class="site-nav__brand" href="index.html" data-ajax="false">
+        <img src="Images/Logo12.png" alt="Jamjoom Printing and Packaging">
+      </a>
+      <input class="site-nav__switch" id="site-nav-switch" type="checkbox" aria-hidden="true">
+      <label class="site-nav__burger" for="site-nav-switch" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="site-nav__links" aria-label="Main">
+        <a href="index.html" data-ajax="false">Home</a>
+        <a href="process.html" data-ajax="false">Process</a>
+        <a href="solution.html" data-ajax="false">Solutions</a>
+        <a href="color.html" data-ajax="false">Colours</a>
+        <a href="about.html" data-ajax="false">About</a>
+        <a class="site-nav__cta" href="about.html#contact" data-ajax="false">Contact</a>
+      </nav>
+    </header>
 
 		<div id="top-bar">
 		</div>
 		<a class="" href="index.html" id="logo" data-ajax="false">
-			<img src="Images/Logo12.png" class="Logo" id="Logo">
+			<img loading="lazy" decoding="async" src="Images/Logo12.png" class="Logo" id="Logo">
 		</a>
 
 		<nav class="" id="nav">
@@ -441,12 +468,12 @@
 						<ul class="project__media__list">
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1778" height="1000" data-srcset="" data-sizes="auto" alt=""
-									data-src="Images/Project/First.png">
+									src="Images/Project/First.png">
 								<noscript>
-									<img class="project__media__img" src="Images/Project/First.png" alt="" width="1778"
+									<img loading="lazy" decoding="async" class="project__media__img" src="Images/Project/First.png" alt="" width="1778"
 										height="1000">
 								</noscript>
 								<div class="project__media__more project__media__more--img">
@@ -457,12 +484,12 @@
 							<li class="project__media__item project__media__item--video" style="">
 								<div class="project__media__player" data-id="242582727"></div>
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="3840" height="2160" data-srcset="" data-sizes="auto" alt=""
-									data-src="https://i.vimeocdn.com/video/666481286_3840x2160?r=pad">
+									src="https://i.vimeocdn.com/video/666481286_3840x2160?r=pad">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://i.vimeocdn.com/video/666481286_3840x2160?r=pad" alt="" width="3840"
 										height="2160">
 								</noscript>
@@ -474,12 +501,12 @@
 							<li class="project__media__item project__media__item--video" style="">
 								<div class="project__media__player" data-id="271339571"></div>
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="3840" height="2160" data-srcset="" data-sizes="auto" alt=""
-									data-src="https://i.vimeocdn.com/video/702614340_3840x2160?r=pad">
+									src="https://i.vimeocdn.com/video/702614340_3840x2160?r=pad">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://i.vimeocdn.com/video/702614340_3840x2160?r=pad" alt="" width="3840"
 										height="2160">
 								</noscript>
@@ -490,14 +517,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1778" height="1000"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2680-480x270.jpg 480w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2680-150x84.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2680-1280x720.jpg 1280w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2680-1600x900.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2680.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2680.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2680.jpg"
 										alt="" width="1778" height="1000">
 								</noscript>
@@ -508,14 +535,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1778" height="1000"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2684-480x270.jpg 480w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2684-150x84.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2684-1280x720.jpg 1280w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2684-1600x900.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2684.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2684.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_2684.jpg"
 										alt="" width="1778" height="1000">
 								</noscript>
@@ -652,12 +679,12 @@
 						<ul class="project__media__list">
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1077" data-srcset="Images/Project/Second.png" data-sizes="auto"
-									alt="" data-src="Images/Project/Second.png">
+									alt="" src="Images/Project/Second.png">
 								<noscript>
-									<img class="project__media__img" src="Images/Project/Second.png" alt="" width="1600"
+									<img loading="lazy" decoding="async" class="project__media__img" src="Images/Project/Second.png" alt="" width="1600"
 										height="1077">
 								</noscript>
 								<div class="project__media__more project__media__more--img">
@@ -667,14 +694,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1060"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3-453x300.jpg 453w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3-150x99.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3-1208x800.jpg 1208w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3-1509x1000.jpg 1509w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_3.jpg" alt=""
 										width="1600" height="1060">
 								</noscript>
@@ -685,14 +712,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1112"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5-432x300.jpg 432w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5-150x104.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5-1151x800.jpg 1151w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5-1439x1000.jpg 1439w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_5.jpg" alt=""
 										width="1600" height="1112">
 								</noscript>
@@ -703,14 +730,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1067"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7-450x300.jpg 450w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7-1200x800.jpg 1200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7-1500x1000.jpg 1500w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_7.jpg" alt=""
 										width="1600" height="1067">
 								</noscript>
@@ -721,14 +748,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="800" height="1133"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9-212x300.jpg 212w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9-106x150.jpg 106w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9-565x800.jpg 565w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9-706x1000.jpg 706w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9.jpg 800w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_9.jpg" alt=""
 										width="800" height="1133">
 								</noscript>
@@ -739,14 +766,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1115"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11-430x300.jpg 430w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11-150x105.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11-1148x800.jpg 1148w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11-1435x1000.jpg 1435w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_11.jpg"
 										alt="" width="1600" height="1115">
 								</noscript>
@@ -757,14 +784,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1060"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13-453x300.jpg 453w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13-150x99.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13-1208x800.jpg 1208w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13-1509x1000.jpg 1509w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_13.jpg"
 										alt="" width="1600" height="1060">
 								</noscript>
@@ -775,14 +802,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1067"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15-450x300.jpg 450w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15-1200x800.jpg 1200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15-1500x1000.jpg 1500w, https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/35116_15.jpg"
 										alt="" width="1600" height="1067">
 								</noscript>
@@ -794,12 +821,12 @@
 							<li class="project__media__item project__media__item--video" style="">
 								<div class="project__media__player" data-id="242582618"></div>
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1920" height="1080" data-srcset="" data-sizes="auto" alt=""
-									data-src="https://i.vimeocdn.com/video/666481065_1920x1080?r=pad">
+									src="https://i.vimeocdn.com/video/666481065_1920x1080?r=pad">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://i.vimeocdn.com/video/666481065_1920x1080?r=pad" alt="" width="1920"
 										height="1080">
 								</noscript>
@@ -929,14 +956,14 @@
 						<ul class="project__media__list">
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1133"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-4-done-424x300.jpg 424w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-4-done-150x106.jpg 150w, Images/Jamjoom-Printing-Press-03112021_170902.jpg 1130w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-4-done-1412x1000.jpg 1412w, Images/Jamjoom-Printing-Press-03112021_170902.jpg  1600w"
 									data-sizes="auto" alt=""
-									data-src="Images/Jamjoom-Printing-Press-03112021_170902.jpg">
+									src="Images/Jamjoom-Printing-Press-03112021_170902.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="Images/Jamjoom-Printing-Press-03112021_170902.jpg" alt="" width="1600"
 										height="1133">
 								</noscript>
@@ -948,12 +975,12 @@
 							<li class="project__media__item project__media__item--video" style="">
 								<div class="project__media__player" data-id="242589836"></div>
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1920" height="1080" data-srcset="" data-sizes="auto" alt=""
-									data-src="https://i.vimeocdn.com/video/666489919_1920x1080?r=pad">
+									src="https://i.vimeocdn.com/video/666489919_1920x1080?r=pad">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://i.vimeocdn.com/video/666489919_1920x1080?r=pad" alt="" width="1920"
 										height="1080">
 								</noscript>
@@ -964,14 +991,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1083"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done-443x300.jpg 443w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done-150x102.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done-1182x800.jpg 1182w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done-1477x1000.jpg 1477w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-6-done.jpg"
 										alt="" width="1600" height="1083">
 								</noscript>
@@ -982,14 +1009,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1241"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done-387x300.jpg 387w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done-150x116.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done-1031x800.jpg 1031w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done-1289x1000.jpg 1289w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-7-done.jpg"
 										alt="" width="1600" height="1241">
 								</noscript>
@@ -1000,14 +1027,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="800" height="1200"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13-533x800.jpg 533w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13.jpg 800w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-13.jpg"
 										alt="" width="800" height="1200">
 								</noscript>
@@ -1018,14 +1045,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="800" height="1202"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done-532x800.jpg 532w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done-666x1000.jpg 666w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done.jpg 800w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-23-done.jpg"
 										alt="" width="800" height="1202">
 								</noscript>
@@ -1036,14 +1063,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1505"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done-319x300.jpg 319w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done-150x141.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done-850x800.jpg 850w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done-1063x1000.jpg 1063w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-26-done.jpg"
 										alt="" width="1600" height="1505">
 								</noscript>
@@ -1054,14 +1081,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="800" height="1039"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done-231x300.jpg 231w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done-115x150.jpg 115w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done-616x800.jpg 616w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done-770x1000.jpg 770w, https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done.jpg 800w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/image-27-done.jpg"
 										alt="" width="800" height="1039">
 								</noscript>
@@ -1417,14 +1444,14 @@
 						<ul class="project__media__list">
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8569-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8569-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8569-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8569-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, Images/Jamjoom-Printing-Press-03112021_171518.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="Images/Jamjoom-Printing-Press-03112021_171518.jpg">
+									src="Images/Jamjoom-Printing-Press-03112021_171518.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="Images/Jamjoom-Printing-Press-03112021_171518.jpg" alt="" width="1600"
 										height="1068">
 								</noscript>
@@ -1435,14 +1462,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8591-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1453,14 +1480,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8595-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1471,14 +1498,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8602-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1489,14 +1516,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8606-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1507,14 +1534,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="800" height="1199"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916.jpg 800w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8611-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="800" height="1199">
 								</noscript>
@@ -1525,14 +1552,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8655-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1543,14 +1570,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8661-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1561,14 +1588,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="800" height="1199"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916.jpg 800w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8683-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="800" height="1199">
 								</noscript>
@@ -1579,14 +1606,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8688-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1597,14 +1624,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8703-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1615,14 +1642,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8707-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1633,14 +1660,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="800" height="1199"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916.jpg 800w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8718-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="800" height="1199">
 								</noscript>
@@ -1651,14 +1678,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8721-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1669,14 +1696,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="800" height="1199"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916.jpg 800w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8799-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="800" height="1199">
 								</noscript>
@@ -1687,14 +1714,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8873-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1705,14 +1732,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8899-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1723,14 +1750,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8937-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1741,14 +1768,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_8987-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1759,14 +1786,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9011-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1777,14 +1804,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9021-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1795,14 +1822,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9031-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1813,14 +1840,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="800" height="1199"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916.jpg 800w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9033-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="800" height="1199">
 								</noscript>
@@ -1831,14 +1858,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9052-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1849,14 +1876,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9063-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1867,14 +1894,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="800" height="1199"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916.jpg 800w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9065-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="800" height="1199">
 								</noscript>
@@ -1885,14 +1912,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="800" height="1199"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916.jpg 800w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9071-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="800" height="1199">
 								</noscript>
@@ -1903,14 +1930,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="800" height="1199"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916.jpg 800w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9079-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="800" height="1199">
 								</noscript>
@@ -1921,14 +1948,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9087-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1939,14 +1966,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9093-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1957,14 +1984,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9095-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1975,14 +2002,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9104-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -1993,14 +2020,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9107-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -2011,14 +2038,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9115-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -2029,14 +2056,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9126-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -2047,14 +2074,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9131-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -2065,14 +2092,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="800" height="1199"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916-200x300.jpg 200w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916-100x150.jpg 100w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916-534x800.jpg 534w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916-667x1000.jpg 667w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916.jpg 800w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9137-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="800" height="1199">
 								</noscript>
@@ -2083,14 +2110,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9148-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -2101,14 +2128,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="1600" height="1068"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916-449x300.jpg 449w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916-150x100.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916-1199x800.jpg 1199w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916-1498x1000.jpg 1498w, https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916.jpg 1600w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/millermiller-MM1_9166-nalco-ecolab-naperville-050916.jpg"
 										alt="" width="1600" height="1068">
 								</noscript>
@@ -2120,12 +2147,12 @@
 							<li class="project__media__item project__media__item--video" style="">
 								<div class="project__media__player" data-id="242589156"></div>
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="3840" height="2160" data-srcset="" data-sizes="auto" alt=""
-									data-src="https://i.vimeocdn.com/video/666489112_3840x2160?r=pad">
+									src="https://i.vimeocdn.com/video/666489112_3840x2160?r=pad">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://i.vimeocdn.com/video/666489112_3840x2160?r=pad" alt="" width="3840"
 										height="2160">
 								</noscript>
@@ -2264,14 +2291,14 @@
 						<ul class="project__media__list">
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="4032" height="3024"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0144-400x300.jpg 400w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0144-150x113.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0144-1067x800.jpg 1067w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0144-1333x1000.jpg 1333w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0144.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0144.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0144.jpg"
 										alt="" width="4032" height="3024">
 								</noscript>
@@ -2283,12 +2310,12 @@
 							<li class="project__media__item project__media__item--video" style="">
 								<div class="project__media__player" data-id="247515086"></div>
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="3840" height="2160" data-srcset="" data-sizes="auto" alt=""
-									data-src="https://i.vimeocdn.com/video/672788834_3840x2160?r=pad">
+									src="https://i.vimeocdn.com/video/672788834_3840x2160?r=pad">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://i.vimeocdn.com/video/672788834_3840x2160?r=pad" alt="" width="3840"
 										height="2160">
 								</noscript>
@@ -2299,14 +2326,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="3024" height="4032"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0165-225x300.jpg 225w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0165-113x150.jpg 113w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0165-600x800.jpg 600w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0165-750x1000.jpg 750w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0165.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0165.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0165.jpg"
 										alt="" width="3024" height="4032">
 								</noscript>
@@ -2317,14 +2344,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="4032" height="3024"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0180-400x300.jpg 400w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0180-150x113.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0180-1067x800.jpg 1067w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0180-1333x1000.jpg 1333w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0180.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0180.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0180.jpg"
 										alt="" width="4032" height="3024">
 								</noscript>
@@ -2335,14 +2362,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="3024" height="4032"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0195-225x300.jpg 225w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0195-113x150.jpg 113w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0195-600x800.jpg 600w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0195-750x1000.jpg 750w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0195.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0195.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0195.jpg"
 										alt="" width="3024" height="4032">
 								</noscript>
@@ -2353,14 +2380,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="4032" height="3024"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0214-400x300.jpg 400w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0214-150x113.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0214-1067x800.jpg 1067w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0214-1333x1000.jpg 1333w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0214.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0214.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0214.jpg"
 										alt="" width="4032" height="3024">
 								</noscript>
@@ -2371,14 +2398,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="3024" height="4032"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0215-225x300.jpg 225w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0215-113x150.jpg 113w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0215-600x800.jpg 600w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0215-750x1000.jpg 750w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0215.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0215.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0215.jpg"
 										alt="" width="3024" height="4032">
 								</noscript>
@@ -2389,14 +2416,14 @@
 							</li>
 							<li class="project__media__item project__media__item--image" style="">
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="4032" height="3024"
 									data-srcset="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0229-400x300.jpg 400w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0229-150x113.jpg 150w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0229-1067x800.jpg 1067w, https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0229-1333x1000.jpg 1333w"
 									data-sizes="auto" alt=""
-									data-src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0229.jpg">
+									src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0229.jpg">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://maman-corp.com/admin/wp-content/uploads/2018/05/IMG_0229.jpg"
 										alt="" width="4032" height="3024">
 								</noscript>
@@ -2408,12 +2435,12 @@
 							<li class="project__media__item project__media__item--video" style="">
 								<div class="project__media__player" data-id="242589156"></div>
 
-								<img class=" project__media__img"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								<img loading="lazy" decoding="async" class=" project__media__img"
+									
 									width="3840" height="2160" data-srcset="" data-sizes="auto" alt=""
-									data-src="https://i.vimeocdn.com/video/666489112_3840x2160?r=pad">
+									src="https://i.vimeocdn.com/video/666489112_3840x2160?r=pad">
 								<noscript>
-									<img class="project__media__img"
+									<img loading="lazy" decoding="async" class="project__media__img"
 										src="https://i.vimeocdn.com/video/666489112_3840x2160?r=pad" alt="" width="3840"
 										height="2160">
 								</noscript>
@@ -2490,7 +2517,7 @@
 						</div>
 
 						<!-- ProLoading Content Start -->
-						<img src="Images/Logo.png" class="Logo_Loading" />
+						<img loading="lazy" decoding="async" src="Images/Logo.png" class="Logo_Loading" />
 						<div class="anim-line line-left"></div>
 						<div class="anim-line line-right"></div>
 
@@ -2504,7 +2531,7 @@
 		<footer id="footer">
 			<div id="footer__inner">
 				<div id="footer__logo">
-					<img src="Images/Logo12.png" alt="" className="footer-logo">
+					<img loading="lazy" decoding="async" src="Images/Logo12.png" alt="" className="footer-logo">
 				</div>
 
 				<ul id="footer__pages">
@@ -2535,7 +2562,6 @@
 			window.jQuery || document.write('<script src="js/Script-jquery.js"><\/script>')
 
 		</script>
-		<script type="text/javascript" src="js/scripts.js"></script>
 		<script type="text/javascript" src="js/reveal.js"></script>
 		<script src="https://embed.typeform.com/next/embed.js"></script>
 

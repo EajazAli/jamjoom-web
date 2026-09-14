@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js desktop">
 
 	<head>
@@ -139,11 +139,33 @@
 	</head>
 
 	<body class="page-id-solutions">
+    <!-- Corporate top navigation. The template shipped only a logo and a
+         hamburger, both left permanently invisible by an intro animation
+         that never runs in this static export, so there was no way to
+         navigate from the homepage at all. This is a plain, always-visible
+         bar that needs no JavaScript to work. -->
+    <header class="site-nav" id="site-nav">
+      <a class="site-nav__brand" href="index.html" data-ajax="false">
+        <img src="Images/Logo12.png" alt="Jamjoom Printing and Packaging">
+      </a>
+      <input class="site-nav__switch" id="site-nav-switch" type="checkbox" aria-hidden="true">
+      <label class="site-nav__burger" for="site-nav-switch" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="site-nav__links" aria-label="Main">
+        <a href="index.html" data-ajax="false">Home</a>
+        <a href="process.html" data-ajax="false">Process</a>
+        <a href="solution.html" aria-current="page" data-ajax="false">Solutions</a>
+        <a href="color.html" data-ajax="false">Colours</a>
+        <a href="about.html" data-ajax="false">About</a>
+        <a class="site-nav__cta" href="about.html#contact" data-ajax="false">Contact</a>
+      </nav>
+    </header>
 
 		<div id="top-bar">
 		</div>
 		<a class="" href="index.html" id="logo" data-ajax="false">
-			<img src="Images/Logo12.png" class="Logo" id="Logo">
+			<img loading="lazy" decoding="async" src="Images/Logo12.png" class="Logo" id="Logo">
 		</a>
 
 		<nav class="" id="nav">
@@ -226,7 +248,7 @@
 				<header id="solutions__header">
 					<div id="solutions__title-wrapper">
 						<div id="solutions__header__img-wrapper">
-														<img id="solutions__header__img" src="Images/SolutionPageImg/home.png" alt="">
+														<img id="solutions__header__img" src="Images/SolutionPageImg/home.jpg" alt="">
 						</div>
 						<h1 id="solutions__title">We provide</h1>
 						<h2 id="solutions__subtitle">Complete<br>Packaging<br>Solutions</h2>
@@ -256,11 +278,11 @@
 					<div id="solutions__price__images">
 						<div id="solutions__price__images__square"></div>
 						<div id="solutions__price__img-1-wrapper">
-							<img id="solutions__price__img-1" src="Images/certificate.png">
+							<img loading="lazy" decoding="async" id="solutions__price__img-1" src="Images/certificate.png">
 							<div id="solutions__price__img-1-overlay"></div>
 						</div>
 						<div id="solutions__price__img-2-wrapper">
-							<img id="solutions__price__img-2" src="">
+							<img loading="lazy" decoding="async" id="solutions__price__img-2" src="Images/Jamjoom-Printing-Press-03112021_170722.jpg" alt="Folding cartons coming off the press">
 							<div id="solutions__price__img-2-overlay"></div>
 						</div>
 					</div>
@@ -278,8 +300,8 @@
 						</div>
 					</div>
 					<div id="solutions__price__txt_vision">
-						<h3 id="solutions__price__title"> MISSION :</h3>
-						<div id="solutions__price__body">
+						<h3 id="solutions__mission__title"> MISSION :</h3>
+						<div id="solutions__mission__body">
 							<p>To be in a leading position in Printing and Packaging solutions industry in the Middle
 								east, we will strive for outstanding partnership with our customer by providing the
 								maximum
@@ -298,21 +320,21 @@
 					<ul id="solutions__experts__list">
 						<li class="solutions__experts__item">
 							<div class="solutions__experts__item__picto">
-								<img src="./Images/SolutionPageImg/img1.png" alt="" className="solutions__experts-img">
+								<img loading="lazy" decoding="async" src="./Images/SolutionPageImg/img1.png" alt="" className="solutions__experts-img">
 							</div>
 							<h4 class="solutions__experts__item__title">Design Center</h4>
 							<p class="solutions__experts__item__body">Graphic Arts Design Center, AutoCAD</p>
 						</li>
 						<li class="solutions__experts__item">
 							<div class="solutions__experts__item__picto">
-								<img src="./Images/SolutionPageImg/img2.gif" alt="" className="solutions__experts-img">
+								<img loading="lazy" decoding="async" src="./Images/SolutionPageImg/img2.gif" alt="" className="solutions__experts-img">
 							</div>
 							<h4 class="solutions__experts__item__title">Printing</h4>
 							<p class="solutions__experts__item__body">Offset Printing both UV & Conventional</p>
 						</li>
 						<li class="solutions__experts__item">
 							<div class="solutions__experts__item__picto">
-								<img src="./Images/SolutionPageImg/img3.png" alt="" className="solutions__experts-img">
+								<img loading="lazy" decoding="async" src="./Images/SolutionPageImg/img3.png" alt="" className="solutions__experts-img">
 							</div>
 							<h4 class="solutions__experts__item__title">Die Cutting and Gluing</h4>
 							<p class="solutions__experts__item__body"> Die cutting & Folding gluing machines.
@@ -320,7 +342,7 @@
 						</li>
 						<li class="solutions__experts__item">
 							<div class="solutions__experts__item__picto">
-								<img src="./Images/SolutionPageImg/img4.png" alt="" className="solutions__experts-img">
+								<img loading="lazy" decoding="async" src="./Images/SolutionPageImg/img4.png" alt="" className="solutions__experts-img">
 							</div>
 							<h4 class="solutions__experts__item__title">Color Management</h4>
 							<p class="solutions__experts__item__body"> State of the art, color management
@@ -337,31 +359,31 @@
 							<div class="solutions__industries__item__label">
 								<div class="solutions__industries__item__label__txt">PHARMACEUTICAL</div>
 							</div>
-							<img class="solutions__industries__item__img" src="Images/solution/pharma.gif">
+							<img loading="lazy" decoding="async" class="solutions__industries__item__img" src="Images/solution/pharma.gif">
 						</li>
 						<li class="solutions__industries__item">
 							<div class="solutions__industries__item__label">
 								<div class="solutions__industries__item__label__txt">FMCG</div>
 							</div>
-							<img class="solutions__industries__item__img" src="Images/solution/fmcg.gif">
+							<img loading="lazy" decoding="async" class="solutions__industries__item__img" src="Images/solution/fmcg.gif">
 						</li>
 						<li class="solutions__industries__item">
 							<div class="solutions__industries__item__label">
 								<div class="solutions__industries__item__label__txt">HOME & PERSONAL CARE</div>
 							</div>
-							<img class="solutions__industries__item__img" src="Images/solution/home.gif">
+							<img loading="lazy" decoding="async" class="solutions__industries__item__img" src="Images/solution/home.gif">
 						</li>
 						<li class="solutions__industries__item">
 							<div class="solutions__industries__item__label">
 								<div class="solutions__industries__item__label__txt">DETERGENTS</div>
 							</div>
-							<img class="solutions__industries__item__img" src="Images/solution/detergent.gif">
+							<img loading="lazy" decoding="async" class="solutions__industries__item__img" src="Images/solution/detergent.gif">
 						</li>
 						<li class="solutions__industries__item">
 							<div class="solutions__industries__item__label">
 								<div class="solutions__industries__item__label__txt">FROZEN FOOD</div>
 							</div>
-							<img class="solutions__industries__item__img" src="Images/solution/frozen.gif">
+							<img loading="lazy" decoding="async" class="solutions__industries__item__img" src="Images/solution/frozen.gif">
 						</li>
 					</ul>
 				</div>
@@ -396,7 +418,7 @@
 							</svg>
 						</div>
 						<!-- ProLoading Content Start -->
-						<img src="Images/Logo.png" class="Logo_Loading" />
+						<img loading="lazy" decoding="async" src="Images/Logo.png" class="Logo_Loading" />
 						<div class="anim-line line-left"></div>
 						<div class="anim-line line-right"></div>
 						<!-- ProLoading Content End -->
@@ -408,7 +430,7 @@
 		<footer id="footer">
 			<div id="footer__inner">
 				<div id="footer__logo">
-					<img src="Images/Logo12.png" alt="" className="footer-logo">
+					<img loading="lazy" decoding="async" src="Images/Logo12.png" alt="" className="footer-logo">
 				</div>
 
 				<ul id="footer__pages">
@@ -439,7 +461,6 @@
 			window.jQuery || document.write('<script src="js/Script-jquery.js"><\/script>')
 
 		</script>
-		<script type="text/javascript" src="js/scripts.js"></script>
 		<script type="text/javascript" src="js/reveal.js"></script>
 		<script src="https://embed.typeform.com/next/embed.js"></script>
 	</body>

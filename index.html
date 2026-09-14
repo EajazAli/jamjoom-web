@@ -155,10 +155,32 @@
   </head>
 
   <body class="page-id-home">
+    <!-- Corporate top navigation. The template shipped only a logo and a
+         hamburger, both left permanently invisible by an intro animation
+         that never runs in this static export, so there was no way to
+         navigate from the homepage at all. This is a plain, always-visible
+         bar that needs no JavaScript to work. -->
+    <header class="site-nav" id="site-nav">
+      <a class="site-nav__brand" href="index.html" data-ajax="false">
+        <img src="Images/Logo12.png" alt="Jamjoom Printing and Packaging">
+      </a>
+      <input class="site-nav__switch" id="site-nav-switch" type="checkbox" aria-hidden="true">
+      <label class="site-nav__burger" for="site-nav-switch" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="site-nav__links" aria-label="Main">
+        <a href="index.html" aria-current="page" data-ajax="false">Home</a>
+        <a href="process.html" data-ajax="false">Process</a>
+        <a href="solution.html" data-ajax="false">Solutions</a>
+        <a href="color.html" data-ajax="false">Colours</a>
+        <a href="about.html" data-ajax="false">About</a>
+        <a class="site-nav__cta" href="about.html#contact" data-ajax="false">Contact</a>
+      </nav>
+    </header>
     <div id="top-bar">
     </div>
     <a class="" href="index.html" id="logo" data-ajax="false">
-      <img src="Images/Logo12.png" class="Logo" id="Logo">
+      <img loading="lazy" decoding="async" src="Images/Logo12.png" class="Logo" id="Logo">
     </a>
     <nav class="" id="nav">
 
@@ -242,7 +264,7 @@
 
         <section class="home-screen" id="home-landing">
           <div id="home-landing__bg">
-            <video id="home-landing__bg__video" preload="auto" loop muted autoplay playsinline>
+            <video id="home-landing__bg__video" preload="auto" poster="Images/NewImages/Home.jpg" loop muted autoplay playsinline>
               <source src="videos/Home_1.mp4" />
             </video>
           </div>
@@ -252,9 +274,10 @@
               <div id="home-landing__content__text__bg"></div>
 
               <div id="home-landing__content__text__heading">
-                <div id="home-landing__content__text__heading__title">
-                  <img src="./Images/Logo12.png" alt="" class="home-landing__content__img">
-                </div>
+                <!-- The logo used to be repeated here, inside the hero panel, in a
+                     second element carrying the same id as the headline below it.
+                     It is in the navigation bar a few hundred pixels above, so it
+                     only read as a doubled mark - and duplicate ids are invalid. -->
                 <div id="home-landing__content__text__heading__baseline"> EXPERTS SINCE 2018 </div>
                 <div id="home-landing__content__text__heading__title"> Jamjoom Printing and Packaging - JP<span
                     class="jpp-green" style="font-size: 16px">&</span>P
@@ -265,7 +288,7 @@
               </div>
               <p id="home-landing__content__text__body">
                 Tegan Al Fateh Factory Co. Ltd. (Jamjoom Printing & Packaging - JP<span class="jpp-green"
-                  style="font-size: 16px">&</span>P) is newly established manufacturer
+                  style="font-size: 16px">&</span>P) is a newly established manufacturer
                 of
                 Duplex Paper Board based inners folding cartons, JP<span class="jpp-green"
                   style="font-size: 16px">&</span>P commenced operations in 2018 with state of the art
@@ -296,7 +319,7 @@
         <section class="home-screen cine-sticky" id="home-screen-1" name="story">
           <section class="home-screen__step home-screen__step-1">
             <div class="home-screen__step-1__bg">
-              <video class="home-screen__step-1__bg__video" preload="auto" loop muted autoplay playsinline>
+              <video class="home-screen__step-1__bg__video" preload="metadata" poster="Images/NewImages/oruServices1.jpg" loop muted autoplay playsinline>
                 <source src="videos/Service.mp4" />
               </video>
               <canvas class="home-screen__step-1__bg__canvas"></canvas>
@@ -387,7 +410,7 @@
           <section class="home-screen__step home-screen__step-1">
 
             <div class="home-screen__step-1__bg">
-              <video class="home-screen__step-1__bg__video" preload="auto" loop muted autoplay playsinline>
+              <video class="home-screen__step-1__bg__video" preload="metadata" poster="Images/NewImages/OurServices2.jpg" loop muted autoplay playsinline>
                 <source src="videos/Service.mp4" />
               </video>
               <canvas class="home-screen__step-1__bg__canvas"></canvas>
@@ -459,7 +482,7 @@
           <section class="home-screen__step home-screen__step-1">
 
             <div class="home-screen__step-1__bg">
-              <video class="home-screen__step-1__bg__video" preload="auto" loop muted autoplay playsinline>
+              <video class="home-screen__step-1__bg__video" preload="metadata" poster="Images/NewImages/ourvision2.jpg" loop muted autoplay playsinline>
                 <!-- <source src="videos/JPP3.mp4"> -->
                 <source src="videos/OurVision.mp4">
               </video>
@@ -529,7 +552,7 @@
           <section class="home-screen__step home-screen__step-1">
 
             <div class="home-screen__step-1__bg">
-              <video class="home-screen__step-1__bg__video" preload="auto" loop muted autoplay playsinline>
+              <video class="home-screen__step-1__bg__video" preload="metadata" poster="Images/NewImages/ourfacility2.jpg" loop muted autoplay playsinline>
                 <source src="videos/Facility.mp4">
               </video>
               <canvas class="home-screen__step-1__bg__canvas"></canvas>
@@ -595,7 +618,7 @@
           <section class="home-screen__step home-screen__step-1">
 
             <div class="home-screen__step-1__bg">
-              <video class="home-screen__step-1__bg__video" preload="auto" loop muted autoplay playsinline>
+              <video class="home-screen__step-1__bg__video" preload="metadata" poster="Images/jpp-1.jpg" loop muted autoplay playsinline>
                 <source src="videos/one.mp4">
               </video>
               <canvas class="home-screen__step-1__bg__canvas"></canvas>
@@ -734,7 +757,7 @@
                   d="M1077.4 1121.7L675.9 720.2" />
               </svg>
             </div>
-            <img src="Images/Logo.png" class="Logo_Loading" />
+            <img loading="lazy" decoding="async" src="Images/Logo.png" class="Logo_Loading" />
             <div class="anim-line line-left"></div>
             <div class="anim-line line-right"></div>
 
@@ -746,7 +769,7 @@
     <footer id="footer" class="reveal">
       <div id="footer__inner">
         <div id="footer__logo">
-          <img src="Images/Logo12.png" alt="" className="footer-logo">
+          <img loading="lazy" decoding="async" src="Images/Logo12.png" alt="" className="footer-logo">
         </div>
 
         <ul id="footer__pages">
@@ -777,21 +800,9 @@
       window.jQuery || document.write('<script src="js/Script-jquery.js"><\/script>')
 
     </script>
-    <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/reveal.js"></script>
     <script type="text/javascript" src="js/cinematic.js"></script>
     <script src="https://embed.typeform.com/next/embed.js"></script>
-    <script>
-      // scripts.js's home-page controller hijacks mouse-wheel/trackpad scroll to
-      // drive a pinned-section carousel animation that never renders in this
-      // static export (see the #home-page / .home-screen rules in style.css,
-      // which turn the sections into a normal scrolling stack instead). That
-      // hijack still calls preventDefault() on wheel events, which otherwise
-      // leaves the homepage unable to scroll at all with a mouse/trackpad.
-      // Stop the event before it reaches that handler so native scrolling works.
-      document.addEventListener('wheel', function (e) { e.stopImmediatePropagation(); }, { capture: true, passive: true });
-    </script>
-
   </body>
 
 </html>

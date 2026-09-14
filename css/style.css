@@ -181,36 +181,42 @@ li {
     src: url(../fonts/GT\ Walsheim\ Bold.woff) format("woff");
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: gt_walsheim;
     src: url(../fonts/GT\ Walsheim\ Medium.woff) format("woff");
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: gt_walsheim;
     src: url(../fonts/GT\ Walsheim\ Pro\ Regular\ Regular.woff) format("woff");
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: roboto;
     src: url(../fonts/Roboto-Medium.woff) format("woff");
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: roboto;
     src: url(../fonts/Roboto-Regular.woff) format("woff");
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: montserrat;
     src: url(../fonts/Montserrat-Bold.woff) format("woff");
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 body {
     min-height: 100%;
@@ -1214,16 +1220,16 @@ button:disabled {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../img/home-landing.jpg);
+    background-image: url(../Images/NewImages/Home.jpg);
 }
 @media screen and (orientation: landscape) {
     .mobile #home-landing__bg {
-        background-image: url(../img/home-landing-landscape.jpg);
+        background-image: url(../Images/NewImages/Home.jpg);
     }
 }
 @media screen and (min-width: 768px) {
     .mobile #home-landing__bg {
-        background-image: url(../img/home-landing-landscape.jpg);
+        background-image: url(../Images/NewImages/Home.jpg);
     }
 }
 #home-landing__bg::before {
@@ -4068,7 +4074,7 @@ button:disabled {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url(../img/contact-header.jpg) center center no-repeat;
+    background: url(../Images/Jamjoom-Printing-Press-Office.jpg) center center no-repeat;
     background-size: auto 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -5000,7 +5006,7 @@ fieldset#contact__form__message {
 }
 #contact__jobs__cover {
     height: 170px;
-    background: url(../img/contact-jobs.jpg) center center no-repeat;
+    background: url(../Images/Jamjoom-Printing-Press-Living-Room.jpg) center center no-repeat;
     background-size: cover;
 }
 @media screen and (min-width: 1024px) {
@@ -5823,6 +5829,7 @@ fieldset#contact__form__message {
     color: #a9a9a9;
 }
 #solutions__price__title,
+#solutions__mission__title,
 #solutions__service__title,
 #solutions__subtitle {
     /* color: #6672cb; */
@@ -5922,7 +5929,7 @@ fieldset#contact__form__message {
     color: #f37024;
     font-size: 11px;
     line-height: 1em;
-    font-family: poppins, sans-serif;
+    font-family: gt_walsheim, Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 @media screen and (min-width: 1024px) {
@@ -6057,7 +6064,7 @@ fieldset#contact__form__message {
 }
 #solutions__price {
     margin-top: 10px;
-    background: url(../img/solutions-price-3.jpg) right 50px no-repeat;
+    background: url(../Images/Jamjoom-Printing-Press-03112021_171325.jpg) right 50px no-repeat;
     background-size: 50%;
 }
 #solutions__price__images__square {
@@ -6163,7 +6170,8 @@ fieldset#contact__form__message {
         margin-left: 22%;
     }
 }
-#solutions__price__title {
+#solutions__price__title,
+#solutions__mission__title {
     width: 55.56%;
     margin-bottom: 20px;
     font-size: 16px;
@@ -6172,14 +6180,16 @@ fieldset#contact__form__message {
     color: #f48c50;
 }
 @media screen and (min-width: 1024px) {
-    #solutions__price__title {
+    #solutions__price__title,
+    #solutions__mission__title {
         width: auto;
         margin-bottom: 25px;
         font-size: 26px;
         margin-top: 10px;
     }
 }
-#solutions__price__body {
+#solutions__price__body,
+#solutions__mission__body {
     color: #ababab;
     font-size: 14px;
     line-height: 1.86em;
@@ -6786,7 +6796,7 @@ fieldset#contact__form__message {
     content: "";
     display: block;
     height: 180px;
-    background: url(../img/terms.jpg) center center no-repeat;
+    background: url(../Images/JPP.jpg) center center no-repeat;
     background-size: cover;
 }
 #terms__header__inner {
@@ -7523,7 +7533,7 @@ fieldset#contact__form__message {
     color: #000;
     line-height: 2.5rem;
     text-align: justify; */
-    font-family: "Roboto";
+    font-family: roboto, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 19.257px;
@@ -8122,8 +8132,11 @@ img {
     }
     .cine-mode .cine-sticky.home-screen {
         position: sticky !important;
-        top: 0;
-        height: 100vh !important;
+        /* Pin below the fixed bar, not under it, and take the height that
+           is actually left - otherwise each panel is a barful taller than
+           the space it has and its bottom edge is permanently cropped. */
+        top: var(--nav-h);
+        height: calc(100vh - var(--nav-h)) !important;
         min-height: 0 !important;
         overflow: hidden !important;
         /* Mid-crossfade a panel sits at partial opacity, so whatever is behind
@@ -8142,16 +8155,19 @@ img {
     }
     .cine-mode .cine-sticky .home-screen__step-1 {
         z-index: 1;
-        will-change: opacity, transform;
     }
     .cine-mode .cine-sticky .home-screen__step-2 {
         z-index: 2;
-        will-change: opacity, transform;
     }
-    .cine-mode .cine-sticky .home-screen__step-1__bg,
+    /* will-change only on what the timeline actually moves. It was on the
+       two full-screen step containers as well, which promoted ten
+       viewport-sized compositor layers that nothing ever animated - pure
+       GPU memory, and on a laptop that is what makes the scroll stutter. */
     .cine-mode .cine-sticky .home-screen__step-2__img,
     .cine-mode .cine-sticky .home-screen__step-2__bg,
-    .cine-mode .cine-sticky .home-screen__step-2__corner {
+    .cine-mode .cine-sticky .home-screen__step-2__corner,
+    .cine-mode .cine-sticky .home-screen__step__content__title,
+    .cine-mode .cine-sticky .home-screen__step__content__subtitle {
         will-change: transform;
     }
     /* During the handover the headline and subtitle of each step travel all
@@ -8190,4 +8206,575 @@ img {
 .cine-fade #home-page .home-screen__step__content.cine-seen {
     opacity: 1;
     transform: translateY(0);
+}
+/* ==================================================================
+   Corporate top navigation, page offset, and responsive image safety
+   ------------------------------------------------------------------
+   Everything below was added on top of the original template. It is
+   kept in one block at the end of the file so it is obvious what is
+   ours and what shipped with the theme.
+   ================================================================== */
+
+:root {
+    --nav-h: 76px;
+    --jpp-blue: #1d386e;
+    --jpp-green: #02a964;
+    --jpp-orange: #f37024;
+}
+@media screen and (max-width: 1023px) {
+    :root {
+        --nav-h: 60px;
+    }
+}
+
+/* The theme's own logo and hamburger are both left permanently
+   visibility:hidden by ".js #logo, .js #nav" near the top of this file -
+   they were only ever meant to be revealed by the intro animation, which
+   never runs here. Rather than un-hide a nav that has no visible desktop
+   links anyway, retire them and use the bar below. */
+#logo,
+#nav,
+#nav-toggle,
+#top-bar {
+    display: none !important;
+}
+
+.site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    height: var(--nav-h);
+    padding: 0 clamp(16px, 4vw, 56px);
+    background-color: #fff;
+    border-bottom: 1px solid rgba(29, 56, 110, 0.1);
+    font-family: gt_walsheim, Helvetica, Arial, sans-serif;
+}
+.site-nav__brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex: 0 0 auto;
+}
+.site-nav__brand img {
+    display: block;
+    width: auto;
+    height: calc(var(--nav-h) - 24px);
+    max-width: 180px;
+    object-fit: contain;
+}
+.site-nav__links {
+    display: flex;
+    align-items: center;
+    gap: clamp(14px, 2.2vw, 34px);
+}
+.site-nav__links a {
+    position: relative;
+    color: var(--jpp-blue);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.25s ease;
+}
+.site-nav__links a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -7px;
+    left: 0;
+    height: 2px;
+    background-color: var(--jpp-green);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.site-nav__links a:hover,
+.site-nav__links a[aria-current="page"] {
+    color: var(--jpp-green);
+}
+.site-nav__links a:hover::after,
+.site-nav__links a[aria-current="page"]::after {
+    transform: scaleX(1);
+}
+.site-nav__links a.site-nav__cta {
+    padding: 10px 22px;
+    color: #fff;
+    background-color: var(--jpp-orange);
+    border-radius: 999px;
+    transition: background-color 0.25s ease;
+}
+.site-nav__links a.site-nav__cta::after {
+    display: none;
+}
+.site-nav__links a.site-nav__cta:hover {
+    color: #fff;
+    background-color: #d95f14;
+}
+
+/* Hamburger. Checkbox-driven so the menu opens with no JavaScript. */
+.site-nav__switch,
+.site-nav__burger {
+    display: none;
+}
+@media screen and (max-width: 1023px) {
+    .site-nav__burger {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 22px;
+        cursor: pointer;
+        flex: 0 0 auto;
+    }
+    .site-nav__burger span {
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--jpp-blue);
+        border-radius: 2px;
+        transition: transform 0.3s ease, opacity 0.2s ease;
+    }
+    .site-nav__burger span:nth-child(1) { top: 0; }
+    .site-nav__burger span:nth-child(2) { top: 10px; }
+    .site-nav__burger span:nth-child(3) { top: 20px; }
+    .site-nav__switch:checked ~ .site-nav__burger span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+    .site-nav__switch:checked ~ .site-nav__burger span:nth-child(2) {
+        opacity: 0;
+    }
+    .site-nav__switch:checked ~ .site-nav__burger span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    /* Animated with opacity/transform rather than by transitioning
+       max-height. A menu must not depend on a transition completing in
+       order to be usable: if transitions are unavailable or interrupted,
+       the checked state here still shows the panel instantly. */
+    .site-nav__links {
+        position: fixed;
+        top: var(--nav-h);
+        right: 0;
+        left: 0;
+        display: block;
+        max-height: calc(100vh - var(--nav-h));
+        padding: 0 24px 8px;
+        overflow-y: auto;
+        background-color: #fff;
+        border-bottom: 1px solid rgba(29, 56, 110, 0.1);
+        box-shadow: 0 14px 28px -18px rgba(29, 56, 110, 0.5);
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.26s ease, transform 0.26s ease,
+            visibility 0s linear 0.26s;
+    }
+    .site-nav__switch:checked ~ .site-nav__links {
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+        transition: opacity 0.26s ease, transform 0.26s ease, visibility 0s;
+    }
+    .site-nav__links a {
+        display: block;
+        padding: 16px 0;
+        font-size: 17px;
+        border-bottom: 1px solid rgba(29, 56, 110, 0.07);
+    }
+    .site-nav__links a::after {
+        display: none;
+    }
+    .site-nav__links a.site-nav__cta {
+        display: inline-block;
+        margin: 18px 0 24px;
+        border-bottom: 0;
+    }
+}
+
+/* Every page's content now starts below the fixed bar. The theme used to
+   push only the homepage down, with a hard-coded 80px margin that did not
+   match anything, which is what left the hero video 80px taller than the
+   space it had and cut its bottom off. */
+#page-container {
+    padding-top: var(--nav-h);
+}
+.js #home-page {
+    margin-top: 0;
+}
+/* The hero is "one screenful" - which is the screen minus the bar, not the
+   whole screen, or its bottom edge is always under the fold. */
+#home-landing {
+    height: calc(100vh - var(--nav-h)) !important;
+    min-height: 480px;
+}
+/* Cover, never letterbox or crop to one side: the video and every
+   background image in the story sections should fill their box from the
+   centre at any aspect ratio. */
+#home-landing__bg,
+#home-landing__bg__video,
+.home-screen__step-1__bg__video,
+.home-screen__step-1__bg__canvas {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* Scroll anchoring tries to keep a "stable" element still when content
+   above it changes size. With sticky sections whose children are being
+   transformed every frame it picks a moving element and corrects the
+   scroll position to compensate - which reads as the page flickering and
+   snapping backwards while you scroll. */
+html {
+    overflow-anchor: none;
+}
+#page-container,
+.cine-block,
+.home-screen {
+    overflow-anchor: none;
+}
+
+/* No image anywhere may exceed its column. This is the single most common
+   cause of the horizontal overflow that crops images on phones. */
+img,
+video,
+canvas {
+    max-width: 100%;
+}
+/* "clip", not "hidden". overflow-x:hidden turns the element into a scroll
+   container, which changes the containing block for position:sticky - it
+   silently stopped the homepage's pinned story panels from pinning at all.
+   "clip" crops the same overflow without creating a scroll container.
+   Where it is unsupported the page simply behaves as before; nothing
+   actually overflows any more in any case. */
+html,
+body {
+    overflow-x: clip;
+}
+
+/* ------------------------------------------------------------------
+   Typography pass
+   ------------------------------------------------------------------ */
+
+/* Body copy across the site was set in very light greys (#999, #ababab,
+   #a9a9a9) which look washed out and fail contrast against white. These
+   are the same greys, darkened to something legible - still quiet, but
+   readable on a phone in daylight. */
+.home-screen__step-2__content__inner__body,
+#solutions__price__body,
+#solutions__mission__body,
+#solutions__intro__body,
+#solutions__service__body p,
+.process__step__body,
+.na__text p,
+.about__body p {
+    color: #5a6472;
+}
+
+/* Justified text opens rivers of white space in narrow columns, which is
+   the single most common way a corporate site reads as sloppy. */
+#solutions__price__body,
+#solutions__mission__body,
+.process__step__body,
+[style*="text-align: justify"] {
+    text-align: left;
+}
+
+/* Long words, product codes and URLs must never punch out of their column. */
+h1, h2, h3, h4, p, li, .title, .para, .details {
+    overflow-wrap: break-word;
+}
+
+/* ------------------------------------------------------------------
+   Responsive corrections
+   ------------------------------------------------------------------ */
+
+@media screen and (max-width: 1023px) {
+    /* This wrapper was positioned at margin-left:64.49% while being
+       48.99% wide - 113% of the row - so on a phone its right-hand
+       third was simply cut off the screen. */
+    #solutions__price__img-2-wrapper {
+        margin-left: 51%;
+    }
+
+    /* The hero has to fit the screen it is on. Its text block was
+       absolutely positioned against a box sized for a desktop window,
+       so on a phone the bottom of the copy ran past the fold. */
+    #home-landing__content {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        max-height: 100%;
+        overflow: visible;
+    }
+    #home-landing__content__text {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    #home-landing__content__text__body {
+        font-size: 13px;
+        line-height: 1.55em;
+    }
+
+    /* Anything relying on a fixed pixel height crops its own picture at
+       phone aspect ratios. Let these size to the space they have. */
+    .process__step__img,
+    .na__img,
+    figure img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+/* Every photo in a fixed-ratio frame should fill it from the centre
+   rather than being squashed or anchored to one edge. */
+.myCertSlides figure img,
+.process__step__img img,
+#solutions__price__img-1,
+#solutions__price__img-2,
+#about__header__img,
+#solutions__header__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+/* Certificates are documents - fit the whole page in, never crop it. */
+.myCertSlides figure img {
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+/* These two sit in auto-height wrappers, so stretching them to height:100%
+   collapses them to nothing - they size from their own aspect instead. */
+#solutions__price__img-1,
+#solutions__price__img-2 {
+    height: auto;
+}
+/* Lazy-loaded images have no height until they arrive, which would let
+   these panels collapse and then jump. Hold the space. */
+#solutions__price__img-1-wrapper,
+#solutions__price__img-2-wrapper {
+    min-height: 120px;
+}
+.myCertSlides figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46vh;
+}
+.myCertSlides figure img {
+    width: auto;
+    max-width: 100%;
+}
+
+/* ------------------------------------------------------------------
+   Mobile corrections, continued
+   ------------------------------------------------------------------ */
+
+@media screen and (max-width: 1023px) {
+    /* The process timeline is a two-column row: text beside a picture.
+       Below about 1024px there is no room for two columns, so the picture
+       was simply pushed off the right of the screen - every one of the six
+       step images was half off-canvas on a phone. Stack them instead. */
+    .process__step__inner {
+        display: block;
+    }
+    .process__step__txt,
+    .process__step:nth-child(odd) .process__step__txt,
+    .process__step:nth-child(even) .process__step__txt {
+        width: auto;
+        margin-right: 6.5%;
+        margin-left: 6.5%;
+    }
+    .process__step__img,
+    .process__step:nth-child(even) .process__step__img,
+    .process__step:nth-child(odd) .process__step__img {
+        display: block;
+        box-sizing: border-box;
+        width: 87%;
+        max-width: 87%;
+        height: auto;
+        margin: 26px 6.5% 0;
+        border-radius: 4px;
+    }
+    /* The sidebar step numerals are positioned with desktop pixel offsets
+       and only stick out past the edge at this width. */
+    .process__step__outer-index {
+        display: none;
+    }
+}
+
+/* The industry thumbnails sit in a 50.72% x 60% box while the artwork is
+   16:9, so they were being squashed into a near-square rather than
+   cropped. Fix the distortion without disturbing the placement. */
+.solutions__industries__item__img {
+    object-fit: cover;
+    object-position: center center;
+}
+@media screen and (max-width: 1023px) {
+    /* These images are revealed on hover - which does not exist on a
+       phone, so on mobile the industries list was labels and nothing
+       else. Show them inline underneath each label instead. */
+    .solutions__industries__item {
+        width: auto;
+    }
+    .solutions__industries__item__img {
+        position: relative;
+        top: auto;
+        right: auto;
+        box-sizing: border-box;
+        width: 87%;
+        height: auto;
+        margin: 12px 6.5% 28px;
+        opacity: 1;
+        border-radius: 4px;
+    }
+}
+
+/* Small inline diagrams should keep their proportions rather than being
+   squeezed into whatever box they land in. */
+.page__color img:not([id]) {
+    object-fit: contain;
+}
+
+/* The numbered step marks on the colour page are drawn from a tall
+   artwork squeezed into a small square - keep their proportions. */
+.ac__number__content img,
+.ac__number2__items img,
+.ac__items__right img.item2__img {
+    object-fit: contain;
+    object-position: center center;
+}
+
+/* ------------------------------------------------------------------
+   Scroll-in reveals: fail visible, never invisible
+   ------------------------------------------------------------------
+   ".reveal" starts at opacity:0 and is brought in by js/reveal.js. If
+   that script does not run - no JavaScript, a blocked file, an error
+   earlier on the page - whole sections of copy stay permanently blank.
+   js/reveal.js now stamps "reveal-js" on <html> as its very first act,
+   so the hidden starting state only ever applies when something is
+   there to undo it. */
+html:not(.reveal-js) .reveal {
+    transform: none;
+    opacity: 1;
+}
+/* 150px is a long way to travel and reads as sluggish. Half that, on a
+   curve that decelerates, matches the rest of the site's motion. */
+.reveal {
+    transform: translateY(64px);
+    transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+.reveal.active {
+    will-change: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        transform: none;
+        opacity: 1;
+        transition: none;
+    }
+}
+
+/* ------------------------------------------------------------------
+   Replaces w3.css (was loaded from w3schools.com on the colour page)
+   ------------------------------------------------------------------
+   That stylesheet was pulled in from a third-party tutorial site on
+   every visit purely for the three animation classes below, and it set
+   the whole page in Verdana - which is why the colour page read in a
+   different typeface from the rest of the site. These are the same
+   three animations, defined locally.
+   ------------------------------------------------------------------ */
+.w3-animate-top {
+    position: relative;
+    animation: jpp-animate-top 0.4s;
+}
+@keyframes jpp-animate-top {
+    from { top: -300px; opacity: 0; }
+    to { top: 0; opacity: 1; }
+}
+.w3-animate-right {
+    position: relative;
+    animation: jpp-animate-right 0.4s;
+}
+@keyframes jpp-animate-right {
+    from { right: -300px; opacity: 0; }
+    to { right: 0; opacity: 1; }
+}
+.w3-animate-zoom {
+    animation: jpp-animate-zoom 0.6s;
+}
+@keyframes jpp-animate-zoom {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .w3-animate-top,
+    .w3-animate-right,
+    .w3-animate-zoom {
+        animation: none;
+    }
+}
+
+/* Section headings in the hand-built sections (certificates, service
+   cards, colour steps) were falling back to the body face, so the brand
+   display face only appeared on the template's own pages. */
+.title,
+.na__action__content .details .title,
+.sp-items .title {
+    font-family: gt_walsheim, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.01em;
+}
+
+/* The chat bubble sits bottom-right on top of the hero copy on a phone.
+   Leave it room rather than letting it cover the last line. */
+@media screen and (max-width: 1023px) {
+    #home-landing__content__text {
+        padding-bottom: 56px;
+    }
+}
+
+/* The oversized decorative step numeral is rotated about its right edge,
+   which pushed it past the right of the page. */
+@media screen and (min-width: 1024px) {
+    .process__step:nth-child(even) .process__step__outer-index {
+        right: 92px;
+    }
+}
+
+/* ------------------------------------------------------------------
+   No justified body copy
+   ------------------------------------------------------------------
+   Eleven blocks across the site set text-align:justify. In narrow
+   columns - which is every column on a phone - forced justification
+   stretches word spacing into visible rivers of white, and it is the
+   fastest way to make otherwise good typography look amateur. Ragged
+   right throughout instead.
+   ------------------------------------------------------------------ */
+.project__desc,
+.process__intro__txt,
+.process__step__body,
+#solutions__intro__title,
+#solutions__price__txt,
+#solutions__price__txt_vision,
+#solutions__price__body,
+#solutions__mission__body,
+.ac__items__left p,
+.ac__item4__list p,
+.na__text__content p {
+    text-align: left;
 }

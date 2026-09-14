@@ -123,6 +123,10 @@
     var scenes = blocks.map(function (block) {
         return {
             block: block,
+            // The pinned panel. Its height is the viewport minus the fixed
+            // nav bar, not the whole viewport, so it - not window.innerHeight
+            // - is what the runway has to be measured against.
+            sticky: q(block, '.cine-sticky'),
             title1: q(block, '.home-screen__step-1__content__title'),
             sub1: q(block, '.home-screen__step-1__content__subtitle'),
             lines1: Array.prototype.slice.call(
@@ -298,8 +302,15 @@
                 return;
             }
             anyLive = true;
-            var runway = rect.height - vh;
-            target[i] = runway > 0 ? clamp01(-rect.top / runway) : 0;
+            // How far the pinned panel has slid down inside its own block:
+            // zero until the block reaches the pin point, then growing to
+            // fill the runway. Derived from the panel rather than assumed,
+            // so it stays correct whatever offset the panel pins at (here,
+            // the height of the fixed nav bar).
+            var pin = scene.sticky || scene.block;
+            var travelled = pin.getBoundingClientRect().top - rect.top;
+            var runway = rect.height - pin.offsetHeight;
+            target[i] = runway > 0 ? clamp01(travelled / runway) : 0;
         });
         return anyLive;
     }
@@ -384,8 +395,17 @@
 
     sync();
 
+    // Only react to a change in WIDTH. On phones and tablets the browser
+    // fires resize every time its own URL bar slides in or out, which is
+    // constantly while you scroll - and re-measuring clears every inline
+    // transform for an instant, so honouring those events made the page
+    // visibly flicker and jump as you scrolled. Height alone never changes
+    // any of the geometry measured here.
+    var lastWidth = window.innerWidth;
     var resizeTimer = 0;
     window.addEventListener('resize', function () {
+        if (window.innerWidth === lastWidth) return;
+        lastWidth = window.innerWidth;
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(sync, 150);
     });
