@@ -102,9 +102,15 @@ body,
 html {
     width: 100%;
 }
-#logo,
 #top-bar {
     position: absolute;
+}
+/* Originally absolute, so the logo scrolled away with the page content while
+   the hamburger toggle next to it (#nav-toggle) stayed fixed — the top bar
+   looked like it "disappeared" on scroll because half of it did. Pin it like
+   the toggle so the whole bar stays put. */
+#logo {
+    position: fixed;
 }
 #logo,
 #logo svg,
@@ -8064,4 +8070,16 @@ img {
         height: auto !important;
         display: block;
     }
+}
+
+/* The homepage story panels now use .reveal (see js/reveal.js) so each one
+   fades/slides in as it's scrolled to, restoring the site's scroll-in motion.
+   .reveal sets position:relative for its own overflow-hidden mask, which would
+   otherwise clobber these panels' position:absolute (needed for their top/
+   left/bottom placement within each home-screen section). Win that fight back
+   with a more specific selector so the reveal animation applies without
+   touching their layout. */
+.home-screen__step-1__content.reveal,
+.home-screen__step-2__content.reveal {
+    position: absolute;
 }

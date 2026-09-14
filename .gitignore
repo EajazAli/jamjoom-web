@@ -1,3 +1,5 @@
 .DS_Store
 __MACOSX/
 Thumbs.db
+.claude/
+serve.ps1
