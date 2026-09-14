@@ -6,6 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
+    <script>
+      // Set this synchronously, before anything paints. js/cinematic.js (loaded
+      // at the end of the body) adds the same class, but by then the browser
+      // has already laid out and painted the homepage story panels once under
+      // the non-cinematic rules. If a paint happens under one layout and the
+      // box then narrows for the cinematic one, some renderers keep the
+      // already-rasterized (wider) text instead of cleanly redrawing it at
+      // the new width, which looks like the text got cut off mid-line. Doing
+      // this before first paint means the story panels are only ever laid
+      // out once, under whichever rules actually apply.
+      (function () {
+        var wide = window.innerWidth >= 1024;
+        var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (wide && !reduced) {
+          document.documentElement.classList.add('cine-mode');
+        }
+      })();
+    </script>
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
@@ -386,7 +404,7 @@
             <div class="reveal home-screen__step__content home-screen__step-1__content">
               <h1 class="home-screen__step__content__title home-screen__step-1__content__title"> Our Services </h1>
               <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">
-                Ã¢â‚¬Å“Together we reach our goalsÃ¢â‚¬Â <br />
+                “Together we reach our goals” <br />
                 Quality Packaging begins with a quality relationship.
               </h2>
             </div>
@@ -459,7 +477,7 @@
             <div class="reveal home-screen__step__content home-screen__step-1__content">
               <h1 class="home-screen__step__content__title home-screen__step-1__content__title">Our vision</h1>
               <h2 class="home-screen__step__content__subtitle home-screen__step-1__content__subtitle">
-                Ã¢â‚¬Å“Together we reach our goalsÃ¢â‚¬Â <br />
+                “Together we reach our goals” <br />
                 Quality Packaging begins with a quality relationship.
               </h2>
             </div>

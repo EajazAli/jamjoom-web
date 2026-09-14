@@ -178,31 +178,37 @@ li {
 }
 @font-face {
     font-family: gt_walsheim;
-    src: url(../fonts/GT\ Walsheim\ Bold.woff) format("woff2"), url(../fonts/GT\ Walsheim\ Bold.woff) format("woff");
+    src: url(../fonts/GT\ Walsheim\ Bold.woff) format("woff");
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: gt_walsheim;
-    src: url(../fonts/GT\ Walsheim\ Medium.woff) format("woff2"), url(../fonts/GT\ Walsheim\ Medium.woff) format("woff");
+    src: url(../fonts/GT\ Walsheim\ Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: gt_walsheim;
+    src: url(../fonts/GT\ Walsheim\ Pro\ Regular\ Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Medium.woff) format("woff");
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: roboto;
-    src: url(../fonts/Roboto-Medium.woff) format("woff2"), url(../fonts/Roboto-Medium.woff) format("woff");
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: roboto;
-    src: url(../fonts/Roboto-Regular.woff) format("woff2"), url(../fonts/Roboto-Regular.woff) format("woff");
+    src: url(../fonts/Roboto-Regular.woff) format("woff");
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: montserrat;
-    src: url(../fonts/Montserrat-Bold.woff) format("woff2"), url(../fonts/Montserrat-Bold.woff) format("woff");
+    src: url(../fonts/Montserrat-Bold.woff) format("woff");
     font-weight: 700;
     font-style: normal;
 }
@@ -1678,11 +1684,13 @@ button:disabled {
     letter-spacing: 0.06em;
     font-weight: 700;
     font-size: 16px;
+    overflow-wrap: break-word;
 }
 .home-screen__step__content__subtitle {
     font-weight: 500;
     font-size: 25px;
     line-height: 1.4em;
+    overflow-wrap: break-word;
 }
 #home-pagination__number,
 .projects__nav__index {
@@ -1714,6 +1722,10 @@ button:disabled {
     height: 100%;
     z-index: 2;
     filter: brightness(0.6);
+    /* The headline sitting on top of this is white, so it needs a dark
+       backdrop to stay readable before the video has decoded a frame, or at
+       all if autoplay is blocked / the connection is slow. */
+    background-color: #0f1b2d;
 }
 .home-screen__step-1__bg__video {
     visibility: hidden;
@@ -8111,6 +8123,12 @@ img {
         height: 100vh !important;
         min-height: 0 !important;
         overflow: hidden !important;
+        /* Mid-crossfade a panel sits at partial opacity, so whatever is behind
+           it shows through. Without this that backdrop is the page's near-white
+           body, which washes the footage out and drops the white headline on it
+           to almost no contrast. Compositing against a dark backdrop instead
+           keeps both readable the whole way through the transition. */
+        background-color: #0f1b2d;
     }
     .cine-mode .cine-sticky .home-screen__step {
         position: absolute !important;
@@ -8121,8 +8139,28 @@ img {
     }
     .cine-mode .cine-sticky .home-screen__step-1 {
         z-index: 1;
+        will-change: opacity, transform;
     }
     .cine-mode .cine-sticky .home-screen__step-2 {
         z-index: 2;
+        will-change: opacity, transform;
     }
+    .cine-mode .cine-sticky .home-screen__step-1__bg,
+    .cine-mode .cine-sticky .home-screen__step-2__img,
+    .cine-mode .cine-sticky .home-screen__step-2__bg {
+        will-change: transform;
+    }
+}
+
+/* The story subtitles are sized by a font-size + transform:scale() pair
+   (25px scaled 1.2973x, or 1.5238x above 1400px, from transform-origin:
+   left top). That means their LAYOUT box stays 25px-text wide while they
+   RENDER about half again as wide, deliberately spilling to the right of
+   their column. That was fine until these panels were given the sitewide
+   .reveal class for their scroll fade-in, because .reveal also carries
+   overflow:hidden - which clipped the scaled text mid-word. Keep the fade,
+   drop the clipping. */
+.home-screen__step__content.reveal,
+.home-screen__step__content.reveal.active {
+    overflow: visible;
 }
