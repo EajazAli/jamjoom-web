@@ -418,6 +418,35 @@
         });
     }
 
+    // The five story sections each sit on a looping background video, and
+    // between them they are by far the heaviest thing on the page. They
+    // carry preload="none" and no autoplay attribute, so nothing is
+    // fetched until one is actually approaching the viewport - and each is
+    // paused and rewound again once it is well past, so at most one or two
+    // are ever decoding. Without this the browser downloads and plays all
+    // six at once on first paint, which is most of what makes the page feel
+    // heavy on a laptop and unusable on a phone connection.
+    if ('IntersectionObserver' in window) {
+        var videos = Array.prototype.slice.call(
+            document.querySelectorAll('#home-page .home-screen__step-1__bg__video'));
+        if (videos.length) {
+            var vo = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    var v = entry.target;
+                    if (entry.isIntersecting) {
+                        var play = v.play();
+                        // Autoplay can be refused (low-power mode, data saver).
+                        // The poster frame stays up, which is a fine outcome.
+                        if (play && play.catch) play.catch(function () { });
+                    } else if (!v.paused) {
+                        v.pause();
+                    }
+                });
+            }, { rootMargin: '50% 0px' });
+            videos.forEach(function (v) { vo.observe(v); });
+        }
+    }
+
     // Narrow screens and reduced-motion visitors keep the panels as a plain
     // stacked page; give them a single gentle fade as each scrolls into view
     // rather than the pinned timeline.
